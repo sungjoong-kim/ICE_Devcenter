@@ -11,15 +11,19 @@
     <title>ICE Devcenter</title>
     <script src="https://kit.fontawesome.com/4eea417a7f.js" crossorigin="anonymous"></script>
     <scrip src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></scrip>
+    <link rel="shortcut icon" href="image/favicon.svg">
+    <link rel="icon" href="image/favicon.ico">
+    
 </head>
+
 
 <body>
     <header class="tnd">
         <div class="container">
             <div class="tnd__header__menu">
-                <li class="tt"><a href="">회원가입</a></li>
-                <li class="tt"><a href="">아이디찾기</a></li>
-                <li class="tt"><a href="">비밀번호찾기</a></li>
+                <li class="tt"><a href="#">회원가입</a></li>
+                <li class="tt"><a href="#">아이디찾기</a></li>
+                <li class="tt"><a href="#">비밀번호찾기</a></li>
             </div>
         </div>
     </header>
@@ -39,9 +43,51 @@
                 <li><a href="#">오시는길</a></li>
             </ul>
         </div>
+            <!-- 네비게이션 모바일바 -->
+    <input type="checkbox" id="menuicon" style="display: none;">
+    <label for="menuicon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    
+    <div class="sidebar">
+        <div class="sidebar__menu">
+            <div class="mobile__menu__button">
+            <ul class="sidebar__mobile">
+                <li class="moblie__menu">
+                    <a href="#">ICE소개</a>
+                </li>
+                <li class="moblie__menu">
+                    <a href="#">개발가이드</a>
+                </li>
+                <li class="moblie__menu">
+                    <a href="#">개발자교육</a>
+                </li>
+                <li class="moblie__menu">
+                    <a href="#">기술지원</a>
+                </li>
+                <li class="moblie__menu">
+                    <a href="#">고객지원</a>
+                </li>
+            </ul></div>
+            <div class="mobile__btn__group">
+            <a href="#" class="mobile__btn mobile__login">
+                <span>로그인하기</span>
+            </a>
+
+            <a href="#" class="mobile__btn mobile__signup">
+                <span>회원가입하기</span>
+            </a>
+        </div>
+    </div>
+</div>
+</nav>
+    </div>
+
         <hr/>
     </header>
-    <!-- 네비게이션 -->
+    <!-- 메인 네비게이션 -->
     <div class="navbar__wrap">
         <nav class="navbar_empty"></nav>
         <nav class="navbar">
@@ -97,6 +143,9 @@
             </div>
         </nav>
     </div>
+
+
+    
     <hr />
     <!-- 로그인 -->
     <section>
@@ -104,7 +153,7 @@
             <div class="container login_header">
                 <div class="login__menu">
                     <img src="image/enter.png">
-                    <span style="color:white;" class="login__text">안녕하세요 방문해주셔서 감사합니다</span>
+                    <span style="color:white; white-space: nowrap;" class="login__text">안녕하세요 방문해주셔서 감사합니다</span>
                 </div>
                 <div class="login">
                     <input type="text" class="login__id" placeholder="아이디" maxlength="15"></input>
@@ -141,7 +190,6 @@
         </article>
         <!--4-->
     </section>
-
     <section id="pager">
         <span class="dots on" onclick="currentSlide(1)"></span>
         <span class="dots" onclick="currentSlide(2)"></span>
@@ -152,47 +200,53 @@
     <!-- 아이콘 -->
     <div class="menu__icon">
         <div class="container">
+            <div class="icon">
             <a href="#">
                 <div class="item">
                     <img src="image/icon1.png">
-                    <a href="#">설치하기</a>
+                    <p><a href="#">설치하기</a></p>
                 </div>
             </a>
             <a href="#">
                 <div class="item">
                     <img src="image/icon6.png">
-                    <a href="#">개발가이드</a>
+                    <p><a href="#">개발가이드</a></p>
+
                 </div>
             </a>
             <a href="#">
                 <div class="item">
                     <img src="image/icon3.png">
-                    <a href="#">교육신청</a>
+                    <p><a href="#">교육신청</a></p>
+
                 </div>
             </a>
             <a href="#">
                 <div class="item">
                     <img src="image/icon2.png">
-                    <a href="#">교육자료</a>
+                    <p><a href="#">교육자료</a></p>
+
                 </div>
             </a>
             <a href="#">
                 <div class="item">
                     <img src="image/icon4.png">
-                    <a href="#">FAQ</a>
+                    <p><a href="#">FAQ</a></p>
+
                 </div>
             </a>
             <a href="#">
                 <div class="item">
                     <img src="image/icon5.png">
-                    <a href="#">묻고답하기</a>
+                    <p><a href="#">묻고답하기</a></p>
+                </div>
                 </div>
             </a>
         </div>
     </div>
     <!-- 게시판 -->
     <div id="idx_board_wrap">
-        <div>
+        <div class="container container_idx">
             <div class="idx_board">
                 <div class="title">
                     <a href="#" class="name">공지사항</a>
@@ -323,19 +377,27 @@
     <footer>
         <div class="container">
             <div class="footer__logo">
-                <img src="image/ionhorizontal.svg">
+                <img src="/image/ionhorizontal.svg">
             </div>
         </div>
-    <script src="https://kit.fontawesome.com/4eea417a7f.js" crossorigin="anonymous"></script>
 
-        <div class="container">
+            <div class="container">
+                <div class="footer__down">
             <div class="footer__text">
-                <p>(06234) 서울특별시 강남구 테헤란로 10길 15, 아이온빌딩&nbsp;&nbsp;
+                <li class="pc">(06234)서울특별시 강남구 테헤란로 10길 15, 아이온빌딩&nbsp;&nbsp;
                     <strong>T.</strong>02-3430-1200&nbsp;&nbsp;
                     <strong>F.</strong>02-3430-1205&nbsp;&nbsp;
                     <strong>E.</strong>ask@i-on.net
                     <br>Copyright 2021 © I-ON Communications Co., Ltd.
-                </p>
+                </li>
+
+                <li class="moblie">(06234)서울특별시 강남구 테헤란로 10길 15, 아이온빌딩&nbsp;&nbsp;<br>
+                    <strong>T.</strong>02-3430-1200&nbsp;&nbsp;<br>
+                    <strong>F.</strong>02-3430-1205&nbsp;&nbsp;<br>
+                    <strong>E.</strong>ask@i-on.net<br>
+                    Copyright 2021 © I-ON Communications Co., Ltd.
+                </li>
+                
             </div>
             <div class="footer__button">
                 <li class="ff"><a href="#"></a>회사소개</li>
@@ -343,9 +405,13 @@
                 <li class="ff"><a href="#"></a>이메일무단수집거부</li>
             </div>
         </div>
+        </div>        </div>
+
     </footer>
 
     <!-- 스크립트시작 -->
+    <script src="https://kit.fontawesome.com/4eea417a7f.js" crossorigin="anonymous"></script>
+
     <script>
         var slides = document.getElementsByClassName('slides');
         var dots = document.getElementsByClassName('dots');
@@ -413,8 +479,8 @@
             slides[slideIndex - 1].style.display = 'block';
             dots[slideIndex - 1].className += ' on';
         }</script>
-  
 </body>
+
 
 
 </html>
