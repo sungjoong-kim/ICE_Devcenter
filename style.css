@@ -29,6 +29,28 @@ hr {
   margin: 0;
 }
 
+/* 특수문자 */
+
+.tt {
+  position: relative;
+}
+.tt ~ .tt::before {
+  position: absolute;
+  content: "·";
+  top: 25%;
+  left: -2.7px;
+}
+
+.ff {
+  position: relative;
+}
+.ff ~ .ff::before {
+  position: absolute;
+  content: "·";
+  top: 0%;
+  left: -13.7px;
+}
+
 /* 헤더최상단 */
 
 .tnd {
@@ -41,7 +63,6 @@ hr {
 .tnd__header__menu {
   display: flex;
   margin-left: auto;
-  color: #666666;
 }
 
 .tnd__header__menu li {
@@ -53,6 +74,9 @@ hr {
 /* 헤더 로고+메뉴 */
 
 .header {
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid #f1f3f9;
 }
 
 .container {
@@ -74,6 +98,11 @@ hr {
   height: auto;
 }
 
+.header__logo img {
+  width: auto;
+  height: auto;
+}
+
 .header__menu {
   display: flex;
   padding-left: 0;
@@ -85,10 +114,11 @@ hr {
 }
 
 .header__menu li:hover {
-  color: #d2d2d2;
+  color: #333333;
 }
 
-/* ----- 메뉴바 ----- Start */
+/* 메인네비게이션바 */
+
 .navbar {
   position: absolute;
   width: 100%;
@@ -108,9 +138,9 @@ hr {
 
 #menu {
   text-align: center;
+  overflow: hidden;
   width: 100%;
   height: 50px;
-  overflow: hidden;
   transition: height 0.08s;
 }
 
@@ -119,14 +149,14 @@ hr {
 }
 
 #menu > ul > li {
-  width: 19.62%;
-  display: inline-block;
   position: relative;
+  display: inline-block;
+  width: 19.62%;
 }
 
 #menu ul li a:hover {
-  color: #5f90db;
   font-weight: bold;
+  color: #5f90db;
 }
 
 #menu > ul > li > a {
@@ -151,17 +181,17 @@ hr {
 }
 
 .submenu .submenu__link {
-  background: url(image/link.png);
   display: inline-block;
+  background: url(image/link.png);
   background-repeat: no-repeat;
   background-position: 90% 50%;
 }
 
 #menu ul li a:hover + .submenu,
 .submenu:hover {
+  box-sizing: border-box;
   background-color: #f7fafd;
   border-top: 3px solid #5f90db;
-  box-sizing: border-box;
 }
 
 .submenu a:hover {
@@ -186,9 +216,9 @@ hr {
 .nav__item__icon a {
   color: #ffffff;
 }
-/* ----- 메뉴바 ----- End */
 
-/* 사이드바 */
+/* 모바일네비게이션바 */
+
 input[id="menuicon"] {
   display: none;
 }
@@ -336,84 +366,102 @@ li:hover .icon::after {
 input#tab01:checked ~ ul > li:nth-child(1) > div > ul.sub {
   max-height: 206px;
 }
+
 input#tab01:checked ~ ul > li:nth-child(1) .sideicon .sidearrow::before {
   bottom: auto;
   top: 5px;
   transform: rotate(-45deg);
   background: #5f90db;
 }
+
 input#tab01:checked ~ ul > li:nth-child(1) .sideicon .sidearrow::after {
   bottom: auto;
   top: 5px;
   transform: rotate(45deg);
   background: #5f90db;
 }
+
 input#tab02:checked ~ ul > li:nth-child(2) > div > ul.sub {
   max-height: 206px;
 }
+
 input#tab02:checked ~ ul > li:nth-child(2) .sideicon::after {
   width: 30px;
 }
+
 input#tab02:checked ~ ul > li:nth-child(2) .sideicon .sidearrow::before {
   bottom: auto;
   top: 5px;
   transform: rotate(-45deg);
   background: #5f90db;
 }
+
 input#tab02:checked ~ ul > li:nth-child(2) .sideicon .sidearrow::after {
   bottom: auto;
   top: 5px;
   transform: rotate(45deg);
   background: #5f90db;
 }
+
 input#tab03:checked ~ ul > li:nth-child(3) > div > ul.sub {
   max-height: 206px;
 }
+
 input#tab03:checked ~ ul > li:nth-child(3) .sideicon::after {
   width: 30px;
 }
+
 input#tab03:checked ~ ul > li:nth-child(3) .sideicon .sidearrow::before {
   bottom: auto;
   top: 5px;
   transform: rotate(-45deg);
   background: #5f90db;
 }
+
 input#tab03:checked ~ ul > li:nth-child(3) .sideicon .sidearrow::after {
   bottom: auto;
   top: 5px;
   transform: rotate(45deg);
   background: #5f90db;
 }
+
 input#tab04:checked ~ ul > li:nth-child(4) > div > ul.sub {
   max-height: 206px;
 }
+
 input#tab04:checked ~ ul > li:nth-child(4) .sideicon::after {
   width: 30px;
 }
+
 input#tab04:checked ~ ul > li:nth-child(4) .sideicon .sidearrow::before {
   bottom: auto;
   top: 5px;
   transform: rotate(-45deg);
   background: #5f90db;
 }
+
 input#tab04:checked ~ ul > li:nth-child(4) .sideicon .sidearrow::after {
   bottom: auto;
   top: 5px;
   transform: rotate(45deg);
   background: #5f90db;
 }
+
 input#tab05:checked ~ ul > li:nth-child(5) > div > ul.sub {
   max-height: 206px;
 }
+
 input#tab05:checked ~ ul > li:nth-child(5) .sideicon::after {
   width: 30px;
 }
+
 input#tab05:checked ~ ul > li:nth-child(5) .sideicon .sidearrow::before {
   bottom: auto;
   top: 5px;
   transform: rotate(-45deg);
   background: #5f90db;
 }
+
 input#tab05:checked ~ ul > li:nth-child(5) .sideicon .sidearrow::after {
   bottom: auto;
   top: 5px;
@@ -429,6 +477,7 @@ input#tab05:checked ~ ul > li:nth-child(5) .sideicon .sidearrow::after {
   width: 20px;
   height: 20px;
 }
+
 .sidearrow::before,
 .sidearrow::after {
   content: "";
@@ -441,11 +490,13 @@ input#tab05:checked ~ ul > li:nth-child(5) .sideicon .sidearrow::after {
   background: #dfdfdf;
   transition: all 0.35s;
 }
+
 .sidearrow:before {
   right: calc(50% - 1px);
   transform-origin: right center;
   transform: rotate(45deg);
 }
+
 .sidearrow:after {
   left: calc(50% - 1px);
   transform-origin: left center;
@@ -488,6 +539,7 @@ input#tab05:checked ~ ul > li:nth-child(5) .sideicon .sidearrow::after {
   background-color: #5f90db;
   color: #fff;
 }
+
 .mobile__signup:hover {
   background-color: #666;
   color: #fff;
@@ -503,28 +555,6 @@ input#tab05:checked ~ ul > li:nth-child(5) .sideicon .sidearrow::after {
 .mobile__idpwsearch:hover {
   font-weight: 600;
 }
-
-/* ----- 특수문자 ----- Start */
-.tt {
-  position: relative;
-}
-.tt ~ .tt::before {
-  position: absolute;
-  content: "·";
-  top: 25%;
-  left: -2.7px;
-}
-
-.ff {
-  position: relative;
-}
-.ff ~ .ff::before {
-  position: absolute;
-  content: "·";
-  top: 0%;
-  left: -13.7px;
-}
-/* ----- 특수문자 ----- End */
 
 /* ----- 로그인 ----- Start */
 
@@ -592,11 +622,8 @@ input#tab05:checked ~ ul > li:nth-child(5) .sideicon .sidearrow::after {
   background-color: #0b598f;
 }
 
-/* ----- 로그인 ----- End */
+/* 메인슬라이드 */
 
-/* ----- 메인슬라이드 ----- Start */
-
-/*==========*/
 #container {
   position: relative;
   box-sizing: border-box;
@@ -715,18 +742,19 @@ input#tab05:checked ~ ul > li:nth-child(5) .sideicon .sidearrow::after {
   margin-top: 1rem;
   cursor: pointer;
 }
-/* ----- 메인슬라이드 ----- End */
 
-/* ----- 기능아이콘 ----- Start */
+/* 기능아이콘 */
 
 .menu__icon {
   border-bottom: 1px solid #f1f3f9;
   height: auto;
 }
+
 .icon {
   display: flex;
   width: 100%;
 }
+
 .item {
   display: flex;
   flex-direction: column;
@@ -924,7 +952,9 @@ footer {
   cursor: pointer;
 }
 
-/* 화면 너비가 0~960px */
+/* ------------- 반응형시작 -------------*/
+
+/* 화면 너비가 768~960px */
 
 @media (max-width: 960px) {
   .login__box .login .login__id {
@@ -975,7 +1005,7 @@ footer {
   }
 }
 
-/* 화면 너비가 0~768 태블릿*/
+/* 화면 너비가 576~768 태블릿*/
 @media (max-width: 768px) {
   .tnd {
     display: none;
