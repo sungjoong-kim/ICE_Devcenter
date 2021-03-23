@@ -270,94 +270,6 @@ div[class="sidebar"] {
   display: none;
 }
 
-.sidebar__menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.mobile__menu__button {
-  width: 100%;
-  width: 70%;
-}
-
-.sidebar__mobile {
-  margin-top: 70px;
-}
-
-.sidebar__mobile > li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 70px;
-}
-
-.sidebar__mobile > li > a {
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.sidebar__mobile > li > a:hover {
-  font-size: 18px;
-  font-weight: 600;
-  color: #5f90db;
-}
-
-.mobile__btn__group {
-  position: absolute;
-  bottom: 120px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  font-size: 17px;
-}
-
-.mobile__btn__group .mobile__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70%;
-  height: 40px;
-  border-radius: 50px;
-}
-
-.mobile__login {
-  border: 1px solid #5f90db;
-  color: #5f90db;
-  transition: 0.2s;
-}
-
-.mobile__signup {
-  border: 1px solid #666;
-  color: #666;
-  margin-top: 10px;
-  transition: 0.2s;
-}
-
-.mobile__login:hover {
-  background-color: #5f90db;
-  color: #fff;
-}
-.mobile__signup:hover {
-  background-color: #666;
-  color: #fff;
-}
-
-.mobile__idpwsearch {
-  margin: 12px 0px 12px 0px;
-  font-size: 13px;
-  color: #666;
-  transition: 0.2s;
-}
-
-.mobile__idpwsearch:hover {
-  font-weight: 600;
-}
-
-/* 테스트사이드바 */
-
 .accordion {
   position: absolute;
   width: 100%;
@@ -538,6 +450,58 @@ input#tab05:checked ~ ul > li:nth-child(5) .sideicon .sidearrow::after {
   left: calc(50% - 1px);
   transform-origin: left center;
   transform: rotate(-45deg);
+}
+
+.mobile__btn__group {
+  position: absolute;
+  bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-size: 17px;
+}
+
+.mobile__btn__group .mobile__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 40px;
+  border-radius: 50px;
+}
+
+.mobile__login {
+  border: 1px solid #5f90db;
+  color: #5f90db;
+  transition: 0.2s;
+}
+
+.mobile__signup {
+  border: 1px solid #666;
+  color: #666;
+  margin-top: 10px;
+  transition: 0.2s;
+}
+
+.mobile__login:hover {
+  background-color: #5f90db;
+  color: #fff;
+}
+.mobile__signup:hover {
+  background-color: #666;
+  color: #fff;
+}
+
+.mobile__idpwsearch {
+  margin: 12px 0px 12px 0px;
+  font-size: 13px;
+  color: #666;
+  transition: 0.2s;
+}
+
+.mobile__idpwsearch:hover {
+  font-weight: 600;
 }
 
 /* ----- 특수문자 ----- Start */
