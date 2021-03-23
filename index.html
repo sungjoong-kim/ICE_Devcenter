@@ -4,15 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
     <link rel="stylesheet" href="style.css">
+    <!-- font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
+    <!-- 타이틀 -->
     <title>ICE Devcenter</title>
-    <script src="https://kit.fontawesome.com/4eea417a7f.js" crossorigin="anonymous"></script>
-    <scrip src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></scrip>
     <!-- 파비콘 -->
-    <link rel="shortcut icon" href="image/favicon.ico">    
+    <link rel="shortcut icon" href="image/favicon-32x32.png">
+    <!-- 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/4eea417a7f.js" crossorigin="anonymous"></script>
+    <!-- jquery -->
+
+    <scrip src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></scrip>
 </head>
 
 
@@ -42,104 +49,105 @@
                 <li><a href="#">오시는길</a></li>
             </ul>
         </div>
-            <!-- 네비게이션 모바일바 -->
-    <input type="checkbox" id="menuicon" style="display: none;">
-            <!-- 햄버거 메뉴 아이콘 -->
-    <label for="menuicon">
-        <span></span>
-        <span></span>
-        <span></span>
-    </label>
-    <div class="sidebar">
+        <!-- 네비게이션 모바일바 -->
+        <input type="checkbox" id="menuicon" style="display: none;">
+        <!-- 햄버거 메뉴 아이콘 -->
+        <label for="menuicon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div class="sidebar">
+            <div class="accordion">
+                <input type="radio" name="tab" id="tab01">
+                <input type="radio" name="tab" id="tab02">
+                <input type="radio" name="tab" id="tab03">
+                <input type="radio" name="tab" id="tab04">
+                <input type="radio" name="tab" id="tab05">
+                <input type="radio" name="tab" id="tab06">
+                <ul>
 
-        <div class="accordion">
-            <input type="radio" name="tab" id="tab01">
-            <input type="radio" name="tab" id="tab02">
-            <input type="radio" name="tab" id="tab03">
-            <input type="radio" name="tab" id="tab04">
-            <input type="radio" name="tab" id="tab05">
-            <input type="radio" name="tab" id="tab06">
-            <ul>
-                
-                <li>
-                    <div>
-                        <label class="sideicon sideicon01" for="tab01">ICE소개<span class="sidearrow"></span></label>
-                        <ul class="sub">
-                            <li><a href="#" target="_self" title="">소개</a></li>
-                            <li><a href="#" target="_self" title="">개요</a></li>
-                            <li><a href="#" target="_self" title="">아키텍처</a></li>
-                            <li><a href="#" target="_self" title="">구축사례</a></li>
+                    <li>
+                        <div>
+                            <label class="sideicon sideicon01" for="tab01">ICE소개<span class="sidearrow"></span></label>
+                            <ul class="sub">
+                                <li><a href="#" target="_self" title="">소개</a></li>
+                                <li><a href="#" target="_self" title="">개요</a></li>
+                                <li><a href="#" target="_self" title="">아키텍처</a></li>
+                                <li><a href="#" target="_self" title="">구축사례</a></li>
 
-                        </ul>
-            
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <label class="sideicon sideicon02" for="tab02">개발가이드<span class="sidearrow"></span></label>
-                        <ul class="sub">
-                            <li><a href="#" target="_self" title="">설치하기</a></li>
-                            <li><a href="#" target="_self" title="">개발환경설정</a></li>
-                            <li><a href="#" target="_self" title="">Backend Core</a></li>
-                            <li><a href="#" target="_self" title="">Front Office</a></li>
-                            <li><a href="#" target="_self" title="">User Manual</a></li>
-                            <li><a href="#" target="_self" title="">릴리즈노트</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <label class="sideicon sideicon03" for="tab03">개발자교육<span class="sidearrow"></span></label>
-                        <ul class="sub">
-                            <li><a href="#" target="_self" title="">교육신청</a></li>
-                            <li><a href="#" target="_self" title="">교육자료</a></li>
-                            <li><a href="#" target="_self" title="">영상자료</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <label class="sideicon sideicon04" for="tab04">기술지원<span class="sidearrow"></span></label>
-                        <ul class="sub">
-                            <li><a href="#" target="_self" title="">FAQ</a></li>
-                            <li><a href="#" target="_self" title="">묻고답하기</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <label class="sideicon sideicon05" for="tab05">고객지원<span class="sidearrow"></span></label>
-                        <ul class="sub">
-                            <li><a href="#" target="_self" title="">공지사항</a></li>
-                            <li><a href="#" target="_self" title="">개인정보처리방침</a></li>
-                            <li><a href="#" target="_self" title="">문의하기</a></li>
-                            <li><a href="#" target="_self" title="">오시는길</a></li>            
-                        </ul>
-                    </div>
-                </li>
-            
-            </ul>
+                            </ul>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <label class="sideicon sideicon02" for="tab02">개발가이드<span class="sidearrow"></span></label>
+                            <ul class="sub">
+                                <li class="submenu__link"><a href="#" target="_self" title="">설치하기</a></li>
+                                <li class="submenu__link"><a href="#" target="_self" title="">개발환경설정</a></li>
+                                <li class="submenu__link"><a href="#" target="_self" title="">Backend Core</a></li>
+                                <li class="submenu__link"><a href="#" target="_self" title="">Front Office</a></li>
+                                <li class="submenu__link"><a href="#" target="_self" title="">User Manual</a></li>
+                                <li class="submenu__link"><a href="#" target="_self" title="">릴리즈노트</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <label class="sideicon sideicon03" for="tab03">개발자교육<span class="sidearrow"></span></label>
+                            <ul class="sub">
+                                <li><a href="#" target="_self" title="">교육신청</a></li>
+                                <li><a href="#" target="_self" title="">교육자료</a></li>
+                                <li><a href="#" target="_self" title="">영상자료</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <label class="sideicon sideicon04" for="tab04">기술지원<span class="sidearrow"></span></label>
+                            <ul class="sub">
+                                <li><a href="#" target="_self" title="">FAQ</a></li>
+                                <li><a href="#" target="_self" title="">묻고답하기</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <label class="sideicon sideicon05" for="tab05">고객지원<span class="sidearrow"></span></label>
+                            <ul class="sub">
+                                <li><a href="#" target="_self" title="">공지사항</a></li>
+                                <li><a href="#" target="_self" title="">개인정보처리방침</a></li>
+                                <li><a href="#" target="_self" title="">문의하기</a></li>
+                                <li><a href="#" target="_self" title="">오시는길</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
             </div>
 
             <div class="mobile__btn__group">
                 <a href="#" class="mobile__btn mobile__login">
                     <span>로그인하기</span>
                 </a>
-    
+
                 <a href="#" class="mobile__btn mobile__signup">
                     <span>회원가입하기</span>
                 </a>
                 <a href="#" class="mobile__idpwsearch">
                     <span>아이디/비밀번호찾기</span>
                 </a>
-                
-            </div>
-    
-</div>
-</nav>
-    </div>
 
-        <hr/>
+            </div>
+
+        </div>
+        <div class="sidebar__background"></div>
+
+        </nav>
+        </div>
+
+        <hr />
     </header>
     <!-- 메인 네비게이션 -->
     <div class="navbar__wrap">
@@ -160,12 +168,12 @@
                         <li>
                             <a href="#">개발가이드</a>
                             <ul class="submenu">
-                                <li><a href="#">설치하기</a></li>
-                                <li><a href="#">개발환경설정</a></li>
-                                <li><a href="#">Backend Core</a></li>
-                                <li><a href="#">Front Office</a></li>
-                                <li><a href="#">User Manual</a></li>
-                                <li><a href="#">릴리즈노트</a></li>
+                                <li><a href="#" class="submenu__link">설치하기</a></li>
+                                <li><a href="#" class="submenu__link">개발환경설정</a></li>
+                                <li><a href="#" class="submenu__link">Backend Core</a></li>
+                                <li><a href="#" class="submenu__link">Front Office</a></li>
+                                <li><a href="#" class="submenu__link">User Manual</a></li>
+                                <li><a href="#" class="submenu__link">릴리즈노트</a></li>
                             </ul>
                         </li>
                         <li>
@@ -199,7 +207,7 @@
     </div>
 
 
-    
+
     <hr />
     <!-- 로그인 -->
     <section>
@@ -255,46 +263,46 @@
     <div class="menu__icon">
         <div class="container">
             <div class="icon">
-            <a href="#">
-                <div class="item">
-                    <img src="image/icon1.png">
-                    <p><a href="#">설치하기</a></p>
-                </div>
-            </a>
-            <a href="#">
-                <div class="item">
-                    <img src="image/icon6.png">
-                    <p><a href="#">개발가이드</a></p>
+                <a href="#">
+                    <div class="item">
+                        <img src="image/icon1.png">
+                        <p><a href="#">설치하기</a></p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="item">
+                        <img src="image/icon6.png">
+                        <p><a href="#">개발가이드</a></p>
 
-                </div>
-            </a>
-            <a href="#">
-                <div class="item">
-                    <img src="image/icon3.png">
-                    <p><a href="#">교육신청</a></p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="item">
+                        <img src="image/icon3.png">
+                        <p><a href="#">교육신청</a></p>
 
-                </div>
-            </a>
-            <a href="#">
-                <div class="item">
-                    <img src="image/icon2.png">
-                    <p><a href="#">교육자료</a></p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="item">
+                        <img src="image/icon2.png">
+                        <p><a href="#">교육자료</a></p>
 
-                </div>
-            </a>
-            <a href="#">
-                <div class="item">
-                    <img src="image/icon4.png">
-                    <p><a href="#">FAQ</a></p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="item">
+                        <img src="image/icon4.png">
+                        <p><a href="#">FAQ</a></p>
 
-                </div>
-            </a>
-            <a href="#">
-                <div class="item">
-                    <img src="image/icon5.png">
-                    <p><a href="#">묻고답하기</a></p>
-                </div>
-                </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="item">
+                        <img src="image/icon5.png">
+                        <p><a href="#">묻고답하기</a></p>
+                    </div>
+            </div>
             </a>
         </div>
     </div>
@@ -434,33 +442,34 @@
             </div>
         </div>
 
-            <div class="container">
-                <div class="footer__down">
-            <div class="footer__text">
-                <li class="pc">(06234)서울특별시 강남구 테헤란로 10길 15, 아이온빌딩&nbsp;&nbsp;
-                    <strong>T.</strong>02-3430-1200&nbsp;&nbsp;
-                    <strong>F.</strong>02-3430-1205&nbsp;&nbsp;
-                    <strong>E.</strong>ask@i-on.net
-                    <br>Copyright 2021 © I-ON Communications Co., Ltd.
-                </li>
+        <div class="container">
+            <div class="footer__down">
+                <div class="footer__text">
+                    <li class="pc">(06234)서울특별시 강남구 테헤란로 10길 15, 아이온빌딩&nbsp;&nbsp;
+                        <strong>T.&nbsp;</strong>02-3430-1200&nbsp;&nbsp;
+                        <strong>F.&nbsp;</strong>02-3430-1205&nbsp;&nbsp;
+                        <strong>E.&nbsp;</strong>ask@i-on.net
+                        <br>Copyright 2021 © I-ON Communications Co., Ltd.
+                    </li>
 
-                <li class="moblie">
-                    (주)아이온커뮤니케이션즈<br>
-                    서울특별시 강남구 테헤란로 10길 15 (06234), 아이온빌딩<br>
-                    <strong>T.&nbsp;</strong>02-3430-1200&nbsp;&nbsp;<br>
-                    <strong>F.&nbsp;</strong>02-3430-1205&nbsp;&nbsp;<br>
-                    <strong>E.&nbsp;</strong>ask@i-on.net<br>
-                    Copyright 2021 © I-ON Communications Co., Ltd.
-                </li>
-                
-            </div>
-            <div class="footer__button">
-                <li class="ff"><a href="#"></a>회사소개</li><br>
-                <li class="ff"><a href="#"></a>개인정보처리방침</li><br>
-                <li class="ff"><a href="#"></a>이메일무단수집거부</li><br>
+                    <li class="moblie">
+                        (주)아이온커뮤니케이션즈<br>
+                        서울특별시 강남구 테헤란로 10길 15 (06234), 아이온빌딩<br>
+                        <strong>T.&nbsp;</strong>02-3430-1200&nbsp;&nbsp;<br>
+                        <strong>F.&nbsp;</strong>02-3430-1205&nbsp;&nbsp;<br>
+                        <strong>E.&nbsp;</strong>ask@i-on.net<br>
+                        Copyright 2021 © I-ON Communications Co., Ltd.
+                    </li>
+
+                </div>
+                <div class="footer__button">
+                    <li class="ff"><a href="#"></a>회사소개</li><br>
+                    <li class="ff"><a href="#"></a>개인정보처리방침</li><br>
+                    <li class="ff"><a href="#"></a>이메일무단수집거부</li><br>
+                </div>
             </div>
         </div>
-        </div>        </div>
+        </div>
 
     </footer>
 
@@ -533,9 +542,8 @@
             document.getElementById('thisSlide').innerHTML = slideIndex;
             slides[slideIndex - 1].style.display = 'block';
             dots[slideIndex - 1].className += ' on';
-        }</script>
+        }
+    </script>
 </body>
-
-
 
 </html>
