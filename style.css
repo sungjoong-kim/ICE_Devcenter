@@ -405,6 +405,7 @@ li:hover .icon::after {
   padding-bottom: 7px;
 }
 .sub > li > a {
+  display: inline-block;
   width: 100%;
   height: auto;
   text-decoration: none;
