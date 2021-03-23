@@ -306,7 +306,7 @@ div[class="sidebar"] {
 
 .mobile__btn__group {
   position: absolute;
-  bottom: 50px;
+  bottom: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
