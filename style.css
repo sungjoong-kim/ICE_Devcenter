@@ -1130,7 +1130,7 @@ footer {
   }
   input[id="menuicon"]:checked + label + .sidebar + .sidebar__background {
     display: block;
-    opacity: 90%;
+    opacity: 70%;
     transition: 0.4s;
   }
 
