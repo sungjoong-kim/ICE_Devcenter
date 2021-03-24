@@ -16,12 +16,12 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="image/favicon-32x32.png">
     <!------------ 스크립트시작 ------------>
-    <!--1. slide -->
-    <script defer src="slide.js"></script>
-    <!--2. fontawesome -->
+    <!--#. fontawesome -->
     <script defer src="https://kit.fontawesome.com/4eea417a7f.js" crossorigin="anonymous"></script>
-    <!--3. jquery -->
+    <!--#. jquery -->
     <scrip defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></scrip>
+    <!--#. slide -->
+    <script defer src="slide.js"></script>
 </head>
 
 <!----------------- body ----------------->
@@ -49,8 +49,8 @@
                 <div class="search__box">
                     <input class="search__txt" type="text" name="" placeholder="검색어를 입력하세요.">
                     <a class="search__btn" value="검색" onclick="alert('개발전입니다')" href="#">
-                    <i class="fas fa-search"></i></a>
-                </div>               
+                        <i class="fas fa-search"></i></a>
+                </div>
                 <li><a href="#">로그인</a></li>
                 <li><a href="#">회원가입</a></li>
                 <li><a href="#">고객지원</a></li>
@@ -66,103 +66,108 @@
             <span></span>
         </label>
         <!-- 사이드바 -->
-        <div class="sidebar">
-        <!-- 검색기능 -->
-            <div class="mobile__search">
-                <input class="mobile__search__txt" type="text" name="" placeholder="검색어를 입력하세요.">
-                <a class="mobile__search__btn" value="검색" onclick="alert('개발전입니다')" href="#">
-                    <i class="fas fa-search"></i></a>
+        <div class="sidebar__wrap">
+            <div class="sidebar__background"></div>
+            <div class="sidebar">
+                <!-- 검색기능 -->
+                <div class="mobile__search">
+                    <input class="mobile__search__txt" type="text" name="" placeholder="검색어를 입력하세요.">
+                    <a class="mobile__search__btn" value="검색" onclick="alert('개발전입니다')" href="#">
+                        <i class="fas fa-search"></i></a>
+                </div>
+                <div class="accordion">
+                    <input type="radio" name="tab" id="tab01">
+                    <input type="radio" name="tab" id="tab02">
+                    <input type="radio" name="tab" id="tab03">
+                    <input type="radio" name="tab" id="tab04">
+                    <input type="radio" name="tab" id="tab05">
+                    <input type="radio" name="tab" id="tab06">
+                    <ul>
+
+                        <li>
+                            <div>
+                                <label class="sideicon sideicon01" for="tab01">ICE소개<span
+                                        class="sidearrow"></span></label>
+                                <ul class="sub">
+                                    <li><a href="#" target="_self" title="">소개</a></li>
+                                    <li><a href="#" target="_self" title="">개요</a></li>
+                                    <li><a href="#" target="_self" title="">아키텍처</a></li>
+                                    <li><a href="#" target="_self" title="">구축사례</a></li>
+
+                                </ul>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <label class="sideicon sideicon02" for="tab02">개발가이드<span
+                                        class="sidearrow"></span></label>
+                                <ul class="sub">
+                                    <li class="submenu__link"><a href="#" target="_self" title="">설치하기</a></li>
+                                    <li class="submenu__link"><a href="#" target="_self" title="">개발환경설정</a></li>
+                                    <li class="submenu__link"><a href="#" target="_self" title="">Backend Core</a></li>
+                                    <li class="submenu__link"><a href="#" target="_self" title="">Front Office</a></li>
+                                    <li class="submenu__link"><a href="#" target="_self" title="">User Manual</a></li>
+                                    <li class="submenu__link"><a href="#" target="_self" title="">릴리즈노트</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <label class="sideicon sideicon03" for="tab03">개발자교육<span
+                                        class="sidearrow"></span></label>
+                                <ul class="sub">
+                                    <li><a href="#" target="_self" title="">교육신청</a></li>
+                                    <li><a href="#" target="_self" title="">교육자료</a></li>
+                                    <li><a href="#" target="_self" title="">영상자료</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <label class="sideicon sideicon04" for="tab04">기술지원<span
+                                        class="sidearrow"></span></label>
+                                <ul class="sub">
+                                    <li><a href="#" target="_self" title="">FAQ</a></li>
+                                    <li><a href="#" target="_self" title="">묻고답하기</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <label class="sideicon sideicon05" for="tab05">고객지원<span
+                                        class="sidearrow"></span></label>
+                                <ul class="sub">
+                                    <li><a href="#" target="_self" title="">공지사항</a></li>
+                                    <li><a href="#" target="_self" title="">개인정보처리방침</a></li>
+                                    <li><a href="#" target="_self" title="">문의하기</a></li>
+                                    <li><a href="#" target="_self" title="">오시는길</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="mobile__btn__group">
+                    <a href="#" class="mobile__btn mobile__login">
+                        <span>로그인하기</span>
+                    </a>
+
+                    <a href="#" class="mobile__btn mobile__signup">
+                        <span>회원가입하기</span>
+                    </a>
+                    <a href="#" class="mobile__idpwsearch">
+                        <span>아이디/비밀번호찾기</span>
+                    </a>
+
+                </div>
+
             </div>
-            <div class="accordion">
-                <input type="radio" name="tab" id="tab01">
-                <input type="radio" name="tab" id="tab02">
-                <input type="radio" name="tab" id="tab03">
-                <input type="radio" name="tab" id="tab04">
-                <input type="radio" name="tab" id="tab05">
-                <input type="radio" name="tab" id="tab06">
-                <ul>
-
-                    <li>
-                        <div>
-                            <label class="sideicon sideicon01" for="tab01">ICE소개<span class="sidearrow"></span></label>
-                            <ul class="sub">
-                                <li><a href="#" target="_self" title="">소개</a></li>
-                                <li><a href="#" target="_self" title="">개요</a></li>
-                                <li><a href="#" target="_self" title="">아키텍처</a></li>
-                                <li><a href="#" target="_self" title="">구축사례</a></li>
-
-                            </ul>
-
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <label class="sideicon sideicon02" for="tab02">개발가이드<span class="sidearrow"></span></label>
-                            <ul class="sub">
-                                <li class="submenu__link"><a href="#" target="_self" title="">설치하기</a></li>
-                                <li class="submenu__link"><a href="#" target="_self" title="">개발환경설정</a></li>
-                                <li class="submenu__link"><a href="#" target="_self" title="">Backend Core</a></li>
-                                <li class="submenu__link"><a href="#" target="_self" title="">Front Office</a></li>
-                                <li class="submenu__link"><a href="#" target="_self" title="">User Manual</a></li>
-                                <li class="submenu__link"><a href="#" target="_self" title="">릴리즈노트</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <label class="sideicon sideicon03" for="tab03">개발자교육<span class="sidearrow"></span></label>
-                            <ul class="sub">
-                                <li><a href="#" target="_self" title="">교육신청</a></li>
-                                <li><a href="#" target="_self" title="">교육자료</a></li>
-                                <li><a href="#" target="_self" title="">영상자료</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <label class="sideicon sideicon04" for="tab04">기술지원<span class="sidearrow"></span></label>
-                            <ul class="sub">
-                                <li><a href="#" target="_self" title="">FAQ</a></li>
-                                <li><a href="#" target="_self" title="">묻고답하기</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <label class="sideicon sideicon05" for="tab05">고객지원<span class="sidearrow"></span></label>
-                            <ul class="sub">
-                                <li><a href="#" target="_self" title="">공지사항</a></li>
-                                <li><a href="#" target="_self" title="">개인정보처리방침</a></li>
-                                <li><a href="#" target="_self" title="">문의하기</a></li>
-                                <li><a href="#" target="_self" title="">오시는길</a></li>
-                            </ul>
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
-
-            <div class="mobile__btn__group">
-                <a href="#" class="mobile__btn mobile__login">
-                    <span>로그인하기</span>
-                </a>
-
-                <a href="#" class="mobile__btn mobile__signup">
-                    <span>회원가입하기</span>
-                </a>
-                <a href="#" class="mobile__idpwsearch">
-                    <span>아이디/비밀번호찾기</span>
-                </a>
-
-            </div>
-
         </div>
-        <div class="sidebar__background"></div>
-
         </nav>
-        </div>
-
     </header>
+
     <!-- 메인 네비게이션 -->
     <div class="navbar__wrap">
         <nav class="navbar_empty"></nav>
