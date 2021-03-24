@@ -117,6 +117,85 @@ hr {
   color: #333333;
 }
 
+/* 검색기능 */
+.search__box {
+  background: #ffffff;
+  height: 32px;
+  border-radius: 40px;
+  margin: 3px 4px 0 0;
+}
+
+.search__box:hover {
+  border: solid 1px rgb(102, 102, 102, 0.4);
+}
+
+.search__box:hover > .search__txt {
+  width: 130px;
+}
+
+.search__box:hover > .search__btn {
+  color: #ffffff;
+  background-color: #666;
+}
+
+.search__btn {
+  color: #666666;
+  float: right;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.search__btn > i {
+  font-size: 15px;
+}
+
+.search__txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: #666;
+  font-size: 13px;
+  transition: 0.4s;
+  line-height: 30px;
+  width: 0px;
+  margin: 0 0 0 10px;
+}
+/* 모바일검색기능 */
+
+.mobile__search {
+}
+
+.mobile__search__txt {
+  height: 39px;
+  width: 190px;
+  border: 1px solid #666;
+  background-color: #ffffff;
+  margin-left: 30px;
+  margin-top: 25px;
+  font-size: 13px;
+  padding: 10px;
+  color: #666;
+}
+.mobile__search__btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  right: 79px;
+  top: 25px;
+  width: 39px;
+  height: 39px;
+}
+
 /* 메인네비게이션바 */
 
 .navbar {
@@ -746,8 +825,8 @@ input#tab05:checked ~ ul > li:nth-child(5) .sideicon .sidearrow::after {
 /* 기능아이콘 */
 
 .menu__icon {
-  border-bottom: 1px solid #f1f3f9;
   height: auto;
+  box-shadow: 0 0 0 1px #f1f3f9 inset;
 }
 
 .icon {
@@ -764,6 +843,7 @@ input#tab05:checked ~ ul > li:nth-child(5) .sideicon .sidearrow::after {
   border: 1px solid #f1f3f9;
   height: 190px;
   padding: 10px;
+  margin-left: -1px;
 }
 
 .item a {
@@ -1068,6 +1148,23 @@ footer {
     width: 33.3333%;
     height: 180px;
   }
+
+  .footer__text > .pc {
+    display: none;
+  }
+
+  .footer__text > .moblie {
+    display: inline;
+    line-height: 250%;
+  }
+  .footer__button {
+    white-space: normal;
+  }
+
+  footer {
+    height: 100%;
+    padding-bottom: 50px;
+  }
 }
 
 /* 화면 너비가 0~576 모바일*/
@@ -1114,20 +1211,10 @@ footer {
     margin-top: 5px;
   }
 
-  .footer__text > .pc {
-    display: none;
+  .mobile__search__txt {
+    margin-top: 15px;
   }
-
-  .footer__text > .moblie {
-    display: inline;
-    line-height: 250%;
-  }
-  .footer__button {
-    white-space: normal;
-  }
-
-  footer {
-    height: 100%;
-    padding-bottom: 50px;
+  .mobile__search__btn {
+    top: 15px;
   }
 }
