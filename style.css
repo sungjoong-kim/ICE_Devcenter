@@ -311,6 +311,7 @@ input[id="menuicon"] + label {
   background-color: #686a71;
   margin-top: -55px;
   margin-right: 10px;
+  z-index: 3;
 }
 input[id="menuicon"] + label span {
   display: block;
@@ -366,14 +367,12 @@ div[class="sidebar"] {
 }
 
 .sidebar__background {
-  display: none;
   position: fixed;
   top: 0px;
   width: 100%;
   height: 100%;
   background-color: #000000;
   opacity: 0%;
-  z-index: 1;
 }
 /* 스크롤고정 */
 .hidden {
@@ -1130,7 +1129,7 @@ footer {
   }
   input[id="menuicon"]:checked + label + .sidebar + .sidebar__background {
     display: block;
-    opacity: 70%;
+    opacity: 80%;
     transition: 0.4s;
   }
 
