@@ -373,6 +373,7 @@ div[class="sidebar"] {
   height: 100%;
   background-color: #000000;
   opacity: 0%;
+  z-index: -1;
 }
 /* 스크롤고정 */
 .hidden {
@@ -1114,6 +1115,7 @@ footer {
   .header__logo {
     width: 250px;
     margin-top: 6px;
+    z-index: -1;
   }
 
   #container {
