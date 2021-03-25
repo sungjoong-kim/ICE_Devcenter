@@ -5,7 +5,7 @@ function handleClickMenu() {
  }
 
  $(function() {
-     $('#menuicon').click(function() {
+      $('#menuicon').on('click scroll touchmove', function() {
          handleClickMenu();
      })
  })
