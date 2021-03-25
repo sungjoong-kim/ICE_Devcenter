@@ -596,6 +596,7 @@ input#tab05:checked ~ ul > li:nth-child(5) .sideicon .sidearrow::after {
   align-items: center;
   width: 100%;
   font-size: 17px;
+  z-index: -3;
 }
 
 .mobile__btn__group .mobile__btn {
