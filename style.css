@@ -1232,15 +1232,3 @@ footer {
     top: 15px;
   }
 }
-
-/* 화면 높이가 0~400 모바일*/
-@media (max-height: 720px) {
-  .accordion {
-    height: 300px;
-    overflow: auto;
-    margin-top: 10px;
-  }
-  .mobile__btn__group {
-    bottom: 5%;
-  }
-}
