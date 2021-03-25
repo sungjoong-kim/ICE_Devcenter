@@ -51,6 +51,8 @@ hr {
   left: -13.7px;
 }
 
+/* 스크롤막기 */
+
 /* 헤더최상단 */
 
 .tnd {
@@ -848,13 +850,17 @@ input#tab05:checked ~ ul > li:nth-child(5) .sideicon .sidearrow::after {
   height: 190px;
   padding: 10px;
   margin-left: -1px;
+  font-size: 16px;
+  transition: 00.2s;
 }
 
-.item a {
+.item:hover {
+  font-weight: 500;
+  color: #5f90db;
 }
 
-.item a p {
-  font-size: 17px;
+.item p {
+  margin-top: 2px;
 }
 
 /* 게시판 */
@@ -914,7 +920,7 @@ input#tab05:checked ~ ul > li:nth-child(5) .sideicon .sidearrow::after {
 }
 
 .idx_board .title .name {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
   letter-spacing: -2px;
 }
@@ -1134,6 +1140,11 @@ footer {
     transition: 0.4s;
   }
 
+  input[id="menuicon"]:checked + label + .sidebar + .sidebar__background,
+  body {
+    overflow: hidden;
+  }
+
   #menu > ul > li > a {
     font-size: 15px;
     padding: 14px 0px;
@@ -1208,7 +1219,6 @@ footer {
 
   .item img {
     width: 90%;
-    margin-bottom: 10px;
   }
 
   .idx_board .edu__group {
