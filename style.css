@@ -368,6 +368,16 @@ div[class="sidebar"] {
   z-index: 3;
 }
 
+.sidebar__group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 70%;
+  overflow: auto;
+  margin-top: 10px;
+}
+
 .sidebar__background {
   display: none;
   position: fixed;
@@ -386,11 +396,6 @@ div[class="sidebar"] {
 }
 
 .accordion {
-  position: absolute;
-  width: 100%;
-  top: 10%;
-  left: 50%;
-  transform: translateX(-50%);
 }
 .sideicon {
   display: block;
@@ -589,14 +594,12 @@ input#tab05:checked ~ ul > li:nth-child(5) .sideicon .sidearrow::after {
 }
 
 .mobile__btn__group {
-  position: absolute;
-  bottom: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   font-size: 17px;
-  z-index: -3;
+  margin-top: 15px;
 }
 
 .mobile__btn__group .mobile__btn {
