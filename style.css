@@ -378,7 +378,7 @@ div[class="sidebar"] {
   opacity: 0%;
 }
 /* 스크롤고정 */
-.hidden {
+.scroll__hidden {
   height: 100%;
   min-height: 100%;
   overflow: hidden !important;
@@ -1230,5 +1230,17 @@ footer {
   }
   .mobile__search__btn {
     top: 15px;
+  }
+}
+
+/* 화면 높이가 0~400 모바일*/
+@media (max-height: 720px) {
+  .accordion {
+    height: 300px;
+    overflow: auto;
+    margin-top: 10px;
+  }
+  .mobile__btn__group {
+    bottom: 5%;
   }
 }
