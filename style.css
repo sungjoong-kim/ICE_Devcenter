@@ -12,6 +12,7 @@
   font-size: 100%;
   font-family: "Noto Sans KR", sans-serif;
 }
+
 html,
 body {
   font-size: 18px;
@@ -397,6 +398,7 @@ div[class="sidebar"] {
 
 .accordion {
 }
+
 .sideicon {
   display: block;
   width: auto;
@@ -1001,6 +1003,168 @@ input#tab05:checked ~ ul > li:nth-child(5) .sideicon .sidearrow::after {
   margin-top: 5px;
 }
 
+/* ---------상세페이지 시작 --------------- */
+
+/* 서브메뉴사이드 */
+
+.sub__side__menubar {
+  flex-direction: column;
+  display: flex;
+  width: 250px;
+  height: 2000px;
+  background-color: #fff;
+  border-top: 1px solid #f1f3f9;
+  border-left: 1px solid #f1f3f9;
+  border-right: 1px solid #f1f3f9;
+}
+
+.sub__side__menubar__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 130px;
+  background-color: #5f90db;
+}
+
+.sub__side__menubar__title > h2 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+}
+.sub__side__menubar__title > h3 {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 200;
+}
+.sub__side__menubar__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  width: 100%;
+  border-bottom: 1px solid #f1f3f9;
+  font-size: 15px;
+}
+
+.sub__side__menubar__menu:hover {
+  background-color: #f7fafd;
+  color: #118ade;
+  background: url(image/arrow-right.png);
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+
+/* breadcrumb */
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  padding: 10px 0 10px 0px;
+  /* border-top: 1px solid #f1f3f9;
+  border-bottom: 1px solid #f1f3f9; */
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "> ";
+  margin: 0 5px 0 5px;
+}
+
+.breadcrumb-item {
+  font-size: 13px;
+  color: #808080;
+}
+
+/* 상세페이지 ontainer */
+
+.content__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+}
+
+/* 상세페이지 maintitle */
+
+.main__title__group {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  height: 82px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #333333;
+}
+
+.main__title__group h2 {
+  color: 333333;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.main__title__group h3 {
+  color: 333333;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* 모바일서브메뉴 셀렉박스 */
+select {
+  display: none;
+  width: 100%;
+  padding: 10px 10px;
+  color: #666;
+  border: 1px solid #999;
+  background: url("image/up-and-down.png") no-repeat 98% 50%;
+  border-radius: 0px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin-bottom: 10px;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+/* 상세페이지 콘텐츠내용 */
+
+.ice__content {
+  width: 100%;
+  height: 100vh;
+  padding-top: 20px;
+}
+
+.ice__content__title {
+  color: #333;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.ice__content__subtitle {
+  color: #666;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.ice__content__img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.ice__content__txt {
+  margin-top: 10px;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
 /* 푸터 */
 footer {
   height: 250px;
@@ -1163,9 +1327,53 @@ footer {
     word-spacing: -1px;
   }
 
+  .menu__icon {
+    box-shadow: none;
+  }
+
   .item {
     width: 33.3333%;
     height: 180px;
+  }
+
+  .sub__side__menubar {
+    display: none;
+  }
+
+  .content__container {
+    padding-left: 0px;
+    margin-top: 80px;
+  }
+
+  .main__title__group {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: revert;
+    align-items: baseline;
+    border: none;
+    height: 50px;
+  }
+
+  .breadcrumb {
+    border: none;
+    padding: 0px;
+  }
+
+  .breadcrumb-item {
+    font-size: 14px;
+  }
+
+  select {
+    display: inline;
+    margin-bottom: 30px;
+  }
+
+  .main__title__group h3 {
+    margin-left: 10px;
+  }
+
+  .ice__content {
+    border-top: 4px solid #666666;
   }
 
   .footer__text > .pc {
@@ -1195,6 +1403,10 @@ footer {
 
   .container_header {
     height: 70px;
+  }
+
+  .content__container {
+    margin-top: 70px;
   }
 
   .header {

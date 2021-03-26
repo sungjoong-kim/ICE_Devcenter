@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
@@ -24,6 +25,7 @@
     <script defer src="scroll__hidden.js"></script>
 </head>
 <!----------------- body ----------------->
+
 <body>
     <!-- 상단 헤더 -->
     <header class="tnd">
@@ -64,14 +66,14 @@
             <span></span>
         </label>
         <!-- 사이드바 -->
-            <div class="sidebar">
-                <!-- 검색기능 -->
-                <div class="mobile__search">
-                    <input class="mobile__search__txt" type="text" name="" placeholder="검색어를 입력하세요.">
-                    <a class="mobile__search__btn" value="검색" onclick="alert('개발전입니다')" href="#">
-                        <i class="fas fa-search"></i></a>
-                </div>
-                <div class="sidebar__group">
+        <div class="sidebar">
+            <!-- 검색기능 -->
+            <div class="mobile__search">
+                <input class="mobile__search__txt" type="text" name="" placeholder="검색어를 입력하세요.">
+                <a class="mobile__search__btn" value="검색" onclick="alert('개발전입니다')" href="#">
+                    <i class="fas fa-search"></i></a>
+            </div>
+            <div class="sidebar__group">
                 <div class="accordion">
                     <input type="radio" name="tab" id="tab01">
                     <input type="radio" name="tab" id="tab02">
@@ -223,222 +225,86 @@
             </div>
         </nav>
     </div>
-    <!-- 로그인 -->
-    <section>
-        <div class="login__box">
-            <div class="container login_header">
-                <div class="login__menu">
-                    <img src="image/enter.png">
-                    <span style="color:white; white-space: nowrap;" class="login__text">안녕하세요 방문해주셔서 감사합니다</span>
-                </div>
-                <div class="login">
-                    <input type="text" class="login__id" placeholder="아이디" maxlength="15"></input>
-                    <input type="password" class="login__pw" placeholder="비밀번호" name="pass" maxlength="16"></input>
-                    <input type="button" class="login__button" value="로그인" onclick="alert('개발전입니다')"></input>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- 메인슬라이드 -->
-    <section id="container">
-        <div class="arrow prev" onclick="prevNext(-1)">&#10094;</div>
-        <div class="arrow next" onclick="prevNext(1)">&#10095;</div>
 
-        <div class="slideNum" style="opacity: 0;">
-            <span id="thisSlide">0</span> / <span id="allSlide">0</span>
-        </div>
 
-        <article class="slides">
-            <img src="image/main_slide01.jpg" alt="">
-        </article>
-        <!--1-->
-        <article class="slides">
-            <img src="image/main_slide02.jpg" alt="">
-        </article>
-        <!--2-->
-        <article class="slides">
-            <img src="image/main_slide03.jpg" alt="">
-        </article>
-        <!--3-->
-        <article class="slides">
-            <img src="image/main_slide04.jpg" alt="">
-        </article>
-        <!--4-->
-    </section>
-    <!-- 메인슬라이드 리모컨 -->
-    <section id="pager">
-        <span class="dots on" onclick="currentSlide(1)"></span>
-        <span class="dots" onclick="currentSlide(2)"></span>
-        <span class="dots" onclick="currentSlide(3)"></span>
-        <span class="dots" onclick="currentSlide(4)"></span>
-    </section>
-    <!-- 아이콘 -->
-    <div class="menu__icon">
+    <main style="height:2000px">
         <div class="container">
-            <div class="icon">
-                <a href="#">
-                    <div class="item">
-                        <img src="image/icon1.png">
-                        <p><a href="#">설치하기</a></p>
+            <aside class="sub__side__menubar">
+                <!-- 타이틀 -->
+                <div class="sub__side__menubar__title">
+                    <h2>ICE소개</h2>
+                    <h3>ICE introduction</h3>
+                </div>
+                <!-- 메뉴바 -->
+                <a href="" target="_self">
+                    <div class="sub__side__menubar__menu">
+                        <p>소개</p>
                     </div>
                 </a>
-                <a href="#">
-                    <div class="item">
-                        <img src="image/icon6.png">
-                        <p><a href="#">개발가이드</a></p>
+                <a href="" target="_self">
+                    <div class="sub__side__menubar__menu">
+                        <p>개요</p>
                     </div>
                 </a>
-                <a href="#">
-                    <div class="item">
-                        <img src="image/icon3.png">
-                        <p><a href="#">교육신청</a></p>
+                <a href="" target="_self">
+                    <div class="sub__side__menubar__menu">
+                        <p>아키텍처</p>
                     </div>
                 </a>
-                <a href="#">
-                    <div class="item">
-                        <img src="image/icon2.png">
-                        <p><a href="#">교육자료</a></p>
+                <a href="" target="_self">
+                    <div class="sub__side__menubar__menu">
+                        <p>구축사례</p>
                     </div>
                 </a>
-                <a href="#">
-                    <div class="item">
-                        <img src="image/icon4.png">
-                        <p><a href="#">FAQ</a></p>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="item">
-                        <img src="image/icon5.png">
-                        <p><a href="#">묻고답하기</a></p>
-                    </div>
-            </div>
-            </a>
-        </div>
-    </div>
-    <!-- 게시판 -->
-    <div id="idx_board_wrap">
-        <div class="container container_idx">
-            <div class="idx_board">
-                <div class="title">
-                    <a href="#" class="name">공지사항</a>
-                    <a href="#" class="more"><img src="image/plus.png" alt="더 보기"></a>
+            </aside>
+
+
+
+            <div class="content__container">
+                <!-- 리모컨네비게이션 -->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html" target="_self"><i class="fas fa-home"></i> </a></li>
+                        <li class="breadcrumb-item"><a>ICE 소개</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">소개</li>
+                    </ol>
+                </nav>
+                <!-- 서브타이틀 -->
+                <div class="main__title__group">
+                    <h2>소개</h2>
+                    <h3>ICE에 대해 소개해드립니다.</h3>
                 </div>
-                <div class="list">
-                    <ul>
-                        <li>
-                            <a href="#">글 제목이 들어갑니다.</a>
-                            <span>21-03-25</span>
-                        </li>
-                        <li>
-                            <a href="#">글 제목이 들어갑니다.</a>
-                            <span>21-03-25</span>
-                        </li>
-                        <li>
-                            <a href="#">글 제목이 들어갑니다.</a>
-                            <span>21-03-25</span>
-                        </li>
-                        <li>
-                            <a href="#">글 제목이 들어갑니다.</a>
-                            <span>21-03-25</span>
-                        </li>
-                        <li>
-                            <a href="#">글 제목이 들어갑니다.</a>
-                            <span>21-03-25</span>
-                        </li>
-                    </ul>
+                <!-- 모바일서브메뉴 -->
+                <select id="mobile__select__group" onchange="window.open(value,'_self')">
+                    <option value="none">선택</option>
+                    <option value="index.html">소개</option>
+                    <option value="index.html">개요</option>
+                    <option value="index.html">아키텍처</option>
+                    <option value="index.html">구축사례</option>
+                </select>
+
+                <div class="ice__content">
+                    <h2 class="ice__content__title">ICE소개</h2>
+                    <img src="/image/sample.png" class="ice__content__img">
+                    <p class="ice__content__txt">B2C, B2B, B2E등 다양한 커머스서비스가 가능하도록 운용사, 채널(고객사), 판매자, 공급사 간 운영 플랫폼관리 기능을 제공함
+                    </p>
+                    <h3 class="ice__content__subtitle">1) 구성</h3>
+                    <img src="/image/sample2.png" class="ice__content__img">
+                    <h3 class="ice__content__subtitle">2) ICE의 MSA(Micro services Architexure)</h3>
+                    <img src="/image/sample3.png" class="ice__content__img">
+
+
                 </div>
-            </div>
-            <div class="idx_board">
-                <div class="title">
-                    <a href="#" class="name">묻고답하기</a>
-                    <a href="#" class="more"><img src="image/plus.png" alt="더 보기"></a>
-                </div>
-                <div class="list">
-                    <ul>
-                        <li>
-                            <a href="#">글 제목이 들어갑니다.</a>
-                            <span>21-03-25</span>
-                        </li>
-                        <li>
-                            <a href="#">글 제목이 들어갑니다.</a>
-                            <span>21-03-25</span>
-                        </li>
-                        <li>
-                            <a href="#">글 제목이 들어갑니다.</a>
-                            <span>21-03-25</span>
-                        </li>
-                        <li>
-                            <a href="#">글 제목이 들어갑니다.</a>
-                            <span>21-03-25</span>
-                        </li>
-                        <li>
-                            <a href="#">글 제목이 들어갑니다.</a>
-                            <span>21-03-25</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="idx_board">
-                <div class="title">
-                    <a href="#" class="name">릴리즈노트</a>
-                    <a href="#" class="more"><img src="image/plus.png" alt="더 보기"></a>
-                </div>
-                <div class="list">
-                    <ul>
-                        <li>
-                            <a href="#">글 제목이 들어갑니다.</a>
-                            <span>21-03-25</span>
-                        </li>
-                        <li>
-                            <a href="#">글 제목이 들어갑니다.</a>
-                            <span>21-03-25</span>
-                        </li>
-                        <li>
-                            <a href="#">글 제목이 들어갑니다.</a>
-                            <span>21-03-25</span>
-                        </li>
-                        <li>
-                            <a href="#">글 제목이 들어갑니다.</a>
-                            <span>21-03-25</span>
-                        </li>
-                        <li>
-                            <a href="#">글 제목이 들어갑니다.</a>
-                            <span>21-03-25</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="idx_board">
-                <div class="title">
-                    <a href="#" class="name">교육동영상</a>
-                    <a href="#" class="more"><img src="image/plus.png" alt="더 보기"></a>
-                </div>
-                <div class="list">
-                    <ul>
-                        <li>
-                            <a href="#">글 제목이 들어갑니다.</a>
-                            <span>21-03-25</span>
-                        </li>
-                        <li>
-                            <a href="#">글 제목이 들어갑니다.</a>
-                            <span>21-03-25</span>
-                        </li>
-                        <li>
-                            <a href="#">글 제목이 들어갑니다.</a>
-                            <span>21-03-25</span>
-                        </li>
-                        <li>
-                            <a href="#">글 제목이 들어갑니다.</a>
-                            <span>21-03-25</span>
-                        </li>
-                        <li>
-                            <a href="#">글 제목이 들어갑니다.</a>
-                            <span>21-03-25</span>
-                        </li>
-                </div>
+
+
+
             </div>
         </div>
-    </div>
+
+
+
+
+    </main>
 
     <!-- 푸터 시작 -->
     <footer>
@@ -478,7 +344,8 @@
         </div>
     </footer>
     <script>
-        $(".search__txt").keyup(function(e){if(e.keyCode == 13)  login(); });
+        $(".search__txt").keyup(function (e) { if (e.keyCode == 13) login(); });
     </script>
 </body>
+
 </html>
