@@ -1,0 +1,175 @@
+.faq__accordion__group {
+    margin-top: 20px;
+    border-top: 4px solid #5f90db;
+  }
+  
+  .accordion__item {
+    background-color: #ffffff;
+    padding: 10px;
+    border-bottom: 1px solid #ebebec;
+  }
+  
+  .accordion__link {
+    font-size: 16px;
+    color: #333333;
+    font-weight: 400;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+  
+  .accordion__link i {
+    color: #333333;
+    padding: 2px;
+  }
+  
+  .accordion__link .fa-chevron-up {
+    display: none;
+  }
+  
+  .faq__answer {
+    position: relative;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 250ms;
+  
+    background: url(../image/link.png);
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+  }
+  
+  .faq__answer p {
+    color: #666666;
+    font-size: 15px;
+    padding: 0 20px 0 0;
+  }
+  
+  .accordion__item:target .faq__answer {
+    max-height: 200px;
+  }
+  
+  .accordion__item:target .accordion__link .fa-chevron-up {
+    display: block;
+  }
+  
+  .accordion__item:target .accordion__link .fa-chevron-down {
+    display: none;
+  }
+  
+
+  --------------------
+
+  <div class="faq__accordion__group">
+    <!-- faq 질문1 -->
+    <div class="accordion__item" id="question1">
+        <a class="accordion__link" href="#question1">
+            질문을 입력해주세요
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <div class="faq__answer">
+            <p>내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요</p>
+        </div>
+    </div>
+    <!-- faq 질문2 -->
+    <div class="accordion__item" id="question2">
+        <a class="accordion__link" href="#question2">
+            질문을 입력해주세요
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <div class="faq__answer">
+            <p>내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요</p>
+        </div>
+    </div>
+    <!-- faq 질문3 -->
+    <div class="accordion__item" id="question3">
+        <a class="accordion__link" href="#question3">
+            질문을 입력해주세요
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <div class="faq__answer">
+            <p>내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요</p>
+        </div>
+    </div>
+    <!-- faq 질문4 -->
+    <div class="accordion__item" id="question4">
+        <a class="accordion__link" href="#question4">
+            질문을 입력해주세요
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <div class="faq__answer">
+            <p>내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요</p>
+        </div>
+    </div>
+    <!-- faq 질문5 -->
+    <div class="accordion__item" id="question5">
+        <a class="accordion__link" href="#question5">
+            질문을 입력해주세요
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <div class="faq__answer">
+            <p>내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요</p>
+        </div>
+    </div>
+    <!-- faq 질문6 -->
+    <div class="accordion__item" id="question6">
+        <a class="accordion__link" href="#question6">
+            질문을 입력해주세요
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <div class="faq__answer">
+            <p>내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요</p>
+        </div>
+    </div>
+    <!-- faq 질문7 -->
+    <div class="accordion__item" id="question7">
+        <a class="accordion__link" href="#question7">
+            질문을 입력해주세요
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <div class="faq__answer">
+            <p>내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요</p>
+        </div>
+    </div>
+    <!-- faq 질문8 -->
+    <div class="accordion__item" id="question8">
+        <a class="accordion__link" href="#question8">
+            질문을 입력해주세요
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <div class="faq__answer">
+            <p>내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요</p>
+        </div>
+    </div>
+    <!-- faq 질문9 -->
+    <div class="accordion__item" id="question9">
+        <a class="accordion__link" href="#question9">
+            질문을 입력해주세요
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <div class="faq__answer">
+            <p>내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요</p>
+        </div>
+    </div>
+    <!-- faq 질문10 -->
+    <div class="accordion__item" id="question10">
+        <a class="accordion__link" href="#question105">
+            질문을 입력해주세요
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <div class="faq__answer">
+            <p>내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요내용을 입력해주세요</p>
+        </div>
+    </div>
+
+</div>

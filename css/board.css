@@ -1,0 +1,320 @@
+.board__list__group {
+  margin-top: 20px;
+}
+
+.notice__view__group {
+}
+
+.board__title {
+  margin-bottom: 30px;
+}
+
+.board__title strong {
+  font-size: 3rem;
+}
+
+.board__title p {
+  margin-top: 5px;
+  font-size: 1.4rem;
+}
+
+.bt__wrap {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0;
+}
+
+.bt__wrap a {
+  display: inline-block;
+  min-width: 80px;
+  margin-left: 10px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 2px;
+  font-size: 1.4rem;
+}
+
+.bt__wrap a:first-child {
+  margin-left: 0;
+}
+
+.bt__wrap a.on {
+  background: #000;
+  color: #fff;
+}
+
+.board__list {
+  width: 100%;
+  border-top: 4px solid #5f90db;
+}
+
+.board__list > div {
+  border-bottom: 1px solid #ddd;
+  font-size: 0;
+}
+
+.board__list > div.top {
+  border-bottom: 1px solid #999;
+}
+
+.board__list > div:last-child {
+  border-bottom: 1px solid #ddd;
+}
+
+.board__list > div > div {
+  display: inline-block;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.board__list > div.top > div {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.board__list .num {
+  width: 10%;
+}
+
+.board__list .title {
+  width: 70%;
+  text-align: left;
+}
+
+.board__list .top .title {
+  text-align: center;
+}
+
+.board__list .writer {
+  width: 10%;
+}
+
+.board__list .date {
+  width: 10%;
+}
+
+.board__list .count {
+  width: 10%;
+}
+
+.board__page {
+  margin: 30px 0;
+  text-align: center;
+  font-size: 0;
+}
+
+.board__page a {
+  display: inline-block;
+  width: 40px;
+  height: 32px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  border-left: 0;
+  line-height: 100%;
+}
+
+.board__page a.bt {
+  font-size: 15px;
+  letter-spacing: -1px;
+  padding: 7px;
+}
+
+.board__page a.num {
+  font-size: 15px;
+  padding: 7px;
+}
+
+.board__page a.num.on {
+  width: 30px;
+  height: 30px;
+  padding: 7px;
+  background: #5f90db;
+  color: #fff;
+  border-radius: 100px;
+}
+
+.board__page a:first-child {
+}
+
+/* ========= 게시판 상세보기 ============ */
+.ice__view__content {
+  width: 100%;
+}
+
+.board__view__group {
+  width: 100%;
+}
+
+.board__view__header {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #ddd;
+  padding: 0px 10px 00px 10px;
+}
+
+.board__view__title {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  font-size: 18px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.board__view__sub {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30%;
+  font-size: 13px;
+}
+
+.board__view__reference {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.board__view__reference a {
+  font-size: 14px;
+}
+
+.board__view__reference i {
+  color: #666;
+  background: #fff;
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.board__view__reference button {
+  background-color: #fff;
+}
+
+.board__view__content {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 10px 50px 10px;
+  min-height: 500px;
+  font-size: 15px;
+}
+
+.board__view__content__question {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 10px;
+  min-height: 250px;
+  font-size: 15px;
+}
+
+.board__view__content__answer {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 10px;
+  font-size: 15px;
+  background-color: #f5f9ff;
+  min-height: 250px;
+}
+
+.board__view__content__answer p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.board__view__remote__group {
+  width: 100%;
+}
+
+.board__view__remote {
+  display: flex;
+  padding: 15px 10px;
+  font-size: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.board__view__remote__btn {
+  width: 12%;
+  font-weight: 500;
+}
+
+.board__view__remote__title {
+  width: 88%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.board__view__content__btn__group {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.board__view__content__btn {
+  width: 150px;
+  height: 50px;
+  background-color: #2c91ef;
+  color: #ffffff;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+/* ========= 게시판 반응형 ============ */
+
+@media (max-width: 768px) {
+  .board__list .num,
+  .board__list .date,
+  .board__list .count {
+    display: none;
+  }
+
+  .board__list .title {
+    width: 80%;
+  }
+
+  .board__list .writer {
+    width: 20%;
+  }
+
+  .board__list .title {
+    text-indent: 10px;
+  }
+
+  .board__list .top .title {
+    text-indent: 0;
+  }
+  .board__page {
+    margin: 20px 0;
+  }
+  .board__page a {
+    width: 26px;
+    height: 26px;
+  }
+
+  .board__page a.bt {
+  }
+
+  .board__page a.num {
+    margin: 0px 5px;
+  }
+
+  .board__view__header {
+    border-top: 4px solid #5f90db;
+  }
+
+  .board__view__content {
+    min-height: 300px;
+  }
+
+  .board__view__remote__btn {
+    width: 30%;
+  }
+
+  .board__view__remote__title {
+    width: 70%;
+  }
+}

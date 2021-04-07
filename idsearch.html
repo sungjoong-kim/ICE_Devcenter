@@ -1,0 +1,84 @@
+<!-- ================ header =================== -->
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#header").load("common/header.html");
+        $("#footer").load("common/footer.html");
+    });
+</script>
+
+<div id="header"></div>
+
+<!-- ================ main =================== -->
+
+<main>
+    <section>
+            <div class="container">
+                    
+                <div class="idpw__group__background">
+
+                    <div class="idpw__group">
+                        <div class="title">아이디/비밀번호찾기</div>
+                            <div class="tab__content">
+
+                                <!-- 버튼요소 -->
+                                <input type="radio" name="tabmenu" id="idtab01" checked class="tab">
+                                <label for="idtab01">아이디 찾기</label>
+                                <input type="radio" name="tabmenu" id="pwtab02">
+                                <label for="pwtab02">비밀번호 찾기</label>
+                            
+                            
+                                <!-- 컨텐츠 요소 -->x
+                                <div class="searchconbox idsearch">
+                                    <form action="#">
+                                        <div class="field">
+                                            <input type="text" required>
+                                            <label>성함</label>
+                                        </div>
+                                        <div class="field">
+                                            <input type="text" required>
+                                            <label>이메일</label>
+                                        </div>
+                                        <div class="field">
+                                            <input type="text" required>
+                                            <label>휴대폰번호</label>
+                                        </div>
+                                        <div class="field confirm">
+                                            <input type="submit" value="확인">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="searchconbox pwsearch">
+                                    <form action="#">
+                                        <div class="field">
+                                            <input type="id" required>
+                                            <label>아이디</label>
+                                        </div>
+                                        <div class="field">
+                                            <input type="text" required>
+                                            <label>성함</label>
+                                        </div>
+                                        <div class="field">
+                                            <input type="text" required>
+                                            <label>이메일</label>
+                                        </div>
+                                        <div class="field">
+                                            <input type="text" required>
+                                            <label>휴대폰번호</label>
+                                        </div>
+                                        <div class="field confirm">
+                                            <input type="submit" value="확인">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+            </div>
+        </div>
+        </div>
+
+    </section>
+</main>
+
+<!-- ================ footer =================== -->
+<div id="footer"></div>

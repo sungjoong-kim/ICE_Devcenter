@@ -1,351 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- ================ header =================== -->
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
-    <!-- css -->
-    <link rel="stylesheet" href="style.css">
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
-    <!-- title -->
-    <title>ICE Devcenter</title>
-    <!-- favicon -->
-    <link rel="shortcut icon" href="image/favicon-32x32.png">
-    <!------------ 스크립트시작 ------------>
-    <!--#. fontawesome -->
-    <script defer src="https://kit.fontawesome.com/4eea417a7f.js" crossorigin="anonymous"></script>
-    <!--#. jquery -->
-    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!--#. slide -->
-    <script defer src="slide.js"></script>
-    <!-- #. hiddn -->
-    <script defer src="scroll__hidden.js"></script>
-</head>
-<!----------------- body ----------------->
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#header").load("common/header.html");
+        $("#footer").load("common/footer.html");
+    });
+</script>
 
-<body>
-    <!-- 상단 헤더 -->
-    <header class="tnd">
-        <div class="container">
-            <div class="tnd__header__menu">
-                <li class="tt"><a href="#">회원가입</a></li>
-                <li class="tt"><a href="#">아이디찾기</a></li>
-                <li class="tt"><a href="#">비밀번호찾기</a></li>
+<div id="header"></div>
+
+<!-- ================ main =================== -->
+<main>
+    <div class="container">
+        <aside class="sub__side__menubar">
+            <!-- 타이틀 -->
+            <div class="sub__side__menubar__title">
+                <h2>ICE소개</h2>
+                <h3>ICE introduction</h3>
             </div>
-        </div>
-    </header>
-    <!-- 메인 헤더 -->
-    <header class="header">
-        <div class="container container_header">
-            <!-- 로고 -->
-            <h1 class="header__logo">
-                <a href="index.html">
-                    <img src="image/ICE Devcneter_logo.svg"></a>
-            </h1>
-            <ul class="header__menu">
-                <div class="search__box">
-                    <input class="search__txt" type="text" name="" placeholder="검색어를 입력하세요." onkeyup="enterkey();">
-                    <a class="search__btn" value="검색" onclick="alert('개발전입니다')" href="#">
-                        <i class="fas fa-search"></i></a>
+            <!-- 메뉴바 -->
+            <a href="" target="_self" class="sub__side__menubar__subtitle">
+                <div class="sub__side__menubar__menu">
+                    <p>소개</p>
                 </div>
-                <li><a href="#">로그인</a></li>
-                <li><a href="#">회원가입</a></li>
-                <li><a href="#">고객지원</a></li>
-                <li><a href="#">오시는길</a></li>
-            </ul>
-        </div>
-        <!-- 네비게이션 모바일바 -->
-        <input type="checkbox" id="menuicon" style="display: none;">
-        <!-- 햄버거 메뉴 아이콘 -->
-        <label for="menuicon">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <!-- 사이드바 -->
-        <div class="sidebar">
-            <!-- 검색기능 -->
-            <div class="mobile__search">
-                <input class="mobile__search__txt" type="text" name="" placeholder="검색어를 입력하세요.">
-                <a class="mobile__search__btn" value="검색" onclick="alert('개발전입니다')" href="#">
-                    <i class="fas fa-search"></i></a>
-            </div>
-            <div class="sidebar__group">
-                <div class="accordion">
-                    <input type="radio" name="tab" id="tab01">
-                    <input type="radio" name="tab" id="tab02">
-                    <input type="radio" name="tab" id="tab03">
-                    <input type="radio" name="tab" id="tab04">
-                    <input type="radio" name="tab" id="tab05">
-                    <input type="radio" name="tab" id="tab06">
-                    <ul>
-                        <li>
-                            <div>
-                                <label class="sideicon sideicon01" for="tab01">ICE소개<span
-                                        class="sidearrow"></span></label>
-                                <ul class="sub">
-                                    <li><a href="introduce.html" target="_self" title="">소개</a></li>
-                                    <li><a href="#" target="_self" title="">개요</a></li>
-                                    <li><a href="#" target="_self" title="">아키텍처</a></li>
-                                    <li><a href="#" target="_self" title="">구축사례</a></li>
-
-                                </ul>
-
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <label class="sideicon sideicon02" for="tab02">개발가이드<span
-                                        class="sidearrow"></span></label>
-                                <ul class="sub">
-                                    <li class="submenu__link"><a href="#" target="_self" title="">설치하기</a></li>
-                                    <li class="submenu__link"><a href="#" target="_self" title="">개발환경설정</a></li>
-                                    <li class="submenu__link"><a href="#" target="_self" title="">Backend Core</a></li>
-                                    <li class="submenu__link"><a href="#" target="_self" title="">Front Office</a></li>
-                                    <li class="submenu__link"><a href="#" target="_self" title="">Back Office</a></li>
-                                    <li class="submenu__link"><a href="#" target="_self" title="">User Manual</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <label class="sideicon sideicon03" for="tab03">개발자교육<span
-                                        class="sidearrow"></span></label>
-                                <ul class="sub">
-                                    <li><a href="#" target="_self" title="">교육신청</a></li>
-                                    <li><a href="#" target="_self" title="">교육자료</a></li>
-                                    <li><a href="#" target="_self" title="">영상자료</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <label class="sideicon sideicon04" for="tab04">기술지원<span
-                                        class="sidearrow"></span></label>
-                                <ul class="sub">
-                                    <li><a href="#" target="_self" title="">FAQ</a></li>
-                                    <li><a href="#" target="_self" title="">묻고답하기</a></li>
-                                    <li><a href="#" target="_self" title="">릴리즈노트</a></li>
-
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <label class="sideicon sideicon05" for="tab05">고객지원<span
-                                        class="sidearrow"></span></label>
-                                <ul class="sub">
-                                    <li><a href="#" target="_self" title="">공지사항</a></li>
-                                    <li><a href="#" target="_self" title="">개인정보처리방침</a></li>
-                                    <li><a href="#" target="_self" title="">문의하기</a></li>
-                                    <li><a href="#" target="_self" title="">오시는길</a></li>
-                                </ul>
-                            </div>
-                        </li>
-
-                    </ul>
+            </a>
+            <a href="" target="_self" class="sub__side__menubar__subtitle">
+                <div class="sub__side__menubar__menu">
+                    <p>개요</p>
                 </div>
-
-                <div class="mobile__btn__group">
-                    <a href="#" class="mobile__btn mobile__login">
-                        <span>로그인하기</span>
-                    </a>
-
-                    <a href="#" class="mobile__btn mobile__signup">
-                        <span>회원가입하기</span>
-                    </a>
-                    <a href="#" class="mobile__idpwsearch">
-                        <span>아이디/비밀번호찾기</span>
-                    </a>
+            </a>
+            <a href="" target="_self" class="sub__side__menubar__subtitle">
+                <div class="sub__side__menubar__menu">
+                    <p>아키텍처</p>
                 </div>
+            </a>
+            <a href="" target="_self" class="sub__side__menubar__subtitle">
+                <div class="sub__side__menubar__menu">
+                    <p>구축사례</p>
+                </div>
+            </a>
+        </aside>
+        <div class="content__container">
+            <!-- 리모컨네비게이션 -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html" target="_self"><i class="fas fa-home"></i> </a>
+                    </li>
+                    <li class="breadcrumb-item"><a>ICE 소개</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">소개</li>
+                </ol>
+            </nav>
+            <!-- 서브타이틀 -->
+            <div class="main__title__group">
+                <h2>소개</h2>
+                <h3>ICE에 대해 소개해드립니다.</h3>
+            </div>
+            <!-- 모바일서브메뉴 -->
+            <select id="mobile__select__group" onchange="window.open(value,'_self')">
+                <option value="none">선택</option>
+                <option value="notice.html">공지사항</option>
+                <option value="individual.html">개인정보처리방침</option>
+                <option value="ask.html">문의하기</option>
+                <option value="map.html">오시는길</option>
+            </select>
+            <!-- ================ 메인콘텐츠시작 =================== -->
+            <section>
+            <div class="ice__content">
+                <h2 class="ice__content__title">ICE소개</h2>
+                <img src="/image/sample.png" class="ice__content__img">
+                <p class="ice__content__txt">B2C, B2B, B2E등 다양한 커머스서비스가 가능하도록 운용사, 채널(고객사), 판매자, 공급사 간 운영 플랫폼관리 기능을 제공함
+                </p>
+                <h3 class="ice__content__subtitle">1) 구성</h3>
+                <img src="/image/sample2.png" class="ice__content__img">
+                <h3 class="ice__content__subtitle">2) ICE의 MSA(Micro services Architexure)</h3>
+                <img src="/image/sample3.png" class="ice__content__img">
             </div>
         </div>
-        <div class="sidebar__background"></div>
-        </div>
-        </nav>
-    </header>
-
-    <!-- 메인 네비게이션 -->
-    <div class="navbar__wrap">
-        <nav class="navbar_empty"></nav>
-        <nav class="navbar">
-            <div class="container">
-                <nav id="menu">
-                    <ul>
-                        <li>
-                            <a href="#">ICE소개</a>
-                            <ul class="submenu">
-                                <li><a href="introduce.html" target="_self">소개</a></li>
-                                <li><a href="#">개요</a></li>
-                                <li><a href="#">이키텍처</a></li>
-                                <li><a href="#">구축사례</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">개발가이드</a>
-                            <ul class="submenu">
-                                <li><a href="#" class="submenu__link">설치하기</a></li>
-                                <li><a href="#" class="submenu__link">개발환경설정</a></li>
-                                <li><a href="#" class="submenu__link">Backend Core</a></li>
-                                <li><a href="#" class="submenu__link">Front Office</a></li>
-                                <li><a href="#" class="submenu__link">Back Office</a></li>
-                                <li><a href="#" class="submenu__link">User Manual</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">개발자교육 </a>
-                            <ul class="submenu">
-                                <li><a href="#">교육신청</a></li>
-                                <li><a href="#">교육자료</a></li>
-                                <li><a href="#">영상자료</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">기술지원</a>
-                            <ul class="submenu">
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="#">묻고답하기</a></li>
-                                <li><a href="#">릴리즈노트</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">고객지원</a>
-                            <ul class="submenu">
-                                <li><a href="#">공지사항</a></li>
-                                <li><a href="#">개인정보처리방침</a></li>
-                                <li><a href="#">문의하기</a></li>
-                                <li><a href="#">오시는길</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </nav>
     </div>
-
-
-    <main style="height:2000px">
-        <div class="container">
-            <aside class="sub__side__menubar">
-                <!-- 타이틀 -->
-                <div class="sub__side__menubar__title">
-                    <h2>ICE소개</h2>
-                    <h3>ICE introduction</h3>
-                </div>
-                <!-- 메뉴바 -->
-                <a href="" target="_self">
-                    <div class="sub__side__menubar__menu">
-                        <p>소개</p>
-                    </div>
-                </a>
-                <a href="" target="_self">
-                    <div class="sub__side__menubar__menu">
-                        <p>개요</p>
-                    </div>
-                </a>
-                <a href="" target="_self">
-                    <div class="sub__side__menubar__menu">
-                        <p>아키텍처</p>
-                    </div>
-                </a>
-                <a href="" target="_self">
-                    <div class="sub__side__menubar__menu">
-                        <p>구축사례</p>
-                    </div>
-                </a>
-            </aside>
-
-
-
-            <div class="content__container">
-                <!-- 리모컨네비게이션 -->
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html" target="_self"><i class="fas fa-home"></i> </a></li>
-                        <li class="breadcrumb-item"><a>ICE 소개</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">소개</li>
-                    </ol>
-                </nav>
-                <!-- 서브타이틀 -->
-                <div class="main__title__group">
-                    <h2>소개</h2>
-                    <h3>ICE에 대해 소개해드립니다.</h3>
-                </div>
-                <!-- 모바일서브메뉴 -->
-                <select id="mobile__select__group" onchange="window.open(value,'_self')">
-                    <option value="none">선택</option>
-                    <option value="index.html">소개</option>
-                    <option value="index.html">개요</option>
-                    <option value="index.html">아키텍처</option>
-                    <option value="index.html">구축사례</option>
-                </select>
-
-                <div class="ice__content">
-                    <h2 class="ice__content__title">ICE소개</h2>
-                    <img src="image/sample.png" class="ice__content__img">
-                    <p class="ice__content__txt">B2C, B2B, B2E등 다양한 커머스서비스가 가능하도록 운용사, 채널(고객사), 판매자, 공급사 간 운영 플랫폼관리 기능을 제공함
-                    </p>
-                    <h3 class="ice__content__subtitle">1) 구성</h3>
-                    <img src="image/sample2.png" class="ice__content__img">
-                    <h3 class="ice__content__subtitle">2) ICE의 MSA(Micro services Architexure)</h3>
-                    <img src="image/sample3.png" class="ice__content__img">
-
-
-                </div>
-
-
-
-            </div>
-        </div>
-
-
-
-
-    </main>
-
-    <!-- 푸터 시작 -->
-    <footer>
-        <div class="container">
-            <div class="footer__logo">
-                <img src="image/ionhorizontal.svg">
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="footer__down">
-                <div class="footer__text">
-                    <li class="pc">(06234)서울특별시 강남구 테헤란로 10길 15, 아이온빌딩&nbsp;&nbsp;
-                        <strong>T.&nbsp;</strong>02-3430-1200&nbsp;&nbsp;
-                        <strong>F.&nbsp;</strong>02-3430-1205&nbsp;&nbsp;
-                        <strong>E.&nbsp;</strong>ask@i-on.net
-                        <br>Copyright 2021 © I-ON Communications Co., Ltd.
-                    </li>
-
-                    <li class="moblie">
-                        (주)아이온커뮤니케이션즈<br>
-                        서울특별시 강남구 테헤란로 10길 15 (06234), 아이온빌딩<br>
-                        <strong>T.&nbsp;</strong>02-3430-1200&nbsp;&nbsp;<br>
-                        <strong>F.&nbsp;</strong>02-3430-1205&nbsp;&nbsp;<br>
-                        <strong>E.&nbsp;</strong>ask@i-on.net<br>
-                        Copyright 2021 © I-ON Communications Co., Ltd.
-                    </li>
-
-                </div>
-                <div class="footer__button">
-                    <li class="ff"><a href="#"></a>회사소개</li><br>
-                    <li class="ff"><a href="#"></a>개인정보처리방침</li><br>
-                    <li class="ff"><a href="#"></a>이메일무단수집거부</li><br>
-                </div>
-            </div>
-        </div>
-        </div>
-    </footer>
-    <script>
-        $(".search__txt").keyup(function (e) { if (e.keyCode == 13) login(); });
-    </script>
-</body>
-
-</html>
+    </section>
+</main>
+<!-- ================ footer =================== -->
+<div id="footer"></div>

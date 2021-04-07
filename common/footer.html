@@ -1,0 +1,97 @@
+<!-- 푸터 시작 -->
+<footer>
+    <div class="container">
+        <div class="footer__logo">
+            <img src="image/ionhorizontal.svg">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="footer__down">
+            <div class="footer__text">
+                <li class="pc">(06234)서울특별시 강남구 테헤란로 10길 15, 아이온빌딩&nbsp;&nbsp;
+                    <strong>T.&nbsp;</strong>02-3430-1200&nbsp;&nbsp;
+                    <strong>F.&nbsp;</strong>02-3430-1205&nbsp;&nbsp;
+                    <strong>E.&nbsp;</strong>ask@i-on.net
+                    <br>Copyright 2021 © I-ON Communications Co., Ltd.
+                </li>
+
+                <li class="moblie">
+                    (주)아이온커뮤니케이션즈<br>
+                    서울특별시 강남구 테헤란로 10길 15 (06234), 아이온빌딩<br>
+                    <strong>T.&nbsp;</strong>02-3430-1200&nbsp;&nbsp;<br>
+                    <strong>F.&nbsp;</strong>02-3430-1205&nbsp;&nbsp;<br>
+                    <strong>E.&nbsp;</strong>ask@i-on.net<br>
+                    Copyright 2021 © I-ON Communications Co., Ltd.
+                </li>
+
+            </div>
+            <div class="footer__button">
+                <li class="ff"><a href="https://www.i-on.net/index.html" target="_blank">회사소개</a></li><br>
+                <li class="ff"><a href="individual.html" target="_self">개인정보처리방침</a></li><br>
+                <li class="ff"><a id="emailreject">이메일무단수집거부</a></li><br>
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
+<script>
+
+        // 엔터키 클릭 모션
+    $(".search__txt").keyup(function (e) { if (e.keyCode == 13) login(); });
+
+        // 모달창 클릭
+    $("#emailreject").on('click', function () {
+        $('.modal__background').show();
+    });
+        // 모달창 닫기
+    $("#emailreject__close").on('click', function () {
+        $('.modal__background').hide();
+    });
+
+            // 모달창 클릭 스크롤막기
+            $("#emailreject").on('click', function () {
+        $('body').addClass('scroll__hidden');
+    });
+        // 모달창 닫기 스크롤막기 풀기
+    $("#emailreject__close").on('click', function () {
+        $('body').removeClass('scroll__hidden');
+    });
+
+
+
+
+
+        // 모바일 사이드 메뉴바 클릭막기
+    function handleClickMenu() {
+        $('body').toggleClass('scroll__hidden');
+    }
+    $(function () {
+        $('#menuicon').on('click scroll touchmove', function () {
+            handleClickMenu();
+        })
+    })
+        // 모바일 사이드 메뉴바 더블클릭막기
+    document.documentElement.addEventListener('touchstart', function (event) {
+        if (event.touches.length > 1) {
+            event.preventDefault();
+        }
+    }, false);
+
+    var lastTouchEnd = 0;
+
+    document.documentElement.addEventListener('touchend', function (event) {
+        var now = (new Date()).getTime();
+        if (now - lastTouchEnd <= 300) {
+            event.preventDefault();
+        } lastTouchEnd = now;
+    }, false);
+
+
+
+
+
+</script>
+</body>
+
+</html>

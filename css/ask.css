@@ -1,0 +1,208 @@
+.ask__group {
+}
+
+.ask__group__name {
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid #f1f3f9;
+  display: flex;
+  align-items: center;
+}
+
+.ask__group__name span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 100%;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.ask__group__name__input {
+  display: flex;
+  align-content: center;
+  width: 75%;
+  height: 50px;
+  border: 1px solid #b1b1b1;
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.ask__group__name__input::placeholder {
+  font-size: 15px;
+  font-weight: 400;
+  color: #999;
+}
+
+.search__bar__ask {
+  position: relative;
+  width: 40%;
+  height: 50px;
+  color: #808080;
+  border: 1px solid #b1b1b1;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.file__box__group {
+  width: 75%;
+  height: 50px;
+}
+
+.file__box {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0;
+}
+
+.file__box input[type="file"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.file__box label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  line-height: 0;
+  vertical-align: middle;
+  cursor: pointer;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  height: 50px;
+  width: 23%;
+  background: #3491ef;
+  border-radius: 5px;
+}
+
+.input__file__index {
+  width: 100%;
+  font-size: 13px;
+  font-weight: 300;
+  word-spacing: -1px;
+}
+
+/* 파일 이름 */
+.file__box .upload__name {
+  display: inline-block;
+  padding: 10px;
+  width: 75%;
+  height: 50px;
+  line-height: 40px;
+  vertical-align: middle;
+  background-color: #ffffff;
+  border: 1px solid #b1b1b1;
+  border-radius: 3px;
+  -webkit-appearance: none; /* 네이티브 외형 감추기 */
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 15px;
+  color: #999;
+  box-sizing: border-box;
+}
+
+.ask__personalinformation {
+  width: 100%;
+  padding: 20px;
+}
+
+.ask__personalinformation > span {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.ask__personalinformation > p {
+  font-size: 15px;
+  margin: 20px 0 30px 0;
+}
+
+.ask__personalinformation__purpose {
+  border-top: 1px solid #f1f3f9;
+  border-bottom: 1px solid #f1f3f9;
+  padding: 20px 0;
+  font-size: 15px;
+}
+
+.ask__personalinformation__purpose__text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ask__personalinformation__purpose__text h5 {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+}
+
+.ask__personalinformation__purpose__text p {
+  width: 80%;
+}
+
+.ask__personalinformation__purpose__link {
+  font-size: 15px;
+}
+
+.ask__personalinformation__purpose__link a {
+  color: #2c91ef;
+  font-weight: 600;
+}
+.ask__btn__group {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.ask__btn {
+  width: 150px;
+  height: 50px;
+  background-color: #2c91ef;
+  color: #ffffff;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+/* 화면 너비가 576~768 태블릿*/
+@media (max-width: 768px) {
+  .ask__personalinformation {
+    padding: 20px 0 20px 0;
+  }
+
+  .ask__group__name span {
+    width: 20%;
+  }
+  .ask__group__name__input,
+  .search__bar__ask {
+    margin-left: 10px;
+    width: 80%;
+  }
+
+  .ask__personalinformation__purpose__link {
+    margin: 20px 0 20px 0;
+  }
+  .file__box__group {
+    width: 80%;
+    margin-left: 10px;
+  }
+  .ask__personalinformation > p {
+    margin-bottom: 20px;
+  }
+}
+
+/* 화면 너비가 0~576 모바일*/
+@media (max-width: 576px) {
+}

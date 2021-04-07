@@ -1,0 +1,200 @@
+.qna__board__list__group {
+  margin-top: 20px;
+}
+
+.board__title {
+  margin-bottom: 30px;
+}
+
+.board__title strong {
+  font-size: 3rem;
+}
+
+.board__title p {
+  margin-top: 5px;
+  font-size: 1.4rem;
+}
+
+.bt__wrap {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0;
+}
+
+.bt__wrap a {
+  display: inline-block;
+  min-width: 80px;
+  margin-left: 10px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 2px;
+  font-size: 1.4rem;
+}
+
+.bt__wrap a:first-child {
+  margin-left: 0;
+}
+
+.bt__wrap a.on {
+  background: #000;
+  color: #fff;
+}
+
+.qna__board__list {
+  width: 100%;
+  border-top: 4px solid #5f90db;
+}
+
+.qna__board__list > div {
+  border-bottom: 1px solid #ddd;
+  font-size: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.qna__board__list > div.qna__board__header {
+  border-bottom: 1px solid #999;
+  display: flex;
+  justify-content: space-between;
+}
+
+.qna__board__list > div:last-child {
+  border-bottom: 1px solid #ddd;
+}
+
+.qna__board__list > div > div {
+  display: inline-block;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.qna__board__list > div.qna__board__header > div {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.qna__board__list .num {
+  width: 5%;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+.qna__board__list .title {
+  width: 50%;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.qna__board__list .division {
+  width: 10%;
+  margin: 0 10px;
+  white-space: nowrap;
+}
+
+.qna__board__list .qna__board__header .title {
+  text-align: center;
+}
+
+.qna__board__list .condition {
+  width: 10%;
+  white-space: nowrap;
+}
+
+.qna__board__list .writer {
+  width: 10%;
+}
+
+.qna__board__list .date {
+  width: 10%;
+  white-space: nowrap;
+}
+
+.board__page {
+  margin: 20px 0 50px 0;
+  text-align: center;
+  font-size: 0;
+}
+
+.board__page a {
+  display: inline-block;
+  width: 40px;
+  height: 32px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  border-left: 0;
+  line-height: 100%;
+}
+
+.board__page a.bt {
+  font-size: 15px;
+  letter-spacing: -1px;
+  padding: 7px;
+}
+
+.board__page a.num {
+  font-size: 15px;
+  padding: 7px;
+}
+
+.board__page a.num.on {
+  width: 30px;
+  height: 30px;
+  padding: 7px;
+  background: #5f90db;
+  color: #fff;
+  border-radius: 100px;
+}
+
+.board__page a:first-child {
+}
+
+@media (max-width: 768px) {
+  .board_wrap {
+    width: 100%;
+    min-width: 320px;
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+
+  .qna__board__list .num,
+  .qna__board__list .date,
+  .qna__board__list .count,
+  .qna__board__list .writer {
+    display: none;
+  }
+
+  .qna__board__list .title {
+    width: 65%;
+  }
+
+  .qna__board__list .division {
+    width: 20%;
+  }
+
+  .qna__board__list .condition {
+    width: 15%;
+    margin: 0 10px;
+  }
+
+  .qna__board__list .title {
+    text-indent: 10px;
+  }
+
+  .qna__board__list .top .title {
+    text-indent: 0;
+  }
+  .board__page {
+    margin: 20px 0;
+  }
+  .board__page a {
+    width: 26px;
+    height: 26px;
+  }
+
+  .board__page a.bt {
+  }
+
+  .board__page a.num {
+    margin: 0px 5px;
+  }

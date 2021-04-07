@@ -1,0 +1,60 @@
+.modal__background {
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.modal__background h5 {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.modal__email__content__btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal__email__content__btn .fa-times {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal__email__content__group {
+  background: #eeeeee;
+  width: 470px;
+  border-radius: 10px;
+  padding: 10px 20px 20px 20px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -60%);
+  border: 1px solid #b6b6b6;
+}
+.modal__email__content {
+  border-top: 2px solid #5f90db;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 0 0 5px 5px;
+}
+
+.modal__email__content__group p {
+  font-size: 15px;
+  text-align: justify;
+  word-spacing: -2;
+}
+
+/* 화면 너비가 576~768 태블릿*/
+@media (max-width: 768px) {
+  .modal__email__content__group {
+    width: 90%;
+  }
+
+  .modal__email__content {
+    height: 90%;
+  }
+}

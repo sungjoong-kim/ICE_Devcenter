@@ -1,0 +1,106 @@
+.edumaterial__content__group {
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.edumaterial__content__group span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.edu__btn__group {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.edu__btn {
+  width: 150px;
+  height: 50px;
+  background-color: #2c91ef;
+  color: #ffffff;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+.board__list__eduvideo__group {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.eduvideo__item {
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+  height: auto;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.eduvideo__item__tum {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.eduvideo__item h5 {
+  width: 100%;
+  font-size: 15px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.eduvideo__item p {
+  min-height: 95px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 300;
+  text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* 라인수 */
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+}
+
+.eduvideo__item__btn {
+  width: 100%;
+  height: 33px;
+  background-color: #5f90db;
+  border-radius: 5px;
+  font-size: 12px;
+  color: #fff;
+}
+
+/* 화면 너비가 768~960px */
+@media (max-width: 960px) {
+  .eduvideo__item {
+    width: 49%;
+  }
+
+  .eduvideo__item p {
+    min-height: 70px;
+  }
+}
+
+/* 화면 너비가 576~768 태블릿*/
+@media (max-width: 768px) {
+}
+
+/* 화면 너비가 0~576 태블릿*/
+@media (max-width: 576px) {
+  .eduvideo__item {
+    width: 100%;
+  }
+
+  .eduvideo__item p {
+    min-height: 0px;
+  }
+}

@@ -1,0 +1,126 @@
+<!-- ================ header =================== -->
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#header").load("common/header.html");
+        $("#footer").load("common/footer.html");
+    });
+</script>
+
+<div id="header"></div>
+
+<!-- ================ main =================== -->
+
+<main>
+    <div class="container">
+        <aside class="sub__side__menubar">
+            <!-- 타이틀 -->
+            <div class="sub__side__menubar__title">
+                <h2>기술지원</h2>
+                <h3>Technical Support</h3>
+            </div>
+            <!-- 메뉴바 -->
+            <a href="faq.html" target="_self" class="sub__side__menubar__subtitle">
+                <div class="sub__side__menubar__menu">
+                    <p>FAQ</p>
+                </div>
+            </a>
+            <a href="qna.html" target="_self" class="sub__side__menubar__subtitle">
+                <div class="sub__side__menubar__menu">
+                    <p>묻고답하기</p>
+                </div>
+            </a>
+            <a href="release.html" target="_self" class="sub__side__menubar__subtitle">
+                <div class="sub__side__menubar__menu">
+                    <p>릴리즈노트</p>
+                </div>
+            </a>
+
+        </aside>
+        <div class="content__container">
+            <!-- 리모컨네비게이션 -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html" target="_self"><i class="fas fa-home"></i> </a>
+                    </li>
+                    <li class="breadcrumb-item"><a>기술지원</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">릴리즈노트</li>
+                </ol>
+            </nav>
+            <!-- 서브타이틀 -->
+            <div class="main__title__group">
+                <h2>릴리즈노트</h2>
+                <h3>ICE 릴리즈노트 게시판입니다.</h3>
+            </div>
+            <!-- 모바일서브메뉴 -->
+            <select id="mobile__select__group" onchange="window.open(value,'_self')">
+                <option value="none">선택</option>
+                <option value="faq.html">faq</option>
+                <option value="qna.html">묻고답하기</option>
+                <option value="release.html">릴리즈노트</option>
+            </select>
+            <!-- ================ 메인콘텐츠시작 =================== -->
+            <section>
+                <div class="ice__view__content">
+                    <!-- 공지사항 콘텐츠보기 -->
+                    <div class="board__view__group">
+                        <div class="board__view__header">
+                            <div class="board__view__title">
+                                제목입니다.
+                            </div>
+                            <div class="board__view__sub">
+                                21-03-25
+                            </div>
+                        </div>
+
+                        <div class="board__view__reference">
+                            <a href="sample.html" download><button>
+                                <i class="fas fa-file-download"></i>
+                            </button> 릴리즈노트 다운로드</a>
+                        </div>
+
+
+                        <div class="board__view__content">
+                            글 내용이 들어갑니다<br>
+                            글 내용이 들어갑니다<br>
+                            글 내용이 들어갑니다<br>
+                            글 내용이 들어갑니다<br>
+                        </div>
+
+                        <div class="board__view__remote__group">
+                            <div class="board__view__remote">
+                                <div class="board__view__remote__btn">
+                                    <a href="#" target="_self">이전글 ▲</a>
+                                </div>
+                                <div class="board__view__remote__title">
+                                    <a href="#" target="_self">이전글 제목입니다.</a>
+                                </div>
+                            </div>
+                            <div class="board__view__remote">
+
+                                <div class="board__view__remote__btn">
+                                    <a href="#" target="_self">다음글 ▼</a>
+                                </div>
+                                <div class="board__view__remote__title">
+                                    <a href="#" target="_self">다음글 제목입니다.</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="board__view__content__btn__group">
+                            <input type="button" class="board__view__content__btn" value="목록보기"
+                                onclick="alert('개발전입니다')">
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</main>
+
+
+<!-- ================ footer =================== -->
+<div id="footer"></div>
