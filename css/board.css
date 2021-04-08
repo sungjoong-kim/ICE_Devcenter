@@ -362,4 +362,16 @@
   .board__view__remote__title {
     width: 70%;
   }
+  
+    .board__write__header {
+    padding: 20px 0;
+  }
+
+  .board__write__fileupload {
+    padding: 20px 0;
+  }
+
+  .board__write__content {
+    padding: 20px 0;
+  }
 }
