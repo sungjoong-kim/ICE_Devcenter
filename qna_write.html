@@ -64,60 +64,28 @@
                 <div class="ice__view__content">
                     <!-- 공지사항 콘텐츠보기 -->
                     <div class="board__view__group">
-                        <div class="board__view__header">
-                            <div class="board__view__title">
-                                제목입니다.
+                        <div class="board__write__header">
+                            <div class="board__write__title">
+                                <input type="text" placeholder="제목 입력">
                             </div>
-                            <div class="board__view__sub">
-                                21-03-25
+                        </div>
+                        <div class="board__write__fileupload">
+
+                            <div class="file__box">
+                                <input class="upload__name" value="파일을 업로드 해 주세요." disabled="disabled">
+                                <label for="input__file" class="input__file__btn">업로드</label>
+                                <input type="file" id="input__file" class="file__hidden">
                             </div>
                         </div>
 
-                        <div class="board__view__reference">
-                            <a href="sample.html" download><button>
-                                <i class="fas fa-file-download"></i>
-                            </button> 첨부파일이 없습니다.</a>
-                        </div>
 
-                        <div class="board__view__content__question">
-                            질문 내용이 들어갑니다<br>
-                            질문 내용이 들어갑니다<br>
-                            질문 내용이 들어갑니다<br>
-                            질문 내용이 들어갑니다<br>
-                        </div>
-
-
-                        <div class="board__view__content__answer">
-                            <p>답변</p>
-                            답변 내용이 들어갑니다<br>
-                            답변 내용이 들어갑니다<br>
-                            답변 내용이 들어갑니다<br>
-                            답변 내용이 들어갑니다<br>
-                        </div>
-
-                        <div class="board__view__remote__group">
-                            <div class="board__view__remote">
-                                <div class="board__view__remote__btn">
-                                    <a href="#" target="_self">이전글 ▲</a>
-                                </div>
-                                <div class="board__view__remote__title">
-                                    <a href="#" target="_self">이전글 제목입니다.</a>
-                                </div>
-                            </div>
-                            <div class="board__view__remote">
-
-                                <div class="board__view__remote__btn">
-                                    <a href="#" target="_self">다음글 ▼</a>
-                                </div>
-                                <div class="board__view__remote__title">
-                                    <a href="#" target="_self">다음글 제목입니다.</a>
-                                </div>
-                            </div>
-
+                        <div class="board__write__content">
+                            <textarea type="text" placeholder="내용 입력" class="ask__group__name__input"
+                                style="width: 100%; height: 470px; resize: none;"></textarea>
                         </div>
 
                         <div class="board__view__content__btn__group">
-                            <input type="button" class="board__view__content__btn" value="목록보기"
+                            <input type="button" class="board__view__content__btn" value="등록하기"
                                 onclick="alert('개발전입니다')">
                         </div>
 
@@ -129,6 +97,23 @@
     </div>
 </main>
 <script>
-</script>
+    /* 파일명 가져오기 start */
+    var fileTarget = $('.file__box .file__hidden');
+        
+        fileTarget.on('change', function(){
+            if(window.FileReader){
+                // 파일명 추출
+                var filename = $(this)[0].files[0].name;
+            } 
+            else {
+                // Old IE 파일명 추출
+                var filename = $(this).val().split('/').pop().split('\\').pop();
+            };
+    
+            $(this).siblings('.upload__name').val(filename);
+        });
+        /* 파일명 가져오기 end */
+    
+    </script>
 <!-- ================ footer =================== -->
 <div id="footer"></div>

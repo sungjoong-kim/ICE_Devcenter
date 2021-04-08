@@ -173,3 +173,98 @@
     </div>
 
 </div>
+
+
+--------------------
+
+.signup__box__item__title span {
+    color: #ff5656;
+    margin-left: 10px;
+    font-weight: 500;
+  }
+  
+  .signup__box__item {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 280px;
+    margin-top: 10px;
+    padding: 15px;
+    border: 1px solid #cacaca;
+    border-radius: 10px;
+    color: #8a8a8a;
+    font-size: 14px;
+    word-spacing: -1;
+  }
+  
+  .signup__box__item__checkbox__group {
+    position: relative;
+    margin-top: 10px;
+    font-size: 15px;
+    color: #333333;
+  }
+  
+  /* // 기본 체크박스 없애기 */
+  
+  .signup__box__item__checkbox__group input[type="checkbox"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  
+  /* // 웹의 경우 커서에 pointer 설정 */
+  
+  .signup__box__item__checkbox__group input[type="checkbox"] + label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* // 새로운 디자인의 체크박스 만들기 */
+  
+  .signup__box__item__checkbox__group input[type="checkbox"] + label:before {
+    content: " ";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin: -2px 8px 0 0;
+    text-align: center;
+    vertical-align: middle;
+    background: #fafafa;
+    border: 1px solid #cacece;
+    border-radius: 3px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05),
+      inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .signup__box__item__checkbox__group
+    input[type="checkbox"]
+    + label:active:before,
+  .signup__box__item__checkbox__group
+    input[type="checkbox"]:checked
+    + label:active:before {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05),
+      inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .signup__box__item__checkbox__group
+    input[type="checkbox"]:checked
+    + label:before {
+    content: "\2713";
+    color: #ffffff;
+    font-weight: 500;
+    background: #5f90db;
+    border-color: #adb8c0;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05),
+      inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  }
+  

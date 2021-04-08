@@ -1,0 +1,260 @@
+<!-- ================ header =================== -->
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#header").load("common/header.html");
+        $("#footer").load("common/footer.html");
+    });
+</script>
+
+<div id="header"></div>
+
+<!-- ================ main =================== -->
+<main>
+    <div class="container">
+        <aside class="sub__side__menubar">
+            <!-- 타이틀 -->
+            <div class="sub__side__menubar__title">
+                <h2>ICE소개</h2>
+                <h3>ICE introduction</h3>
+            </div>
+            <!-- 메뉴바 -->
+            <a href="introduce.html" target="_self" class="sub__side__menubar__subtitle">
+                <div class="sub__side__menubar__menu">
+                    <p>소개</p>
+                </div>
+            </a>
+            <a href="summary.html" target="_self" class="sub__side__menubar__subtitle">
+                <div class="sub__side__menubar__menu">
+                    <p>개요</p>
+                </div>
+            </a>
+            <a href="architecture.html" target="_self" class="sub__side__menubar__subtitle">
+                <div class="sub__side__menubar__menu">
+                    <p>아키텍처</p>
+                </div>
+            </a>
+            <a href="casestudy.html" target="_self" class="sub__side__menubar__subtitle">
+                <div class="sub__side__menubar__menu">
+                    <p>구축사례</p>
+                </div>
+            </a>
+        </aside>
+        <div class="content__container">
+            <!-- 리모컨네비게이션 -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html" target="_self"><i class="fas fa-home"></i> </a>
+                    </li>
+                    <li class="breadcrumb-item"><a>ICE 소개</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">구축사례</li>
+                </ol>
+            </nav>
+            <!-- 서브타이틀 -->
+            <div class="main__title__group">
+                <h2>구축사례</h2>
+                <h3>ICE로 구축 한 고객사 사례입니다.</h3>
+            </div>
+            <!-- 모바일서브메뉴 -->
+            <select id="mobile__select__group" onchange="window.open(value,'_self')">
+                <option value="none">선택</option>
+                <option value="introduce.html">소개</option>
+                <option value="summary.html">개요</option>
+                <option value="architecture.html">아키텍처</option>
+                <option value="casestudy.html">구축사례</option>
+            </select>
+            <!-- ================ 메인콘텐츠시작 =================== -->
+            <section>
+                <div class="ice__content">
+                    <!-- 검색바 -->
+                    <div class="search__bar__group">
+                        <!-- <select class="search__bar__sort">
+                            <option value="none">분류</option>
+                            <option value="#">소개</option>
+                            <option value="#">소개</option>
+                            <option value="#">소개</option>
+                        </select> -->
+                        <select class="search__bar__sort">
+                            <option value="#">제목+내용</option>
+                            <option value="#">제목</option>
+                            <option value="#">내용</option>
+                        </select>
+                        <input class="search__bar__inputbox" type="text" name="" placeholder="검색어를 입력하세요."></input>
+                        <button class="search__bar__btn">검색</button>
+                    </div>
+
+                    <!-- 공지사항 -->
+                    <div class="board__list__casestudy__group">
+
+                        <!-- 1번 비디오 -->
+                        <div class="casestudy__item">
+                            <a href="#" target="_self"><img class="casestudy__item__tum" src="image/casestudy_sample.jpg">
+                                <h5>교원 Market85</h5>
+                                <hr/>
+                                <h6>이커머스솔루션 - ICE Commerce</h6>
+                            </a>
+                            <p>내부의 다양한 IDEA를 수집, 평가하고 BEST IDEA를 선택하기까지의 프로세스를 표준화하여 제품 설계의 효율을 극대화하여 사용자 중심의 인터페이스 구현을
+                                통해 쉽고 빠른 이용을 지원합니다.
+                            </p>
+                            <button class="casestudy__item__btn" onclick="location.href='link.html'">구축사례 바로가기</button>
+                        </div>
+                        <!-- 2번 비디오 -->
+                        <div class="casestudy__item">
+                            <a href="#" target="_self"><img class="casestudy__item__tum" src="image/casestudy_sample.jpg">
+                                <h5>교원 Market85</h5>
+                                <hr/>
+                                <h6>이커머스솔루션 - ICE Commerce</h6>
+                            </a>
+                            <p>내부의 다양한 IDEA를 수집, 평가하고 BEST IDEA를 선택하기까지의 프로세스를 표준화하여 제품 설계의 효율을 극대화하여 사용자 중심의 인터페이스 구현을
+                                통해 쉽고 빠른 이용을 지원합니다.
+                            </p>
+                            <button class="casestudy__item__btn" onclick="location.href='link.html'">구축사례 바로가기</button>
+                        </div>
+                        <!-- 3번 비디오 -->
+                        <div class="casestudy__item">
+                            <a href="#" target="_self"><img class="casestudy__item__tum" src="image/casestudy_sample.jpg">
+                                <h5>교원 Market85</h5>
+                                <hr/>
+                                <h6>이커머스솔루션 - ICE Commerce</h6>
+                            </a>
+                            <p>내부의 다양한 IDEA를 수집, 평가하고 BEST IDEA를 선택하기까지의 프로세스를 표준화하여 제품 설계의 효율을 극대화하여 사용자 중심의 인터페이스 구현을
+                                통해 쉽고 빠른 이용을 지원합니다.
+                            </p>
+                            <button class="casestudy__item__btn" onclick="location.href='link.html'">구축사례 바로가기</button>
+                        </div>
+                        <!-- 4번 비디오 -->
+                        <div class="casestudy__item">
+                            <a href="#" target="_self"><img class="casestudy__item__tum" src="image/casestudy_sample.jpg">
+                                <h5>교원 Market85</h5>
+                                <hr/>
+                                <h6>이커머스솔루션 - ICE Commerce</h6>
+                            </a>
+                            <p>내부의 다양한 IDEA를 수집, 평가하고 BEST IDEA를 선택하기까지의 프로세스를 표준화하여 제품 설계의 효율을 극대화하여 사용자 중심의 인터페이스 구현을
+                                통해 쉽고 빠른 이용을 지원합니다.
+                            </p>
+                            <button class="casestudy__item__btn" onclick="location.href='link.html'">구축사례 바로가기</button>
+                        </div>
+                        <!-- 5번 비디오 -->
+                        <div class="casestudy__item">
+                            <a href="#" target="_self"><img class="casestudy__item__tum" src="image/casestudy_sample.jpg">
+                                <h5>교원 Market85</h5>
+                                <hr/>
+                                <h6>이커머스솔루션 - ICE Commerce</h6>
+                            </a>
+                            <p>내부의 다양한 IDEA를 수집, 평가하고 BEST IDEA를 선택하기까지의 프로세스를 표준화하여 제품 설계의 효율을 극대화하여 사용자 중심의 인터페이스 구현을
+                                통해 쉽고 빠른 이용을 지원합니다.
+                            </p>
+                            <button class="casestudy__item__btn" onclick="location.href='link.html'">구축사례 바로가기</button>
+                        </div>
+                        <!-- 6번 비디오 -->
+                        <div class="casestudy__item">
+                            <a href="#" target="_self"><img class="casestudy__item__tum" src="image/casestudy_sample.jpg">
+                                <h5>교원 Market85</h5>
+                                <hr/>
+                                <h6>이커머스솔루션 - ICE Commerce</h6>
+                            </a>
+                            <p>내부의 다양한 IDEA를 수집, 평가하고 BEST IDEA를 선택하기까지의 프로세스를 표준화하여 제품 설계의 효율을 극대화하여 사용자 중심의 인터페이스 구현을
+                                통해 쉽고 빠른 이용을 지원합니다.
+                            </p>
+                            <button class="casestudy__item__btn" onclick="location.href='link.html'">구축사례 바로가기</button>
+                        </div>
+                        <!-- 7번 비디오 -->
+                        <div class="casestudy__item">
+                            <a href="#" target="_self"><img class="casestudy__item__tum" src="image/casestudy_sample.jpg">
+                                <h5>교원 Market85</h5>
+                                <hr/>
+                                <h6>이커머스솔루션 - ICE Commerce</h6>
+                            </a>
+                            <p>내부의 다양한 IDEA를 수집, 평가하고 BEST IDEA를 선택하기까지의 프로세스를 표준화하여 제품 설계의 효율을 극대화하여 사용자 중심의 인터페이스 구현을
+                                통해 쉽고 빠른 이용을 지원합니다.
+                            </p>
+                            <button class="casestudy__item__btn" onclick="location.href='link.html'">구축사례 바로가기</button>
+                        </div>
+                        <!-- 8번 비디오 -->
+                        <div class="casestudy__item">
+                            <a href="#" target="_self"><img class="casestudy__item__tum" src="image/casestudy_sample.jpg">
+                                <h5>교원 Market85</h5>
+                                <hr/>
+                                <h6>이커머스솔루션 - ICE Commerce</h6>
+                            </a>
+                            <p>내부의 다양한 IDEA를 수집, 평가하고 BEST IDEA를 선택하기까지의 프로세스를 표준화하여 제품 설계의 효율을 극대화하여 사용자 중심의 인터페이스 구현을
+                                통해 쉽고 빠른 이용을 지원합니다.
+                            </p>
+                            <button class="casestudy__item__btn" onclick="location.href='link.html'">구축사례 바로가기</button>
+                        </div>
+                        <!-- 9번 비디오 -->
+                        <div class="casestudy__item">
+                            <a href="#" target="_self"><img class="casestudy__item__tum" src="image/casestudy_sample.jpg">
+                                <h5>교원 Market85</h5>
+                                <hr/>
+                                <h6>이커머스솔루션 - ICE Commerce</h6>
+                            </a>
+                            <p>내부의 다양한 IDEA를 수집, 평가하고 BEST IDEA를 선택하기까지의 프로세스를 표준화하여 제품 설계의 효율을 극대화하여 사용자 중심의 인터페이스 구현을
+                                통해 쉽고 빠른 이용을 지원합니다.
+                            </p>
+                            <button class="casestudy__item__btn" onclick="location.href='link.html'">구축사례 바로가기</button>
+                        </div>
+                        <!-- 10번 비디오 -->
+                        <div class="casestudy__item">
+                            <a href="#" target="_self"><img class="casestudy__item__tum" src="image/casestudy_sample.jpg">
+                                <h5>교원 Market85</h5>
+                                <hr/>
+                                <h6>이커머스솔루션 - ICE Commerce</h6>
+                            </a>
+                            <p>내부의 다양한 IDEA를 수집, 평가하고 BEST IDEA를 선택하기까지의 프로세스를 표준화하여 제품 설계의 효율을 극대화하여 사용자 중심의 인터페이스 구현을
+                                통해 쉽고 빠른 이용을 지원합니다.
+                            </p>
+                            <button class="casestudy__item__btn" onclick="location.href='link.html'">구축사례 바로가기</button>
+                        </div>
+                        <!-- 11번 비디오 -->
+                        <div class="casestudy__item">
+                            <a href="#" target="_self"><img class="casestudy__item__tum" src="image/casestudy_sample.jpg">
+                                <h5>교원 Market85</h5>
+                                <hr/>
+                                <h6>이커머스솔루션 - ICE Commerce</h6>
+                            </a>
+                            <p>내부의 다양한 IDEA를 수집, 평가하고 BEST IDEA를 선택하기까지의 프로세스를 표준화하여 제품 설계의 효율을 극대화하여 사용자 중심의 인터페이스 구현을
+                                통해 쉽고 빠른 이용을 지원합니다.
+                            </p>
+                            <button class="casestudy__item__btn" onclick="location.href='link.html'">구축사례 바로가기</button>
+                        </div>
+                        <!-- 12번 비디오 -->
+                        <div class="casestudy__item">
+                            <a href="#" target="_self"><img class="casestudy__item__tum" src="image/casestudy_sample.jpg">
+                                <h5>교원 Market85</h5>
+                                <hr/>
+                                <h6>이커머스솔루션 - ICE Commerce</h6>
+                            </a>
+                            <p>내부의 다양한 IDEA를 수집, 평가하고 BEST IDEA를 선택하기까지의 프로세스를 표준화하여 제품 설계의 효율을 극대화하여 사용자 중심의 인터페이스 구현을
+                                통해 쉽고 빠른 이용을 지원합니다.
+                            </p>
+                            <button class="casestudy__item__btn" onclick="location.href='link.html'">구축사례 바로가기</button>
+                        </div>
+                    </div>
+                    <!-- 페이지뷰 -->
+                    <div class="board__page">
+                        <a href="#" class="bt first"><<</a>
+                                <a href="#" class="bt prev">
+                                    < </a>
+                                        <a href="#" class="num on">1</a>
+                                        <a href="#" class="num">2</a>
+                                        <a href="#" class="num">3</a>
+                                        <a href="#" class="num">4</a>
+                                        <a href="#" class="num">5</a>
+                                        <a href="#" class="bt next">></a>
+                                        <a href="#" class="bt last">>></a>
+                    </div>
+
+
+
+
+
+                </div>
+            </section>
+
+        </div>
+    </div>
+</main>
+<!-- ================ footer =================== -->
+<div id="footer"></div>

@@ -315,7 +315,7 @@ input[id="menuicon"] + label {
   cursor: pointer;
   width: 40px;
   height: 40px;
-  background-color: #686a71;
+  /* background-color: #686a71; */
   margin-top: -55px;
   margin-right: 10px;
   z-index: 3;
@@ -326,7 +326,7 @@ input[id="menuicon"] + label span {
   width: 73%;
   height: 4px;
   border-radius: 30px;
-  background: #fff;
+  background: #666;
   transition: all 0.35s;
   margin-left: 4.5px;
 }
@@ -345,7 +345,7 @@ input[id="menuicon"]:checked + label {
   z-index: 202;
 }
 input[id="menuicon"]:checked + label span {
-  background: #fff;
+  background: #666;
 }
 
 input[id="menuicon"]:checked + label span:nth-child(1) {
@@ -1169,8 +1169,9 @@ input#tab05:checked ~ ul > li:nth-child(5) .sideicon .sidearrow::after {
 }
 
 .ice__content__txt {
-  margin-top: 10px;
-  font-size: 15px;
+  color: #666;
+  font-size: 16px;
+  font-weight: 300;
   margin-bottom: 20px;
 }
 

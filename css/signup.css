@@ -1,0 +1,286 @@
+.signup__group__background {
+  margin: auto;
+}
+
+form {
+}
+
+.signup__group {
+  background: #fff;
+}
+
+.signup__group .title {
+  margin-top: 50px;
+  font-size: 35px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 50px;
+  color: #282828;
+  user-select: none;
+  border-radius: 15px 15px 0 0;
+}
+
+fieldset {
+  margin-top: 50px;
+  height: 40px;
+  border-bottom: 2px solid #282828;
+}
+
+.signup__step {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 20px;
+  font-weight: 500;
+  width: 100%;
+  color: #333333;
+}
+
+.signup__step p {
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+.signup__step .signup__step__on {
+  color: #5f90db;
+}
+
+.signup__box__item__title {
+  margin: 20px 0 5px 0;
+  font-size: 17px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.signup__btn__group {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.signup__btn {
+  width: 150px;
+  height: 50px;
+  background-color: #2c91ef;
+  color: #ffffff;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+.signup__box__item__account__item p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333333;
+  margin-top: 20px;
+}
+
+.id {
+  margin-top: 30px;
+}
+
+.pw {
+  margin-top: 15px;
+}
+
+.signup__box__item__account__item input {
+  width: 100%;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid #e4e4e4;
+  font-size: 14px;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.signup__box__item__title span {
+  color: #ff5656;
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.signup__box__item {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 280px;
+  margin-top: 10px;
+  padding: 15px;
+  border: 1px solid #cacaca;
+  border-radius: 10px;
+  color: #8a8a8a;
+  font-size: 14px;
+  word-spacing: -1;
+}
+
+.signup__box__item__checkbox__group {
+  position: relative;
+  margin-top: 10px;
+  font-size: 15px;
+  color: #333333;
+}
+
+.allsignup__box__item__group {
+  font-size: 17px;
+  margin-top: 20px;
+}
+
+.allagree__text {
+}
+.where {
+  display: block;
+  margin: 25px 15px;
+  font-size: 11px;
+  color: #000;
+  text-decoration: none;
+  font-family: verdana;
+  font-style: italic;
+}
+
+.signup__box__item__group__checks {
+  position: relative;
+  margin-top: 10px;
+}
+
+.signup__box__item__group__checks input[type="checkbox"] {
+  /* 실제 체크박스는 화면에서 숨김 */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.signup__box__item__group__checks input[type="checkbox"] + label {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.signup__box__item__group__checks input[type="checkbox"] + label:before {
+  /* 가짜 체크박스 */
+  content: " ";
+  display: inline-block;
+  width: 21px; /* 체크박스의 너비를 지정 */
+  height: 21px; /* 체크박스의 높이를 지정 */
+  line-height: 21px; /* 세로정렬을 위해 높이값과 일치 */
+  margin: -2px 8px 0 0;
+  text-align: center;
+  vertical-align: middle;
+  background: #fafafa;
+  border: 1px solid #cacece;
+  border-radius: 3px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+}
+.signup__box__item__group__checks input[type="checkbox"] + label:active:before,
+.signup__box__item__group__checks
+  input[type="checkbox"]:checked
+  + label:active:before {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.signup__box__item__group__checks
+  input[type="checkbox"]:checked
+  + label:before {
+  /* 체크박스를 체크했을때 */
+  content: "\2714"; /* 체크표시 유니코드 사용 */
+  color: #99a1a7;
+  text-shadow: 1px 1px #fff;
+  background: #e9ecee;
+  border-color: #adb8c0;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05),
+    inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+}
+
+.signup__box__item__group__checks.small input[type="checkbox"] + label {
+  font-size: 12px;
+}
+
+.signup__box__item__group__checks.small input[type="checkbox"] + label:before {
+  width: 17px;
+  height: 17px;
+  line-height: 17px;
+  font-size: 11px;
+}
+
+.signup__box__item__group__checks.etrans input[type="checkbox"] + label {
+  padding-left: 30px;
+  font-size: 15px;
+  font-weight: 400;
+}
+.signup__box__item__group__checks.etrans input[type="checkbox"] + label:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 1px;
+  opacity: 0.6;
+  box-shadow: none;
+  border-color: #cacaca;
+  background-color: #fff;
+  -webkit-transition: all 0.12s, border-color 0.08s;
+  transition: all 0.12s, border-color 0.08s;
+}
+
+.signup__box__item__group__checks.etrans
+  input[type="checkbox"]:checked
+  + label:before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  top: -5px;
+  left: 5px;
+  border-radius: 0;
+  opacity: 1;
+  background: transparent;
+  border-color: transparent #5f90db #5f90db transparent;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.no-csstransforms
+  .signup__box__item__group__checks.etrans
+  input[type="checkbox"]:checked
+  + label:before {
+  /*content:"\2713";*/
+  content: "\2714";
+  top: 0;
+  left: 0;
+  width: 21px;
+  line-height: 21px;
+  color: #5f90db;
+  text-align: center;
+  border: 1px solid #5f90db;
+}
+
+.all__agree {
+  margin: 20px 0;
+}
+
+/* 화면 너비가 576~768 태블릿*/
+@media (max-width: 768px) {
+  .signup__group {
+    width: auto;
+    margin-top: 100px;
+  }
+
+  .signup__group__background {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .signup__group {
+    margin-top: 90px;
+  }
+}
