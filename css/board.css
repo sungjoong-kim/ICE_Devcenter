@@ -278,6 +278,12 @@
   width: 100%;
 }
 
+.board__write__title input::placeholder {
+  font-size: 15px;
+  font-weight: 400;
+  color: #999;
+}
+
 .board__write__header {
   display: flex;
   width: 100%;
@@ -318,6 +324,9 @@
 
   .board__list .title {
     text-indent: 10px;
+  }
+  .board__write__header {
+    border-top: 4px solid #666666;
   }
 
   .board__list .top .title {

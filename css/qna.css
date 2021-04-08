@@ -132,6 +132,24 @@
   padding: 7px;
 }
 
+.qna__group__name__input {
+  display: flex;
+  align-content: center;
+  width: 75%;
+  height: 50px;
+  border: 1px solid #b1b1b1;
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.qna__group__name__input::placeholder {
+  font-size: 15px;
+  font-weight: 400;
+  color: #999;
+}
+
+
 .board__page a.num {
   font-size: 15px;
   padding: 7px;
