@@ -48,15 +48,17 @@
   word-spacing: -2;
 }
 
+/* ------------- 반응형시작 -------------*/
 /* 화면 너비가 576~768 태블릿*/
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .modal__email__content__group {
     width: 90%;
     transform: translate(-50%, -50%);
   }
 }
+
 /* 화면 너비가 0~576 모바일*/
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .signup__box__item__group .signup__box__item__title {
     font-size: 15px;
     word-spacing: -2;

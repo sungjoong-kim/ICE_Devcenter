@@ -1,3 +1,79 @@
+/* 검색박스 */
+.search__bar__group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+  background-color: #f9f9f9;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+}
+
+.search__bar__sort {
+  position: relative;
+  width: 17%;
+  height: 33px;
+  color: #808080;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 15px;
+  margin-right: 10px;
+  padding: 5px;
+  background: #fff url("../image/select_arrow.jpg") no-repeat 97% 50%/23px auto;
+  -webkit-appearance: none; /* for chrome */
+  -moz-appearance: none; /*for firefox*/
+  appearance: none;
+}
+
+.search__bar__sort::-ms-expand {
+  display: none;
+}
+
+.search__bar__inputbox {
+  position: relative;
+  width: 45%;
+  height: 33px;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.search__bar__qna__inputbox {
+  position: relative;
+  width: 35%;
+  height: 33px;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.search__bar__btn {
+  position: relative;
+  width: 15%;
+  height: 33px;
+  background-color: #5f90db;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.search__bar__qna__btn {
+  position: relative;
+  width: 15%;
+  height: 33px;
+  background-color: #405069;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #fff;
+}
+
+/* 게시판 */
 .board__list__group {
   margin-top: 20px;
 }
@@ -18,37 +94,14 @@
   font-size: 1.4rem;
 }
 
-.bt__wrap {
-  margin-top: 30px;
-  text-align: center;
-  font-size: 0;
-}
-
-.bt__wrap a {
-  display: inline-block;
-  min-width: 80px;
-  margin-left: 10px;
-  padding: 10px;
-  border: 1px solid #000;
-  border-radius: 2px;
-  font-size: 1.4rem;
-}
-
-.bt__wrap a:first-child {
-  margin-left: 0;
-}
-
-.bt__wrap a.on {
-  background: #000;
-  color: #fff;
-}
-
 .board__list {
   width: 100%;
   border-top: 4px solid #5f90db;
 }
 
 .board__list > div {
+  display: flex;
+  justify-content: space-between;
   border-bottom: 1px solid #ddd;
   font-size: 0;
 }
@@ -66,6 +119,7 @@
   padding: 20px 0;
   text-align: center;
   font-size: 14px;
+  white-space: nowrap;
 }
 
 .board__list > div.top > div {
@@ -78,7 +132,7 @@
 }
 
 .board__list .title {
-  width: 70%;
+  width: 67%;
   text-align: left;
 }
 
@@ -91,7 +145,7 @@
 }
 
 .board__list .date {
-  width: 10%;
+  width: 13%;
 }
 
 .board__list .count {
@@ -159,7 +213,7 @@
   align-items: center;
   width: 70%;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -199,6 +253,7 @@
   padding: 20px 10px 50px 10px;
   min-height: 500px;
   font-size: 15px;
+  font-weight: 300;
 }
 
 .board__view__content__question {
@@ -207,6 +262,9 @@
   padding: 20px 10px;
   min-height: 250px;
   font-size: 15px;
+  font-weight: 300;
+  line-height: 1.4rem;
+  word-spacing: -1;
 }
 
 .board__view__content__answer {
@@ -226,18 +284,19 @@
 
 .board__view__remote__group {
   width: 100%;
+  font-size: 15px;
+  font-weight: 300;
 }
 
 .board__view__remote {
   display: flex;
   padding: 15px 10px;
-  font-size: 15px;
   border-bottom: 1px solid #ddd;
 }
 
 .board__view__remote__btn {
   width: 12%;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .board__view__remote__title {
@@ -247,6 +306,7 @@
   text-overflow: ellipsis;
 }
 
+/* ========= 게시판 상세보기 버튼 ============ */
 .board__view__content__btn__group {
   width: 100%;
   display: flex;
@@ -263,6 +323,7 @@
   border-radius: 5px;
 }
 
+/* ========= 게시판 쓰기 ============ */
 .board__write__title {
   display: flex;
   align-content: center;
@@ -293,7 +354,6 @@
 
 .board__write__content {
   width: 100%;
-  border-bottom: 2px solid #333333;
   padding: 20px 10px;
   min-height: 250px;
   font-size: 15px;
@@ -305,9 +365,119 @@
   font-size: 15px;
   border-bottom: 1px solid #ddd;
 }
-/* ========= 게시판 반응형 ============ */
 
-@media (max-width: 768px) {
+/* ========= 게시판 상세보기 버튼 ============ */
+.board__write__content__btn__group {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 50px 0;
+}
+
+.board__write__content__btn {
+  width: 150px;
+  height: 50px;
+  background-color: #2c91ef;
+  color: #ffffff;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+/* ========= QNA ============ */
+.qna__board__list__group {
+  margin-top: 20px;
+}
+
+.qna__board__list {
+  width: 100%;
+  border-top: 4px solid #5f90db;
+}
+
+.qna__board__list > div {
+  border-bottom: 1px solid #ddd;
+  font-size: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.qna__board__list > div.qna__board__header {
+  border-bottom: 1px solid #999;
+  display: flex;
+  justify-content: space-between;
+}
+
+.qna__board__list > div:last-child {
+  border-bottom: 1px solid #ddd;
+}
+
+.qna__board__list > div > div {
+  display: inline-block;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.qna__board__list > div.qna__board__header > div {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.qna__board__list .num {
+  width: 5%;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+.qna__board__list .title {
+  width: 50%;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.qna__board__list .division {
+  width: 10%;
+  margin: 0 10px;
+  white-space: nowrap;
+}
+
+.qna__board__list .qna__board__header .title {
+  text-align: center;
+}
+
+.qna__board__list .condition {
+  width: 10%;
+  white-space: nowrap;
+}
+
+.qna__board__list .writer {
+  width: 10%;
+}
+
+.qna__board__list .date {
+  width: 10%;
+  white-space: nowrap;
+}
+
+.qna__group__name__input {
+  display: flex;
+  align-content: center;
+  width: 75%;
+  height: 50px;
+  border: 1px solid #b1b1b1;
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.qna__group__name__input::placeholder {
+  font-size: 15px;
+  font-weight: 400;
+  color: #999;
+}
+
+/* ------------- 반응형시작 -------------*/
+/* 화면 너비가 576~768 태블릿*/
+@media screen and (max-width: 768px) {
   .board__list .num,
   .board__list .date,
   .board__list .count {
@@ -362,8 +532,8 @@
   .board__view__remote__title {
     width: 70%;
   }
-  
-    .board__write__header {
+
+  .board__write__header {
     padding: 20px 0;
   }
 
@@ -373,5 +543,34 @@
 
   .board__write__content {
     padding: 20px 0;
+  }
+
+  /* qna */
+  .qna__board__list .num,
+  .qna__board__list .date,
+  .qna__board__list .count,
+  .qna__board__list .writer {
+    display: none;
+  }
+
+  .qna__board__list .title {
+    width: 65%;
+  }
+
+  .qna__board__list .division {
+    width: 20%;
+  }
+
+  .qna__board__list .condition {
+    width: 15%;
+    margin: 0 10px;
+  }
+
+  .qna__board__list .title {
+    text-indent: 10px;
+  }
+
+  .qna__board__list .top .title {
+    text-indent: 0;
   }
 }

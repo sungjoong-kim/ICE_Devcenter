@@ -52,7 +52,28 @@ hr {
   left: -13.7px;
 }
 
-/* 스크롤막기 */
+/* 유튜브비디오 비율유지 */
+
+.iframe__rate {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.iframe__rate > div {
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+
+.iframe__rate > div iframe {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 /* 헤더최상단 */
 
@@ -241,7 +262,6 @@ hr {
 }
 
 #menu ul li a:hover {
-  font-weight: bold;
   color: #5f90db;
 }
 
@@ -862,55 +882,65 @@ input#tab05:checked ~ ul > li:nth-child(5) .sideicon .sidearrow::after {
   padding: 10px;
   margin-left: -1px;
   font-size: 16px;
-  transition: 00.2s;
+  transition: all 0.3s;
 }
 
-.item:hover {
+.item__background {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: rgb(52 145 239 / 0.03);
+  transition: 0.3s;
+}
+
+.item__background:hover {
+  background: rgb(52 145 239 / 0.5);
+}
+
+.item__background:hover + .item__text {
   font-weight: 500;
   color: #5f90db;
 }
 
+.item__background img {
+  position: absolute;
+  width: 80%;
+}
+
+/* .item:hover {
+  font-weight: 500;
+  color: #5f90db;
+} */
+
 .item p {
-  margin-top: 2px;
+  margin-top: 15px;
+  font-weight: 400;
+  text-align: center;
 }
 
 /* 게시판 */
 
-/* container */
-
-.container_idx {
+.container__mainpage {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-#idx_top {
-  width: 100%;
-  padding: 150px 0;
-  text-align: center;
-}
-
-#idx_top strong {
-  font-size: 60px;
-  letter-spacing: -2px;
-}
-
-#idx_top p {
-  margin-top: 20px;
-  font-size: 20px;
-}
-
-#idx_board_wrap {
+#mainpage__board__wrap {
   padding: 30px 0;
 }
 
-#idx_board_wrap > div {
+#mainpage__board__wrap > div {
   margin: 0 auto;
   font-size: 0;
   padding: 0 10px;
 }
 
-.idx_board {
+.mainpage__board {
   display: inline-block;
   background: #fff;
   border: 1px solid #e1e1e1;
@@ -919,55 +949,55 @@ input#tab05:checked ~ ul > li:nth-child(5) .sideicon .sidearrow::after {
   margin-bottom: 20px;
 }
 
-.idx_board .title {
+.mainpage__board .title {
   position: relative;
   padding: 10px 20px;
   border-bottom: 1px solid #e1e1e1;
 }
 
-.idx_board .title a {
+.mainpage__board .title a {
   display: inline-block;
   vertical-align: middle;
 }
 
-.idx_board .title .name {
+.mainpage__board .title .name {
   font-size: 20px;
   font-weight: 400;
   letter-spacing: -2px;
 }
 
-.idx_board .title .more {
+.mainpage__board .title .more {
   position: absolute;
   top: 24px;
   right: 20px;
 }
 
-.idx_board .title .more img {
+.mainpage__board .title .more img {
   width: 18px;
   margin-top: -4px;
   margin-left: 3px;
 }
 
-.idx_board .list {
+.mainpage__board .list {
   padding: 20px;
 }
 
-.idx_board .list ul li {
+.mainpage__board .list ul li {
   margin-top: 10px;
   padding-left: 7px;
   font-size: 0;
 }
-.idx_board .list ul li:first-child {
+.mainpage__board .list ul li:first-child {
   margin-top: 0;
 }
 
-.idx_board .list a,
-.idx_board .list span {
+.mainpage__board .list a,
+.mainpage__board .list span {
   display: inline-block;
   vertical-align: middle;
 }
 
-.idx_board .list a {
+.mainpage__board .list a {
   width: 70%;
   font-size: 14px;
   overflow: hidden;
@@ -975,7 +1005,7 @@ input#tab05:checked ~ ul > li:nth-child(5) .sideicon .sidearrow::after {
   white-space: nowrap;
 }
 
-.idx_board .list span {
+.mainpage__board .list span {
   width: 30%;
   text-align: right;
   font-size: 12px;
@@ -983,7 +1013,7 @@ input#tab05:checked ~ ul > li:nth-child(5) .sideicon .sidearrow::after {
   white-space: nowrap;
 }
 
-.idx_board .edu__group {
+.mainpage__board .edu__group {
   display: flex;
   padding: 20px;
 }
@@ -992,18 +1022,18 @@ input#tab05:checked ~ ul > li:nth-child(5) .sideicon .sidearrow::after {
   height: auto;
 }
 
-.idx_board .edu__group .edu__text {
+.mainpage__board .edu__group .edu__text {
   margin-left: 15px;
   white-space: nowrap;
 }
 
-.idx_board .edu__group .edu__text > span {
+.mainpage__board .edu__group .edu__text > span {
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 10px;
 }
 
-.idx_board .edu__group .edu__text > p {
+.mainpage__board .edu__group .edu__text > p {
   font-size: 14px;
   margin-top: 5px;
 }
@@ -1175,72 +1205,6 @@ input#tab05:checked ~ ul > li:nth-child(5) .sideicon .sidearrow::after {
   margin-bottom: 20px;
 }
 
-.search__bar__group {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 70px;
-  background-color: #f9f9f9;
-  border: 1px solid #ebebeb;
-  border-radius: 5px;
-}
-
-.search__bar__sort {
-  position: relative;
-  width: 17%;
-  height: 33px;
-  color: #808080;
-  border: 1px solid #ebebeb;
-  border-radius: 5px;
-  text-align: center;
-  font-size: 15px;
-  margin-right: 10px;
-  padding: 5px;
-}
-
-.search__bar__inputbox {
-  position: relative;
-  width: 45%;
-  height: 33px;
-  border: 1px solid #ebebeb;
-  border-radius: 5px;
-  margin-right: 10px;
-  font-size: 15px;
-  padding: 10px;
-}
-
-.search__bar__qna__inputbox {
-  position: relative;
-  width: 35%;
-  height: 33px;
-  border: 1px solid #ebebeb;
-  border-radius: 5px;
-  margin-right: 10px;
-  font-size: 15px;
-  padding: 10px;
-}
-
-.search__bar__btn {
-  position: relative;
-  width: 15%;
-  height: 33px;
-  background-color: #5f90db;
-  border-radius: 5px;
-  font-size: 15px;
-  color: #fff;
-}
-
-.search__bar__qna__btn {
-  position: relative;
-  width: 15%;
-  height: 33px;
-  background-color: #405069;
-  border-radius: 5px;
-  font-size: 15px;
-  color: #fff;
-}
-
 .map__group {
   margin-bottom: 50px;
   border: 1px solid #d5dbe2;
@@ -1328,10 +1292,8 @@ footer {
 }
 
 /* ------------- 반응형시작 -------------*/
-
 /* 화면 너비가 768~960px */
-
-@media (max-width: 960px) {
+@media screen and (max-width: 960px) {
   .login__box .login .login__id {
     width: 40%;
     margin-left: 20px;
@@ -1357,7 +1319,7 @@ footer {
     height: 200px;
   }
 
-  .idx_board {
+  .mainpage__board {
     width: 100%;
   }
 
@@ -1381,7 +1343,7 @@ footer {
 }
 
 /* 화면 너비가 576~768 태블릿*/
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .tnd {
     display: none;
   }
@@ -1530,7 +1492,7 @@ footer {
 }
 
 /* 화면 너비가 0~576 모바일*/
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   #container {
     margin: 70px auto 0 auto;
     height: 400px;
@@ -1567,11 +1529,11 @@ footer {
     width: 90%;
   }
 
-  .idx_board .edu__group {
+  .mainpage__board .edu__group {
     display: block;
   }
 
-  .idx_board .edu__group .edu__text {
+  .mainpage__board .edu__group .edu__text {
     margin-left: 0px;
     margin-top: 5px;
   }

@@ -33,24 +33,27 @@ fieldset {
   align-items: flex-end;
   font-size: 20px;
   font-weight: 500;
-  width: 100%;
+  width: 99%;
   color: #333333;
 }
 
 .signup__step p {
+  word-spacing: -5;
   font-size: 15px;
   font-weight: 500;
   letter-spacing: 3px;
 }
 
-.signup__step .signup__step__on {
+.signup__step p::first-letter {
+  font-size: 16px;
+  font-weight: 600;
   color: #5f90db;
 }
 
 .signup__box__item__title {
   margin: 20px 0 5px 0;
   font-size: 17px;
-  font-weight: 600;
+  font-weight: 500;
   color: #333333;
 }
 
@@ -104,6 +107,7 @@ fieldset {
 .signup__box__item {
   overflow-x: hidden;
   overflow-y: auto;
+  text-align: justify;
   height: 280px;
   margin-top: 10px;
   padding: 15px;
@@ -126,8 +130,6 @@ fieldset {
   margin-top: 20px;
 }
 
-.allagree__text {
-}
 .where {
   display: block;
   margin: 25px 15px;
@@ -267,8 +269,9 @@ fieldset {
   margin: 20px 0;
 }
 
+/* ------------- 반응형시작 -------------*/
 /* 화면 너비가 576~768 태블릿*/
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .signup__group {
     width: auto;
     margin-top: 100px;
@@ -280,7 +283,8 @@ fieldset {
   }
 }
 
-@media (max-width: 576px) {
+/* 화면 너비가 0~576 태블릿*/
+@media screen and (max-width: 576px) {
   .signup__group {
     margin-top: 90px;
   }

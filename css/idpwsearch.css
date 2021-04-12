@@ -5,10 +5,14 @@
   margin-top: 50px;
 }
 
+/* =====탭메뉴처리===== */
+
+/* input을 안보이게 처리 */
 input[type="radio"] {
   display: none;
-} /* input을 안보이게 처리 */
+}
 
+/* 버튼 공통 속성 */
 input[type="radio"] + label {
   width: 40%;
   display: inline-block;
@@ -18,14 +22,16 @@ input[type="radio"] + label {
   font-size: 16px;
   cursor: pointer;
   border-bottom: 1px solid #999;
-} /* 버튼 공통 속성 */
+}
 
+/* 선택된 버튼속성 */
 input[type="radio"]:checked + label {
   background: #fff;
   color: #000;
   border-bottom: 2px solid #000;
-} /* 선택된 버튼속성 */
+}
 
+/* 컨텐츠박스 공통 속성 */
 .searchconbox {
   margin: 100%;
   height: auto;
@@ -35,14 +41,17 @@ input[type="radio"]:checked + label {
   font-size: 12px;
   box-sizing: border-box;
 }
-/* 컨텐츠박스 공통 속성 */
+
+/* 인풋에 체크가 해당 요소보이게 설정 */
 input[id="idtab01"]:checked ~ .idsearch {
   display: block;
 }
-/* 인풋에 체크가 해당 요소보이게 설정 */
+
 input[id="pwtab02"]:checked ~ .pwsearch {
   display: block;
 }
+
+/* =====아이디패스워드CSS시작===== */
 
 .idpw__group {
   position: relative;
@@ -50,6 +59,7 @@ input[id="pwtab02"]:checked ~ .pwsearch {
   width: 100%;
   background: #fff;
 }
+
 .idpw__group .title {
   font-size: 35px;
   text-align: center;
@@ -58,15 +68,18 @@ input[id="pwtab02"]:checked ~ .pwsearch {
   user-select: none;
   border-radius: 15px 15px 0 0;
 }
+
 .idpw__group form {
   padding: 10px;
 }
+
 .idpw__group form .field {
   height: 60px;
   width: 100%;
   margin-top: 20px;
   position: relative;
 }
+
 .idpw__group form .field input {
   height: 100%;
   width: 100%;
@@ -77,10 +90,12 @@ input[id="pwtab02"]:checked ~ .pwsearch {
   border-radius: 5px;
   transition: all 0.3s ease;
 }
+
 .idpw__group form .field input:focus,
 form .field input:valid {
   border-color: #4158d0;
 }
+
 .idpw__group form .field label {
   position: absolute;
   top: 50%;
@@ -106,6 +121,7 @@ form .field input:valid {
   background: #fff;
   border-radius: 15px;
 }
+
 .idpw__group .title {
   font-size: 35px;
   text-align: center;
@@ -114,9 +130,11 @@ form .field input:valid {
   user-select: none;
   border-radius: 15px 15px 0 0;
 }
+
 .idpw__group form {
   padding: 10px;
 }
+
 .idpw__group form .field {
   height: 60px;
   width: 100%;
@@ -127,6 +145,7 @@ form .field input:valid {
 .idpw__group form .confirm {
   margin-top: 50px;
 }
+
 .idpw__group form .field input {
   height: 100%;
   width: 100%;
@@ -137,10 +156,12 @@ form .field input:valid {
   border-radius: 5px;
   transition: all 0.3s ease;
 }
+
 .idpw__group form .field input:focus,
 form .field input:valid {
   border-color: #4158d0;
 }
+
 .idpw__group form .field label {
   position: absolute;
   top: 50%;
@@ -153,8 +174,9 @@ form .field input:valid {
   transition: all 0.3s ease;
 }
 
-/* 화면 너비가 576~768 태블릿*/
-@media (max-width: 768px) {
+/* ------------- 반응형시작 -------------*/
+/* 화면 너비가 0~768 태블릿*/
+@media screen and (max-width: 768px) {
   .tab__content {
     margin-top: 30px;
   }

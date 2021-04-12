@@ -68,32 +68,28 @@
             <section>
                 <div class="ice__content" style="padding-top: 0;">
                     <div class="ask__group">
-                        <div class="ask__group__name">
+                        <form action="#">
+                        <div class="ask__group__item">
                             <span>이름</span>
-                            <input type="text" placeholder="아이온" maxlength="15" class="ask__group__name__input"></input>
+                            <input type="text" placeholder="아이온" maxlength="15" class="ask__group__item__input"></input>
                         </div>
-
-                        <div class="ask__group__name">
+                        <div class="ask__group__item">
                             <span>회사명</span>
                             <input type="text" placeholder="아이온커뮤니케이션즈" maxlength="15"
-                                class="ask__group__name__input"></input>
+                                class="ask__group__item__input"></input>
                         </div>
-
-                        <div class="ask__group__name">
+                        <div class="ask__group__item">
                             <span>이메일</span>
                             <input type="text" placeholder="example@i-on.net" maxlength="15"
-                                class="ask__group__name__input"></input>
+                                class="ask__group__item__input"></input>
                         </div>
-
-                        <div class="ask__group__name" style="border-bottom: 2px solid #7b7b7b;">
+                        <div class="ask__group__item" style="border-bottom: 2px solid #7b7b7b;">
                             <span>휴대폰</span>
                             <input type="text" placeholder="010-1234-5678" maxlength="15"
-                                class="ask__group__name__input"></input>
+                                class="ask__group__item__input"></input>
                         </div>
-
-                        <div class="ask__group__name">
+                        <div class="ask__group__item">
                             <span>문의종류</span>
-
                             <select class="search__bar__ask">
                                 <option value="none">선택</option>
                                 <option value="#">제품문의</option>
@@ -102,35 +98,29 @@
                                 <option value="#">기타문의</option>
                             </select>
                         </div>
-
-                        <div class="ask__group__name">
+                        <div class="ask__group__item">
                             <span>제목</span>
                             <input type="text" placeholder="제목을 입력해 주세요(30자이내)" maxlength="30"
-                                class="ask__group__name__input"></input>
+                                class="ask__group__item__input"></input>
                         </div>
-
-                        <div class="ask__group__name" style="height: 500px; border-bottom: 2px solid #7b7b7b;">
+                        <div class="ask__group__item" style="height: 500px; border-bottom: 2px solid #7b7b7b;">
                             <span>내용</span>
-                            <textarea type="text" placeholder="" class="ask__group__name__input"
+                            <textarea type="text" placeholder="" class="ask__group__item__input"
                                 style="height: 470px; resize: none;"></textarea>
                         </div>
-
-
-                        <div class="ask__group__name" style="border-bottom: 2px solid #7b7b7b;">
+                        <div class="ask__group__item" style="border-bottom: 2px solid #7b7b7b;">
                             <span>파일첨부</span>
                             <div class="file__box__group">
                                 <div class="file__box">
                                     <input class="upload__name" value="이미지를 업로드 해 주세요." disabled="disabled">
-                                    <label for="input__file" class="input__file__btn">업로드</label> 
-                                    <input type="file" id="input__file" class="file__hidden"> 
+                                    <label for="input__file" class="input__file__btn">업로드</label>
+                                    <input type="file" id="input__file" class="file__hidden">
                                 </div>
                             </div>
-
                         </div>
                         <div class="ask__personalinformation">
                             <span>개인정보 수집·이용에 대한 안내</span>
-                            <p>(주)아이온커뮤니케이션즈는 이용자 문의를 처리하기 위해 다음과 같이 개인정보를 수집 및 이용하며, 이를 위한 최소한의 개인정보이므로 동의를 해주셔야 처리가
-                                가능합니다. (선택 항목은 동의하지 않으셔도 문의 접수가 가능합니다.)
+                            <p>(주)아이온커뮤니케이션즈는 이용자 문의를 처리하기 위해 다음과 같이 개인정보를 수집 및 이용하며, 이를 위한 최소한의 개인정보이므로 동의를 해주셔야 처리가 가능합니다. (선택 항목은 동의하지 않으셔도 문의 접수가 가능합니다.)
                             </p>
                             <div class="ask__personalinformation__purpose">
                                 <div class="ask__personalinformation__purpose__text">
@@ -146,48 +136,41 @@
                                     <p>관련 법령 또는 회사 내부방침에 의해 보존 필요 시 까지 보관, 그외 지체없이 파기</p><br>
                                 </div>
                             </div>
-
-
                             <p class="ask__personalinformation__purpose__link">더 자세한 내용에 대해서는 <a href="individual.html"
                                     target="_blank">(주)아이온커뮤니케이션즈의 개인정보처리방침</a>을 참고하시기 바랍니다</p>
-
-                                    <div class="signup__box__item__group__checks etrans">
-                                        <input type='checkbox' name='signupagree' alue='agree' id="ex_chk3">
-                                        <label for="ex_chk3">위 내용에 동의합니다.</label>
-                                    </div>
-
-                            <!-- <p class="ask__personalinformation__purpose__checkbox"><input type="checkbox" name="xxx"
-                                    value="yyy"> 위 내용에 동의합니다</p> -->
-
+                            <div class="signup__box__item__group__checks etrans">
+                                <input type='checkbox' name='signupagree' alue='agree' id="ex_chk3">
+                                <label for="ex_chk3">위 내용에 동의합니다.</label>
+                            </div>
                         </div>
-
                         <div class="ask__btn__group">
-                            <input type="button" class="ask__btn" value="제출하기" onclick="alert('개발전입니다')">
+                            <input type="submit" class="ask__btn" value="제출하기" onclick="alert('개발전입니다')">
                         </div>
-
+                    </form>
                     </div>
                 </div>
+
             </section>
         </div>
     </div>
 </main>
 
 <script>
-/* 파일명 가져오기 start */
-var fileTarget = $('.file__box .file__hidden');
-	
-	fileTarget.on('change', function(){
-		if(window.FileReader){
-			// 파일명 추출
-			var filename = $(this)[0].files[0].name;
-		} 
-		else {
-			// Old IE 파일명 추출
-			var filename = $(this).val().split('/').pop().split('\\').pop();
-		};
+    /* 파일명 가져오기 start */
+    var fileTarget = $('.file__box .file__hidden');
 
-		$(this).siblings('.upload__name').val(filename);
-	});
+    fileTarget.on('change', function () {
+        if (window.FileReader) {
+            // 파일명 추출
+            var filename = $(this)[0].files[0].name;
+        }
+        else {
+            // Old IE 파일명 추출
+            var filename = $(this).val().split('/').pop().split('\\').pop();
+        };
+
+        $(this).siblings('.upload__name').val(filename);
+    });
 	/* 파일명 가져오기 end */
 
 </script>

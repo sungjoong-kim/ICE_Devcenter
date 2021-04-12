@@ -1,4 +1,4 @@
-.qna__board__list__group {
+/* .qna__board__list__group {
   margin-top: 20px;
 }
 
@@ -165,54 +165,4 @@
 }
 
 .board__page a:first-child {
-}
-
-@media (max-width: 768px) {
-  .board_wrap {
-    width: 100%;
-    min-width: 320px;
-    padding: 0 30px;
-    box-sizing: border-box;
-  }
-
-  .qna__board__list .num,
-  .qna__board__list .date,
-  .qna__board__list .count,
-  .qna__board__list .writer {
-    display: none;
-  }
-
-  .qna__board__list .title {
-    width: 65%;
-  }
-
-  .qna__board__list .division {
-    width: 20%;
-  }
-
-  .qna__board__list .condition {
-    width: 15%;
-    margin: 0 10px;
-  }
-
-  .qna__board__list .title {
-    text-indent: 10px;
-  }
-
-  .qna__board__list .top .title {
-    text-indent: 0;
-  }
-  .board__page {
-    margin: 20px 0;
-  }
-  .board__page a {
-    width: 26px;
-    height: 26px;
-  }
-
-  .board__page a.bt {
-  }
-
-  .board__page a.num {
-    margin: 0px 5px;
-  }
+} */

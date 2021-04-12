@@ -1,7 +1,5 @@
-.ask__group {
-}
-
-.ask__group__name {
+/* ask input box */
+.ask__group__item {
   width: 100%;
   height: 80px;
   border-bottom: 1px solid #f1f3f9;
@@ -9,7 +7,7 @@
   align-items: center;
 }
 
-.ask__group__name span {
+.ask__group__item span {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +17,7 @@
   font-weight: 400;
 }
 
-.ask__group__name__input {
+.ask__group__item__input {
   display: flex;
   align-content: center;
   width: 75%;
@@ -30,11 +28,13 @@
   font-size: 15px;
 }
 
-.ask__group__name__input::placeholder {
+.ask__group__item__input::placeholder {
   font-size: 15px;
   font-weight: 400;
   color: #999;
 }
+
+/* 셀렉박스 */
 
 .search__bar__ask {
   position: relative;
@@ -48,6 +48,7 @@
   padding: 10px;
 }
 
+/* 파일업로드 */
 .file__box__group {
   width: 75%;
   height: 50px;
@@ -87,12 +88,12 @@
   border-radius: 5px;
 }
 
-.input__file__index {
+/* .input__file__index {
   width: 100%;
   font-size: 13px;
   font-weight: 300;
   word-spacing: -1px;
-}
+} */
 
 /* 파일 이름 */
 .file__box .upload__name {
@@ -113,6 +114,7 @@
   box-sizing: border-box;
 }
 
+/* 개인정보처리방침 */
 .ask__personalinformation {
   width: 100%;
   padding: 20px;
@@ -160,6 +162,8 @@
   color: #2c91ef;
   font-weight: 600;
 }
+
+/* 문의하기버튼 */
 .ask__btn__group {
   width: 100%;
   display: flex;
@@ -176,16 +180,18 @@
   border-radius: 5px;
 }
 
+/* ------------- 반응형시작 -------------*/
 /* 화면 너비가 576~768 태블릿*/
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .ask__personalinformation {
     padding: 20px 0 20px 0;
   }
 
-  .ask__group__name span {
+  .ask__group__item span {
     width: 20%;
   }
-  .ask__group__name__input,
+
+  .ask__group__item__input,
   .search__bar__ask {
     margin-left: 10px;
     width: 80%;
@@ -194,15 +200,12 @@
   .ask__personalinformation__purpose__link {
     margin: 20px 0 20px 0;
   }
+
   .file__box__group {
     width: 80%;
-    margin-left: 10px;
   }
+
   .ask__personalinformation > p {
     margin-bottom: 20px;
   }
-}
-
-/* 화면 너비가 0~576 모바일*/
-@media (max-width: 576px) {
 }

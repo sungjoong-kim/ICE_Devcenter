@@ -132,8 +132,10 @@ form .signup-link a:hover {
   text-decoration: underline;
 }
 
+/* ------------- 반응형시작 -------------*/
+
 /* 화면 너비가 576~768 태블릿*/
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .iogin__group,
   .idpw__group {
     margin-top: 100px;
@@ -144,8 +146,9 @@ form .signup-link a:hover {
     height: 100%;
   }
 }
+
 /* 화면 너비가 0~576 태블릿*/
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .iogin__group,
   .idpw__group {
     margin-top: 90px;
