@@ -479,6 +479,11 @@
 /* ------------- 반응형시작 -------------*/
 /* 화면 너비가 576~768 태블릿*/
 @media screen and (max-width: 768px) {
+  
+  .search__bar__sort {
+  width: 100px;
+  }
+  
   .board__list .num,
   .board__list .date,
   .board__list .count {
