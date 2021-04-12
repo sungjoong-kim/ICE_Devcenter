@@ -1483,7 +1483,7 @@ footer {
   }
 
   .search__bar__sort {
-    display: none;
+    width: 25%
   }
 
   .search__bar__inputbox {
