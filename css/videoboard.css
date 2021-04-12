@@ -170,9 +170,6 @@ hr {
   .eduvideo__item {
     width: 49%;
   }
-  .eduvideo__item p {
-    min-height: 70px;
-  }
 
   .casestudy__item {
     width: 49%;
@@ -188,8 +185,9 @@ hr {
   .eduvideo__item {
     width: 100%;
   }
+  
   .eduvideo__item p {
-    min-height: 0px;
+    min-height: 90px;
   }
 
   .casestudy__item {
