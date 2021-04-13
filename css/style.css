@@ -23,6 +23,8 @@ a {
   color: inherit;
 }
 
+input,
+textarea,
 input:focus,
 textarea:focus {
   outline: none;
