@@ -28,11 +28,13 @@
   font-size: 15px;
 }
 
+.file__box .upload__name::placeholder,
 .ask__group__item__input::placeholder {
   font-size: 15px;
   font-weight: 400;
   color: #999;
 }
+
 
 /* 셀렉박스 */
 
