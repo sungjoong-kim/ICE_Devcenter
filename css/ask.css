@@ -28,6 +28,7 @@
   font-size: 15px;
 }
 
+.search__bar__ask::placeholder,
 .file__box .upload__name::placeholder,
 .ask__group__item__input::placeholder {
   font-size: 15px;
