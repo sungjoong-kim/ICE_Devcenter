@@ -70,6 +70,10 @@
   color: #fff;
 }
 
+.search__bar__btn:hover {
+  background-color: #3b6bb3;
+}
+
 .search__bar__qna__btn {
   position: relative;
   width: 15%;
