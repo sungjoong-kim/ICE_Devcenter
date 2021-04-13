@@ -22,10 +22,16 @@
   font-size: 15px;
   margin-right: 10px;
   padding: 5px;
-  background: #fff url("../image/select_arrow.jpg") no-repeat 97% 50%/23px auto;
+  background: #fff url("../image/select_arrow.png") no-repeat 97% 50%/23px auto;
   -webkit-appearance: none; /* for chrome */
   -moz-appearance: none; /*for firefox*/
   appearance: none;
+}
+
+.search__bar__sort::placeholder {
+  font-size: 15px;
+  font-weight: 400;
+  color: #999;
 }
 
 .search__bar__sort::-ms-expand {
@@ -479,13 +485,28 @@
 /* ------------- 반응형시작 -------------*/
 /* 화면 너비가 576~768 태블릿*/
 @media screen and (max-width: 768px) {
-  
   .search__bar__sort {
-  width: 100px;
+    width: 100px;
   }
-  
+
+  .search__bar__inputbox {
+    width: 50%;
+  }
+
+  .search__bar__qna__inputbox {
+    width: 50%;
+  }
+
+  .search__bar__btn {
+    width: 20%;
+  }
+
+  .search__bar__qna__btn {
+    width: 20%;
+  }
+
   .board__list .num,
-  .board__list .date,
+  .board__list .writer,
   .board__list .count {
     display: none;
   }
@@ -494,7 +515,7 @@
     width: 80%;
   }
 
-  .board__list .writer {
+  .board__list .date {
     width: 20%;
   }
 
@@ -578,5 +599,15 @@
 
   .qna__board__list .top .title {
     text-indent: 0;
+  }
+}
+
+/* 화면 너비가 0~400 모바일*/
+@media screen and (max-width: 350px) {
+  .search__bar__sort {
+    display: none;
+  }
+  .search__bar__inputbox {
+    width: 75%;
   }
 }

@@ -1482,26 +1482,6 @@ footer {
     border-top: 4px solid #666666;
   }
 
-  .search__bar__sort {
-    width: 25%
-  }
-
-  .search__bar__inputbox {
-    width: 70%;
-  }
-
-  .search__bar__qna__inputbox {
-    width: 50%;
-  }
-
-  .search__bar__btn {
-    width: 20%;
-  }
-
-  .search__bar__qna__btn {
-    width: 20%;
-  }
-
   .footer__text > .pc {
     display: none;
   }
@@ -1571,5 +1551,33 @@ footer {
 
   .map__index {
     display: none;
+  }
+}
+
+/* 화면 너비가 0~400 모바일*/
+@media screen and (max-width: 400px) {
+  footer {
+    height: 600px;
+  }
+
+  .footer__text {
+    text-align: left;
+    margin-bottom: 50px;
+  }
+
+  .footer__button {
+    display: block;
+  }
+
+  .ff ~ .ff::before {
+    display: none;
+  }
+}
+
+/* 화면 너비가 0~400 모바일*/
+@media screen and (max-width: 350px) {
+  .item__background {
+    width: 70px;
+    height: 70px;
   }
 }

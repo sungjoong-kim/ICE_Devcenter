@@ -109,7 +109,7 @@ form .field input:valid {
 }
 
 .idpw__group__background {
-  margin: auto;
+  margin: 0 auto 100px auto;
   height: 85vh;
   width: 500px;
 }
