@@ -84,7 +84,6 @@ document.documentElement.addEventListener('touchend', function (event) {
         }
 
         // faq
-
         $(document).ready(function () {
             $(".card__header").click(function () {
                 // self clicking close

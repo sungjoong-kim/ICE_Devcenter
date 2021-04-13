@@ -23,4 +23,9 @@
   color: #ffffff;
   font-size: 17px;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.edu__btn:hover {
+  background-color: #3b6bb3;
 }
