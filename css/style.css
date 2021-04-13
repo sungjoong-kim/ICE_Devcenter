@@ -23,6 +23,13 @@ a {
   color: inherit;
 }
 
+input:focus,
+textarea:focus {
+  outline: none;
+  -webkit-appearance: none;
+  box-shadow: none;
+}
+
 /* 라인 */
 hr {
   border: 0;

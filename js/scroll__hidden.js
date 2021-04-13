@@ -47,3 +47,38 @@ document.documentElement.addEventListener('touchend', function (event) {
         $('body').removeClass('scroll__hidden');
     });
 
+    /* 파일명 가져오기 start */
+    var fileTarget = $('.file__box .file__hidden');
+
+    fileTarget.on('change', function () {
+        if (window.FileReader) {
+            // 파일명 추출
+            var filename = $(this)[0].files[0].name;
+        }
+        else {
+            // Old IE 파일명 추출
+            var filename = $(this).val().split('/').pop().split('\\').pop();
+        };
+
+        $(this).siblings('.upload__name').val(filename);
+    });
+	/* 파일명 가져오기 end */
+
+
+        // 가입 단계나누기
+        $("#signup__next").on('click', function () {
+            $('#singstep01').hide('');
+            $('#singstep02').show('');
+        });
+    
+        // 전체동의하기
+        function selectAll(selectAll) {
+            const checkboxes
+                = document.getElementsByName("signupagree");
+    
+            checkboxes.forEach((checkbox) => {
+                checkbox.checked = selectAll.checked;
+            })
+    
+    
+        }
