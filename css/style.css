@@ -27,6 +27,7 @@ input,
 textarea,
 input:focus,
 textarea:focus {
+  border: 1px solid #b1b1b1;
   outline: none;
   -webkit-appearance: none;
   box-shadow: none;
