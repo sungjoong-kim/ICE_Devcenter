@@ -36,9 +36,7 @@
   color: #999;
 }
 
-
 /* 셀렉박스 */
-
 .search__bar__ask {
   position: relative;
   width: 40%;
@@ -49,6 +47,11 @@
   text-align: center;
   font-size: 15px;
   padding: 10px;
+  background: url(../image/up-and-down.png) no-repeat 98% 50%;
+  border-radius: 0px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 /* 파일업로드 */

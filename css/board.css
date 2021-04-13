@@ -82,6 +82,7 @@
   border-radius: 5px;
   font-size: 15px;
   color: #fff;
+  margin-left: 10px;
 }
 
 /* 게시판 */
@@ -491,14 +492,17 @@
 @media screen and (max-width: 768px) {
   .search__bar__sort {
     width: 100px;
+    margin-right: 5px;
   }
 
   .search__bar__inputbox {
     width: 50%;
+    margin-right: 5px;
   }
 
   .search__bar__qna__inputbox {
     width: 50%;
+    margin-right: 5px;
   }
 
   .search__bar__btn {
@@ -507,6 +511,7 @@
 
   .search__bar__qna__btn {
     width: 20%;
+    margin-left: 5px;
   }
 
   .board__list .num,
