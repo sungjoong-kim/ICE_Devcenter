@@ -328,15 +328,14 @@
                                 <input type="text" placeholder="제목 입력">
                             </div>
                         </div>
-                        <div class="board__write__fileupload">
 
+                        <div class="board__write__fileupload">
                             <div class="file__box">
                                 <input class="upload__name" value="파일을 업로드 해 주세요." disabled="disabled">
                                 <label for="input__file" class="input__file__btn">업로드</label>
                                 <input type="file" id="input__file" class="file__hidden">
                             </div>
                         </div>
-
 
                         <div class="board__write__content">
                             <textarea type="text" placeholder="내용 입력" class="qna__group__name__input"
@@ -348,32 +347,13 @@
                                 onclick="alert('개발전입니다')">
                         </div>
 
-
                     </div>
                 </div>
             </section>
         </div>
     </div>
 </main>
-<script>
-    /* 파일명 가져오기 start */
-    var fileTarget = $('.file__box .file__hidden');
-        
-        fileTarget.on('change', function(){
-            if(window.FileReader){
-                // 파일명 추출
-                var filename = $(this)[0].files[0].name;
-            } 
-            else {
-                // Old IE 파일명 추출
-                var filename = $(this).val().split('/').pop().split('\\').pop();
-            };
-    
-            $(this).siblings('.upload__name').val(filename);
-        });
-        /* 파일명 가져오기 end */
-    
-    </script>
+
 <!-- ================ 푸터시작 =================== -->
 <footer>
     <div class="container">

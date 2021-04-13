@@ -28,6 +28,10 @@
   appearance: none;
 }
 
+.search__bar__ask::placeholder,
+.ask__group__item__input::placeholder,
+.qna__group__name__input::placeholder,
+.board__write__title input::placeholder,
 .search__bar__sort::placeholder {
   font-size: 15px;
   font-weight: 400;
@@ -90,8 +94,8 @@
   margin-top: 20px;
 }
 
-.notice__view__group {
-}
+/* .notice__view__group {
+} */
 
 .board__title {
   margin-bottom: 30px;
@@ -200,8 +204,8 @@
   border-radius: 100px;
 }
 
-.board__page a:first-child {
-}
+/* .board__page a:first-child {
+} */
 
 /* ========= 게시판 상세보기 ============ */
 .ice__view__content {
@@ -351,12 +355,6 @@
   width: 100%;
 }
 
-.board__write__title input::placeholder {
-  font-size: 15px;
-  font-weight: 400;
-  color: #999;
-}
-
 .board__write__header {
   display: flex;
   width: 100%;
@@ -481,12 +479,6 @@
   font-size: 15px;
 }
 
-.qna__group__name__input::placeholder {
-  font-size: 15px;
-  font-weight: 400;
-  color: #999;
-}
-
 /* ------------- 반응형시작 -------------*/
 /* 화면 너비가 576~768 태블릿*/
 @media screen and (max-width: 768px) {
@@ -546,8 +538,8 @@
     height: 26px;
   }
 
-  .board__page a.bt {
-  }
+  /* .board__page a.bt {
+  } */
 
   .board__page a.num {
     margin: 0px 5px;
@@ -576,8 +568,8 @@
   .board__write__fileupload {
     padding: 20px 0;
   }
-  
-   .board__write__fileupload > .file__box {
+
+  .board__write__fileupload > .file__box {
     margin-left: 0;
   }
 

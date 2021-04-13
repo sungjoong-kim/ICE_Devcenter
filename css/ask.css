@@ -28,14 +28,6 @@
   font-size: 15px;
 }
 
-.search__bar__ask::placeholder,
-.file__box .upload__name::placeholder,
-.ask__group__item__input::placeholder {
-  font-size: 15px;
-  font-weight: 400;
-  color: #999;
-}
-
 /* 셀렉박스 */
 .search__bar__ask {
   position: relative;
@@ -117,6 +109,7 @@
   appearance: none;
   font-size: 15px;
   color: #999;
+  font-weight: 400;
   box-sizing: border-box;
 }
 
@@ -203,16 +196,13 @@
     width: 80%;
   }
 
-  .file__box {
+  .file__box__group {
+    width: 80%;
     margin-left: 10px;
   }
 
   .ask__personalinformation__purpose__link {
     margin: 20px 0 20px 0;
-  }
-
-  .file__box__group {
-    width: 80%;
   }
 
   .ask__personalinformation > p {
