@@ -40,10 +40,19 @@
   font-size: 15px;
   padding: 10px;
   background: url(../image/up-and-down.png) no-repeat 98% 50%;
-  border-radius: 0px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+.search__bar__ask:focus {
+  outline: none;
+  -webkit-appearance: none;
+  box-shadow: none;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+  -webkit-border-radius: 3; /* for iOS input button */
 }
 
 /* 파일업로드 */
