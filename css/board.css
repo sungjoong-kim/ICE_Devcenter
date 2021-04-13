@@ -576,6 +576,10 @@
   .board__write__fileupload {
     padding: 20px 0;
   }
+  
+   .board__write__fileupload > .file__box {
+    margin-left: 0;
+  }
 
   .board__write__content {
     padding: 20px 0;
