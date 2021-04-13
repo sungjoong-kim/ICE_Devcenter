@@ -71,7 +71,7 @@ form .content {
   width: 100%;
   height: 50px;
   font-size: 16px;
-  margin: 20px 0;
+  margin: 20px 0 30px 0;
   align-items: center;
   justify-content: space-between;
 }
@@ -91,7 +91,7 @@ form .content label {
   padding-left: 5px;
 }
 form .content .pass-link {
-  color: "";
+  margin-top: 10px;
 }
 form .field input[type="submit"] {
   color: #fff;

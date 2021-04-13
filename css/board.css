@@ -602,7 +602,14 @@
   }
 }
 
-/* 화면 너비가 0~400 모바일*/
+/* 화면 너비가 350~576 모바일*/
+@media screen and (max-width: 576px) {
+  .qna__mobile__select {
+    display: none;
+  }
+}
+
+/* 화면 너비가 0~350 모바일*/
 @media screen and (max-width: 350px) {
   .search__bar__sort {
     display: none;

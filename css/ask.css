@@ -197,6 +197,10 @@
     width: 80%;
   }
 
+  .file__box {
+    margin-left: 10px;
+  }
+
   .ask__personalinformation__purpose__link {
     margin: 20px 0 20px 0;
   }
