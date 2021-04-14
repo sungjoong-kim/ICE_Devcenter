@@ -1,0 +1,31 @@
+.edumaterial__content__group {
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.edumaterial__content__group span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* 버튼 */
+.edu__btn__group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.edu__btn {
+  width: 150px;
+  height: 50px;
+  background-color: #5f90db;
+  color: #ffffff;
+  font-size: 17px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edu__btn:hover {
+  background-color: #3b6bb3;
+}
