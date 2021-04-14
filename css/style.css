@@ -989,6 +989,7 @@ input#tab05:checked ~ ul > li:nth-child(5) .sideicon .sidearrow::after {
   width: 49%;
   border-radius: 6px;
   margin-bottom: 20px;
+  box-shadow: 2px 2px 5px 0px rgb(0 0 0 / 10%);
 }
 
 .mainpage__board .title {
@@ -1008,6 +1009,10 @@ input#tab05:checked ~ ul > li:nth-child(5) .sideicon .sidearrow::after {
   font-size: 20px;
   font-weight: 500;
   letter-spacing: -2px;
+}
+
+.mainpage__board .title .name:hover + .more {
+  color: #666;
 }
 
 .mainpage__board .title .more {
@@ -1053,7 +1058,7 @@ input#tab05:checked ~ ul > li:nth-child(5) .sideicon .sidearrow::after {
   white-space: nowrap;
 }
 
-.mainpage__board .list a > img {
+.new__icon {
   margin: 0 0 -1px 3px;
 }
 
@@ -1232,15 +1237,17 @@ input#tab05:checked ~ ul > li:nth-child(5) .sideicon .sidearrow::after {
 
 .ice__content__title {
   color: #333;
-  font-size: 24px;
+  font-size: 25px;
   font-weight: 500;
+  letter-spacing: -1px;
   margin-bottom: 20px;
 }
 
 .ice__content__subtitle {
   color: #666;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 500;
+  word-spacing: -1px;
   margin-bottom: 20px;
 }
 
@@ -1252,9 +1259,11 @@ input#tab05:checked ~ ul > li:nth-child(5) .sideicon .sidearrow::after {
 
 .ice__content__txt {
   color: #666;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 300;
-  margin-bottom: 20px;
+  word-spacing: -1px;
+  margin: 5px 0 20px 0;
+  text-align: justify;
 }
 
 .map__group {
