@@ -1447,7 +1447,8 @@ footer {
   }
 
   #container {
-    margin: 80px auto 0 auto;
+    transform: translateY(80px);
+    margin: 0 auto 80px auto;
   }
 
   input[id="menuicon"] + label {
@@ -1559,8 +1560,8 @@ footer {
 /* 화면 너비가 0~576 모바일*/
 @media screen and (max-width: 576px) {
   #container {
-    margin: 70px auto 0 auto;
-    height: 400px;
+    transform: translateY(70px);
+    margin: 0 auto 70px auto;
   }
 
   .container_header {
