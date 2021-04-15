@@ -1,6 +1,7 @@
 .signup__group__background {
   margin: auto;
   width: 500px;
+  min-height: 900px;
 }
 
 /* form {
