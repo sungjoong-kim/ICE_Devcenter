@@ -11,7 +11,7 @@
   font-size: 20px;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .modal__email__content__btn {
@@ -20,15 +20,23 @@
 }
 
 .modal__email__content__btn .fa-times {
-  font-size: 20px;
+  position: absolute;
+  font-size: 25px;
+  color: #999999;
   cursor: pointer;
+  transform: translate(5px, -11px);
+}
+
+.modal__email__content__btn .fa-times:hover {
+  color: #666666;
+  transition: 0.3s;
 }
 
 .modal__email__content__group {
   background: #eeeeee;
   width: 490px;
   border-radius: 10px;
-  padding: 10px 20px 20px 20px;
+  padding: 20px;
   top: 50%;
   left: 50%;
   position: absolute;

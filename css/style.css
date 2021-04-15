@@ -276,7 +276,7 @@ hr {
   position: relative;
 }
 
-.navbar_empty {
+.navbar__empty {
   height: 50px;
 }
 
@@ -779,7 +779,7 @@ input#tab05:checked ~ ul > li:nth-child(5) .sideicon .sidearrow::after {
   position: relative;
   box-sizing: border-box;
   overflow: hidden;
-  margin: 2rem auto 0 auto;
+  margin: 0 auto 0 auto;
   width: 100%;
   height: 400px;
 }
