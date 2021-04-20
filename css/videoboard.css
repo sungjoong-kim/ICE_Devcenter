@@ -15,10 +15,10 @@
   border-radius: 5px;
   margin-top: 20px;
   padding: 10px;
+  transition: transform 0.5s;
 }
 
 .eduvideo__item:hover {
-  transition: 0.5s;
   transform: translateY(-3px);
 }
 
@@ -88,11 +88,11 @@
   border-radius: 5px;
   margin-top: 20px;
   padding: 10px;
+  transition: transform 0.5s;
 }
 
 .casestudy__item:hover {
   transform: translateY(-3px);
-  transition: 0.5s;
 }
 
 .casestudy__item__tum {
