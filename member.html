@@ -66,13 +66,13 @@
                     <img src="image/ICE Devcneter_logo.svg"></a>
             </h1>
             <ul class="header__menu">
-                <!-- <div class="search__box">
+                <div class="search__box">
                     <input class="search__txt" type="text" name="" placeholder="검색어를 입력하세요." onkeyup="enterkey();">
                     <a class="search__btn" value="검색" onclick="alert('개발전입니다')" href="#">
                         <i class="fas fa-search"></i></a>
-                </div> -->
-                <li><a href="member.html"><span>아이온커뮤니케이션즈</span>님</a></li>
-                <li><a href="#.html">로그아웃</a></li>
+                </div>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="signup.html">회원가입</a></li>
                 <li><a href="notice.html">고객지원</a></li>
                 <li><a href="directions.html">오시는길</a></li>
             </ul>
@@ -268,282 +268,72 @@
         </nav>
     </div>
 <!-- ================ main =================== -->
+
 <main>
-    <!-- 로그인 -->
-    <!-- <section>
-        <div class="login__box">
-            <div class="container login_header">
-                <div class="login__menu">
-                    <img src="image/enter.png">
-                    <span style="color:white; white-space: nowrap;" class="login__text">안녕하세요 방문해주셔서 감사합니다</span>
+    <section>
+            <div class="container">
+                
+                <div class="iogin__group__background">
+                    
+
+                    <div class="iogin__group">
+                        <div class="title">회원정보 변경</div>
+                        <form action="#">
+                            <div class="member__id">
+                                <h5>아이디</h5>
+                                <p>ioncomm0705</p>
+
+                            </div>
+                            <div class="field">
+                                <input type="password" required>
+                                <label>비밀번호</label>
+                            </div>
+
+                            <div class="field">
+                                <input type="submit" value="확인">
+                            </div>
+          
+                        </form>
+                    </div>
                 </div>
-                <div class="login">
-                    <input type="text" class="login__id" placeholder="아이디" maxlength="15"></input>
-                    <input type="password" class="login__pw" placeholder="비밀번호" name="pass" maxlength="16"></input>
-                    <input type="button" class="login__button" value="로그인" onclick="alert('개발전입니다')"></input>
-                </div>
-            </div>
-        </div>      
-    </section> -->
-    <!-- 메인슬라이드 -->
-    <section id="container">
-        <!-- 슬라이드화살표 -->
-        <div class="arrow prev" onclick="prevNext(-1)">&#10094;</div>
-        <div class="arrow next" onclick="prevNext(1)">&#10095;</div>
-        <div class="slideNum" style="opacity: 0;">
-            <span id="thisSlide">0</span> / <span id="allSlide">0</span>
         </div>
-        <!-- 슬라이드시작 -->
-        <!--1-->
-        <article class="slides">
-            <img src="image/main_slide01.jpg" alt="">
-        </article>
-        <!--2-->
-        <article class="slides">
-            <img src="image/main_slide02.jpg" alt="">
-        </article>
-        <!--3-->
-        <article class="slides">
-            <img src="image/main_slide03.jpg" alt="">
-        </article>
-        <!--4-->
-        <article class="slides">
-            <img src="image/main_slide04.jpg" alt="">
-        </article>
     </section>
-    <!-- 메인슬라이드 리모컨 -->
-    <section id="pager">
-        <span class="dots on" onclick="currentSlide(1)"></span>
-        <span class="dots" onclick="currentSlide(2)"></span>
-        <span class="dots" onclick="currentSlide(3)"></span>
-        <span class="dots" onclick="currentSlide(4)"></span>
-    </section>
-    <!-- 메뉴아이콘 -->
-    <div class="menu__icon">
-        <div class="container">
-            <div class="icon">
-                <!-- 아이콘1 -->
-                <div class="item">
-                    <a href="https://ionsdp.atlassian.net/wiki/spaces/ICE4P/pages/871006209/Install+Guide"
-                        target="_blank">
-                        <div class="item__background">
-                            <img src="image/item1.png">
-                        </div>
-                        <p class="item__text">설치하기</p>
-                    </a>
-                </div>
-                <!-- 아이콘2 -->
-                <div class="item">
-                    <a href="https://ionsdp.atlassian.net/wiki/spaces/ICE4P/pages/871006209/Install+Guide"
-                        target="_blank">
-                        <div class="item__background">
-                            <img src="image/item2.png">
-                        </div>
-                        <p class="item__text">개발가이드</p>
-                    </a>
-                </div>
-                <!-- 아이콘3 -->
-                <div class="item">
-                    <a href="eduregister.html" target="_self">
-                        <div class="item__background">
-                            <img src="image/item3.png">
-                        </div>
-                        <p class="item__text">교육신청</p>
-                    </a>
-                </div>
-                <!-- 아이콘4 -->
-                <div class="item">
-                    <a href="edumaterial.html" target="_self">
-                        <div class="item__background">
-                            <img src="image/item4.png">
-                        </div>
-                        <p class="item__text">교육자료</p>
-                    </a>
-                </div>
-                <!-- 아이콘5 -->
-                <div class="item">
-                    <a href="faq.html" target="_self">
-                        <div class="item__background">
-                            <img src="image/item5.png">
-                        </div>
-                        <p class="item__text">FAQ</p>
-                    </a>
-                </div>
-                <!-- 아이콘6 -->
-                <div class="item">
-                    <a href="qna.html" target="_self">
-                        <div class="item__background">
-                            <img src="image/item6.png">
-                        </div>
-                        <p class="item__text">묻고답하기</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 메인게시판 -->
-    <div id="mainpage__board__wrap">
-        <div class="container container__mainpage">
-            <!-- 게시판1 -->
-            <div class="mainpage__board">
-                <div class="title">
-                    <a href="notice.html" class="name">공지사항</a>
-                    <a href="notice.html" class="more"><i class="fas fa-plus"></i></a>
-                </div>
-                <div class="list">
-                    <ul>
-                        <li>
-                            <a href="notice_view.html">글 제목이 들어갑니다.<img class="new__icon "src="image/new_icon.gif"></a>
-                            <span>21-03-25</span>
-                        </li>
-                        <li>
-                            <a href="notice_view">글 제목이 들어갑니다.<img class="new__icon "src="image/new_icon.gif"></a>
-                            <span>21-03-25</span>
-                        </li>
-                        <li>
-                            <a href="#notice_view">글 제목이 들어갑니다.<img class="new__icon "src="image/new_icon.gif"></a>
-                            <span>21-03-25</span>
-                        </li>
-                        <li>
-                            <a href="notice_view">글 제목이 들어갑니다.</a>
-                            <span>21-03-25</span>
-                        </li>
-                        <li>
-                            <a href="notice_view">글 제목이 들어갑니다.</a>
-                            <span>21-03-25</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- 게시판2 -->
-            <div class="mainpage__board">
-                <div class="title">
-                    <a href="qna.html" class="name">묻고답하기</a>
-                    <a href="notice.html" class="more"><i class="fas fa-plus"></i></a>
-                </div>
-                <div class="list">
-                    <ul>
-                        <li>
-                            <a href="qna_view.html">글 제목이 들어갑니다.<img class="new__icon "src="image/new_icon.gif"></a>
-                            <span>21-03-25</span>
-                        </li>
-                        <li>
-                            <a href="qna_view.html">글 제목이 들어갑니다.<img class="new__icon "src="image/new_icon.gif"></a>
-                            <span>21-03-25</span>
-                        </li>
-                        <li>
-                            <a href="qna_view.html">글 제목이 들어갑니다.<img class="new__icon "src="image/new_icon.gif"></a>
-                            <span>21-03-25</span>
-                        </li>
-                        <li>
-                            <a href="qna_view.html">글 제목이 들어갑니다.</a>
-                            <span>21-03-25</span>
-                        </li>
-                        <li>
-                            <a href="qna_view.html">글 제목이 들어갑니다.</a>
-                            <span>21-03-25</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- 게시판3 -->
-            <div class="mainpage__board">
-                <div class="title">
-                    <a href="release.html" class="name">릴리즈노트</a>
-                    <a href="notice.html" class="more"><i class="fas fa-plus"></i></a>
-                </div>
-                <div class="list">
-                    <ul>
-                        <li>
-                            <a href="release_view.html">글 제목이 들어갑니다.<img class="new__icon "src="image/new_icon.gif"></a>
-                            <span>21-03-25</span>
-                        </li>
-                        <li>
-                            <a href="release_view.html">글 제목이 들어갑니다.<img class="new__icon "src="image/new_icon.gif"></a>
-                            <span>21-03-25</span>
-                        </li>
-                        <li>
-                            <a href="release_view.html">글 제목이 들어갑니다.<img class="new__icon "src="image/new_icon.gif"></a>
-                            <span>21-03-25</span>
-                        </li>
-                        <li>
-                            <a href="release_view.html">글 제목이 들어갑니다.</a>
-                            <span>21-03-25</span>
-                        </li>
-                        <li>
-                            <a href="release_view.html">글 제목이 들어갑니다.</a>
-                            <span>21-03-25</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- 게시판4 -->
-            <div class="mainpage__board">
-                <div class="title">
-                    <a href="eduvideo.html" class="name">교육동영상</a>
-                    <a href="notice.html" class="more"><i class="fas fa-plus"></i></a>
-                </div>
-                <div class="list">
-                    <ul>
-                        <li>
-                            <a href="eduvideo.html">글 제목이 들어갑니다.<img class="new__icon "src="image/new_icon.gif"></a>
-                            <span>21-03-25</span>
-                        </li>
-                        <li>
-                            <a href="eduvideo.html">글 제목이 들어갑니다.<img class="new__icon "src="image/new_icon.gif"></a>
-                            <span>21-03-25</span>
-                        </li>
-                        <li>
-                            <a href="eduvideo.html">글 제목이 들어갑니다.<img class="new__icon "src="image/new_icon.gif"></a>
-                            <span>21-03-25</span>
-                        </li>
-                        <li>
-                            <a href="eduvideo.html">글 제목이 들어갑니다.</a>
-                            <span>21-03-25</span>
-                        </li>
-                        <li>
-                            <a href="eduvideo.html">글 제목이 들어갑니다.</a>
-                            <span>21-03-25</span>
-                        </li>
-                </div>
-            </div>
-        </div>
-    </div>
 </main>
-    <!-- 푸터 시작 -->
-    <footer>
-        <div class="container">
-            <div class="footer__logo">
-                <a href="https://www.i-on.net/index.html" target="_blank">
-                    <img src="image/ionhorizontal.svg"></a>
+
+<!-- ================ 푸터시작 =================== -->
+<footer>
+    <div class="container">
+        <div class="footer__logo">
+            <a href="https://www.i-on.net/index.html" target="_blank">
+                <img src="image/ionhorizontal.svg"></a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="footer__down">
+            <div class="footer__text">
+                <li class="pc">(06234)서울특별시 강남구 테헤란로 10길 15, 아이온빌딩&nbsp;&nbsp;
+                    <strong>T.&nbsp;</strong>02-3430-1200&nbsp;&nbsp;
+                    <strong>F.&nbsp;</strong>02-3430-1205&nbsp;&nbsp;
+                    <strong>E.&nbsp;</strong>ask@i-on.net
+                    <br>Copyright 2021 © I-ON Communications Co., Ltd.
+                </li>
+                <li class="moblie">
+                    (주)아이온커뮤니케이션즈<br>
+                    서울특별시 강남구 테헤란로 10길 15 (06234), 아이온빌딩<br>
+                    <strong>T.&nbsp;</strong>02-3430-1200&nbsp;&nbsp;<br>
+                    <strong>F.&nbsp;</strong>02-3430-1205&nbsp;&nbsp;<br>
+                    <strong>E.&nbsp;</strong>ask@i-on.net<br>
+                    Copyright 2021 © I-ON Communications Co., Ltd.
+                </li>
+            </div>
+            <div class="footer__button">
+                <li class="ff"><a href="https://www.i-on.net/index.html" target="_blank">회사소개</a></li><br>
+                <li class="ff"><a href="individual.html" target="_self">개인정보처리방침</a></li><br>
+                <li class="ff"><a id="emailreject">이메일무단수집거부</a></li><br>
             </div>
         </div>
-        <div class="container">
-            <div class="footer__down">
-                <div class="footer__text">
-                    <li class="pc">(06234)서울특별시 강남구 테헤란로 10길 15, 아이온빌딩&nbsp;&nbsp;
-                        <strong>T.&nbsp;</strong>02-3430-1200&nbsp;&nbsp;
-                        <strong>F.&nbsp;</strong>02-3430-1205&nbsp;&nbsp;
-                        <strong>E.&nbsp;</strong>ask@i-on.net
-                        <br>Copyright 2021 © I-ON Communications Co., Ltd.
-                    </li>
-                    <li class="moblie">
-                        (주)아이온커뮤니케이션즈<br>
-                        서울특별시 강남구 테헤란로 10길 15 (06234), 아이온빌딩<br>
-                        <strong>T.&nbsp;</strong>02-3430-1200&nbsp;&nbsp;<br>
-                        <strong>F.&nbsp;</strong>02-3430-1205&nbsp;&nbsp;<br>
-                        <strong>E.&nbsp;</strong>ask@i-on.net<br>
-                        Copyright 2021 © I-ON Communications Co., Ltd.
-                    </li>
-                </div>
-                <div class="footer__button">
-                    <li class="ff"><a href="https://www.i-on.net/index.html" target="_blank">회사소개</a></li><br>
-                    <li class="ff"><a href="individual.html" target="_self">개인정보처리방침</a></li><br>
-                    <li class="ff"><a id="emailreject">이메일무단수집거부</a></li><br>
-                </div>
-            </div>
-        </div>
-    </footer>
+    </div>
+</footer>
 </body>
 
 </html>

@@ -159,6 +159,25 @@ form .signup-link a {
   border-bottom: 1px solid #999999;
 }
 
+.member__id {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.member__id h5 {
+  width: 30%;
+}
+
+.member__id p {
+  width: 70%;
+  letter-spacing: -1px;
+  font-weight: 500;
+  .board__view__content__question;
+}
+
 /* form .pass-link a:hover,
 form .signup-link a:hover {
   text-decoration: underline;
