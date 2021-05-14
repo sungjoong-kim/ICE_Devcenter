@@ -65,11 +65,11 @@ document.documentElement.addEventListener('touchend', function (event) {
 	/* 파일명 가져오기 end */
 
 
-        // 가입 단계나누기
-        $("#signup__next").on('click', function () {
-            $('#singstep01').hide('');
-            $('#singstep02').show('');
-        });
+        // // 가입 단계나누기
+        // $("#signup__next").on('click', function () {
+        //     $('#singstep01').hide('');
+        //     $('#singstep02').show('');
+        // });
     
         // 전체동의하기
         function selectAll(selectAll) {
