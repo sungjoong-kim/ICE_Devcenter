@@ -38,6 +38,20 @@
         </div>
     </div>
 </div>
+
+<div class="modal__background__leave" id="leave__modal">
+    <div class="modal__leave__popup__group">
+        <div class="modal__leave__popup__group__btn ">
+            <i class="fas fa-times" id="leave__popup__close" aria-hidden="true"></i>
+        </div>
+        <h5><span>회원탈퇴</span></h5>
+        <p><span>*</span>비밀번호를 다시 한 번 입력해주세요.</p>
+        <input type="password" placeholder="비밀번호입력" class="modal__leave__input">
+        <input type="button" class="popup__btn__end" value="확인" id="popup__finish__join__end" onclick="alert('개발전입니다 클릭 시 탈퇴 처리 완료후 Index로 이동')">
+    </div>
+</div>
+
+
 <!----------------- body ----------------->
 
 <body>
@@ -65,8 +79,24 @@
                     <a class="search__btn" value="검색" onclick="alert('개발전입니다')" href="#">
                         <i class="fas fa-search"></i></a>
                 </div> -->
-                <li><a href="login.html">로그인</a></li>
-                <li><a href="signup.html">회원가입</a></li>
+                <li class="member__downicon">
+                    <a href="javascript:void(0);" id="if__btn">
+                        <span class="memberinformation__btn">김성중</span>님
+                    </a>
+                    <ul class="memberinformation__group">
+                        <a href="member1.html">
+                            <li>정보변경</li>
+                        </a>
+                        <a href="member2.html">
+                            <li>비빌번호변경</li>
+                        </a>
+                        <a href="member3.html">
+                            <li>회원탈퇴</li>
+                        </a>
+                    </ul>
+                </li>
+
+                <li><a href="#.html">로그아웃</a></li>
                 <li><a href="notice.html">고객지원</a></li>
                 <li><a href="directions.html">오시는길</a></li>
             </ul>
@@ -182,15 +212,15 @@
                 </div>
                 <!-- 모바일 로그인/회원가입/비밀번호찾기 -->
                 <div class="mobile__btn__group">
-                    <a href="login.html" class="mobile__btn mobile__login">
-                        <span>로그인하기</span>
+                    <a href="member1.html" class="mobile__btn mobile__login">
+                        <span>마이페이지</span>
                     </a>
 
-                    <a href="signup.html" class="mobile__btn mobile__signup">
-                        <span>회원가입하기</span>
+                    <a href="#" class="mobile__btn mobile__signup">
+                        <span>로그아웃</span>
                     </a>
-                    <a href="idsearch.html" class="mobile__idpwsearch">
-                        <span>아이디/비밀번호찾기</span>
+                    <a href="#" class="mobile__idpwsearch">
+                        <span>회원탈퇴</span>
                     </a>
                 </div>
             </div>
@@ -262,151 +292,95 @@
             </div>
         </nav>
     </div>
-<!-- ================ main =================== -->
-<main>
-    <div class="container">
-        <aside class="sub__side__menubar">
-            <!-- 타이틀 -->
-            <div class="sub__side__menubar__title">
-                <h2>개발자교육</h2>
-                <h3>Developer education</h3>
-            </div>
-            <!-- 메뉴바 -->
-            <a href="eduregister.html" target="_self" class="sub__side__menubar__subtitle">
-                <div class="sub__side__menubar__menu">
-                    <p>교육신청</p>
-                </div>
-            </a>
-            <a href="edumaterial.html" target="_self" class="sub__side__menubar__subtitle">
-                <div class="sub__side__menubar__menu">
-                    <p>교육자료</p>
-                </div>
-            </a>
-            <a href="eduvideo.html" target="_self" class="sub__side__menubar__subtitle">
-                <div class="sub__side__menubar__menu">
-                    <p>영상자료</p>
-                </div>
-            </a>
+    <!-- ================ main =================== -->
 
-        </aside>
-        <div class="content__container">
-            <!-- 리모컨네비게이션 -->
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html" target="_self"><i class="fas fa-home"></i> </a>
-                    </li>
-                    <li class="breadcrumb-item"><a>개발자교육 </a></li>
-                    <li class="breadcrumb-item active" aria-current="page">교육자료</li>
-                </ol>
-            </nav>
-            <!-- 서브타이틀 -->
-            <div class="main__title__group">
-                <h2>교육자료</h2>
-                <h3>ICE 교육자료입니다.</h3>
-            </div>
-            <!-- 모바일서브메뉴 -->
-            <select id="mobile__select__group" onchange="window.open(value,'_self')">
-                <option value="none">선택</option>
-                <option value="eduregister.html">교육신청</option>
-                <option value="edumaterial.html">교육자료</option>
-                <option value="eduvideo.html">영상자료</option>
-            </select>
-            <!-- ================ 메인콘텐츠시작 =================== -->
-            <section>
-                <div class="ice__view__content">
-                    <!-- 공지사항 콘텐츠보기 -->
-                    <div class="board__view__group">
-                        <div class="board__view__header">
-                            <div class="board__view__title">
-                                제목입니다.
-                            </div>
-                            <div class="board__view__sub">
-                                <span>아이온</span>
-                                <span>21-03-25</span>
-                            </div>
-                        </div>
+    <main>
+        <section>
+            <div class="container">
 
-                        <div class="board__view__reference">
-                            <a href="sample.html" download><button>
-                                <i class="fas fa-file-download"></i>
-                            </button> 첨부파일이 없습니다.</a>
-                        </div>
-
-
-                        <div class="board__view__content">
-                            글 내용이 들어갑니다<br>
-                            글 내용이 들어갑니다<br>
-                            글 내용이 들어갑니다<br>
-                            글 내용이 들어갑니다<br>
-                        </div>
-
-                        <div class="board__view__remote__group">
-                            <div class="board__view__remote">
-                                <div class="board__view__remote__btn">
-                                    <a href="#" target="_self">이전글 ▲</a>
-                                </div>
-                                <div class="board__view__remote__title">
-                                    <a href="#" target="_self">이전글 제목입니다.</a>
-                                </div>
-                            </div>
-                            <div class="board__view__remote">
-
-                                <div class="board__view__remote__btn">
-                                    <a href="#" target="_self">다음글 ▼</a>
-                                </div>
-                                <div class="board__view__remote__title">
-                                    <a href="#" target="_self">다음글 제목입니다.</a>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="board__view__content__btn__group">
-                            <input type="button" class="board__view__content__btn" value="목록보기" onclick="location.href='edumaterial.html'">
-                        </div>
-
-
+                <div class="member__information__group__background">
+                    <div class="member__group">
+                        <h4 class="title">회원정보 변경</h4>
+                        <ul class="member__content">
+                            <a href="member1_1.html" target="_self">
+                                <li class="member__content__item ">개인정보변경</li>
+                            </a>
+                            <a href="member2_2.html" target="_self">
+                                <li class="member__content__item">비밀번호변경</li>
+                            </a>
+                            <a href="member3_3.html" target="_self">
+                                <li class="member__content__item member__content__item__on">회원탈퇴</li>
+                            </a>
+                        </ul>
                     </div>
-                </div>
-            </section>
-        </div>
-    </div>
-</main>
 
-<!-- ================ 푸터시작 =================== -->
-<footer>
-    <div class="container">
-        <div class="footer__logo">
-            <a href="https://www.i-on.net/index.html" target="_blank">
-                <img src="image/ionhorizontal.svg"></a>
-        </div>
-    </div>
-    <div class="container">
-        <div class="footer__down">
-            <div class="footer__text">
-                <li class="pc">(06234)서울특별시 강남구 테헤란로 10길 15, 아이온빌딩&nbsp;&nbsp;
-                    <strong>T.&nbsp;</strong>02-3430-1200&nbsp;&nbsp;
-                    <strong>F.&nbsp;</strong>02-3430-1205&nbsp;&nbsp;
-                    <strong>E.&nbsp;</strong>ask@i-on.net
-                    <br>Copyright 2021 © I-ON Communications Co., Ltd.
-                </li>
-                <li class="moblie">
-                    (주)아이온커뮤니케이션즈<br>
-                    서울특별시 강남구 테헤란로 10길 15 (06234), 아이온빌딩<br>
-                    <strong>T.&nbsp;</strong>02-3430-1200&nbsp;&nbsp;<br>
-                    <strong>F.&nbsp;</strong>02-3430-1205&nbsp;&nbsp;<br>
-                    <strong>E.&nbsp;</strong>ask@i-on.net<br>
-                    Copyright 2021 © I-ON Communications Co., Ltd.
-                </li>
+                    <div class="member__leave__group">
+                        <h4> 탈퇴 시 꼭 확인해 주세요.</h4>
+                        <p>
+                            회원 탈퇴 즉시 캠페인 정보 포함 모든 회원정보는 모두 삭제 되며, 재가입 시에도 복원되지 않습니다.<br>
+                            또한, 회원 탈퇴 후 1개월은 회원 재가입이 불가능하며, 사용하시던 ID 재가입 방지를 위해 1개월간 보관됩니다.
+                        </p>
+                    </div>
+
+                    <div class="member__leave__btn__group">
+                        <div class="member__leave__btn">
+                        <input type="button" id="member__leave" class="member__leave__btn__leave" value="탈퇴하기">
+                        <input type="button" class="member__leave__btn__cancel" value="취소" onclick="location.href='index.html'">
+                    </div>
+                    </div>
+
+
+
+                </div>
             </div>
-            <div class="footer__button">
-                <li class="ff"><a href="https://www.i-on.net/index.html" target="_blank">회사소개</a></li><br>
-                <li class="ff"><a href="individual.html" target="_self">개인정보처리방침</a></li><br>
-                <li class="ff"><a id="emailreject">이메일무단수집거부</a></li><br>
+        </section>
+    </main>
+
+    <!-- 푸터 시작 -->
+    <footer>
+        <div class="container">
+            <div class="footer__logo">
+                <a href="https://www.i-on.net/index.html" target="_blank">
+                    <img src="image/ionhorizontal.svg"></a>
             </div>
         </div>
-    </div>
-</footer>
+        <div class="container">
+            <div class="footer__down">
+                <div class="footer__text">
+                    <li class="pc">(06234)서울특별시 강남구 테헤란로 10길 15, 아이온빌딩&nbsp;&nbsp;
+                        <strong>T.&nbsp;</strong>02-3430-1200&nbsp;&nbsp;
+                        <strong>F.&nbsp;</strong>02-3430-1205&nbsp;&nbsp;
+                        <strong>E.&nbsp;</strong>ask@i-on.net
+                        <br>Copyright 2021 © I-ON Communications Co., Ltd.
+                    </li>
+                    <li class="moblie">
+                        (주)아이온커뮤니케이션즈<br>
+                        서울특별시 강남구 테헤란로 10길 15 (06234), 아이온빌딩<br>
+                        <strong>T.&nbsp;</strong>02-3430-1200&nbsp;&nbsp;<br>
+                        <strong>F.&nbsp;</strong>02-3430-1205&nbsp;&nbsp;<br>
+                        <strong>E.&nbsp;</strong>ask@i-on.net<br>
+                        Copyright 2021 © I-ON Communications Co., Ltd.
+                    </li>
+                </div>
+                <div class="footer__button">
+                    <li class="ff"><a href="https://www.i-on.net/index.html" target="_blank">회사소개</a></li><br>
+                    <li class="ff"><a href="individual.html" target="_self">개인정보처리방침</a></li><br>
+                    <li class="ff"><a id="emailreject">이메일무단수집거부</a></li><br>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!------------ 스크립트시작 ------------>
+    <!-- #. fontawesome -->
+    <script src="https://kit.fontawesome.com/4eea417a7f.js" crossorigin="anonymous"></script>
+    <!-- #. jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- #. slide -->
+    <script src="js/slide.js"></script>
+    <!-- #. hiddn -->
+    <script src="js/scroll__hidden.js"></script>
+
 </body>
 
 </html>

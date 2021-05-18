@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+    <!-- css -->
+    <link rel="stylesheet" href="css/css.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- title -->
+    <title>ICE Devcenter</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="image/favicon-32x32.png">
+</head>
+<!----------------- modal  ----------------->
+<div class="modal__background__popup">
+    <div class="modal__popup__content__group">
+        <img src="image/ICE Devcneter_logo.svg">
+        <h5>인증이 완료되었거나, 유효시간이<br>지났습니다.</h5>
+        <p>인증을 다시 시도하려면, 인증메일을 요청해 주세요!</p>
+        <input type="button" class="popup__btn" value="인증받기" id="popup__next" onclick="location.href='#'">
+        <div class="popup__finish__group">
+            <div class="popup__finish">
+                <input type="text" class="popup__input" id="confirmemail__input" placeholder="가입된 이메일을 정확히 입력해 주세요." maxlength="15">
+                <input type="button" class="popup__btn__finish" value="인증메일보내기" id="popup__finish__close">
+            </div>
+        </div>
+    </div>
+    <div class="modal__popup__content__btn">
+        <i class="fas fa-times" id="popup__close" aria-hidden="true"></i>
+    </div>
+</div>
+
+<div class="modal__background__emailconfirm" id="error__modal">
+    <div class="modal__emailconfirm__popup__group">
+        <img src="image/alerttriangle.png">
+        <h5>메일주소를 확인해 주세요.</h5>
+        <p>가입되지 않았거나 이미 인증이 완료된 계정입니다.</p>
+        <input type="button" class="popup__btn__end" value="확인" id="popup__finish__end">
+    </div>
+</div>
+
+
+<div class="modal__background__emailconfirm" id="join__modal">
+    <div class="modal__join__popup__group">
+        <img src="image/alerttemail.png">
+        <h5>인증메일을 재전송하였습니다.</h5>
+        <p>메일 확인 후, 링크를 클력하여 회원가입을 완료해주세요!</p>
+        <input type="button" class="popup__btn__end" value="확인" id="popup__finish__join__end"  onclick="location.href='index.html'">
+    </div>
+</div>
+
+
+<!----------------- body ----------------->
+
+<body>
+    
+<!------------ 스크립트시작 ------------>
+<!-- #. fontawesome -->
+<script src="https://kit.fontawesome.com/4eea417a7f.js" crossorigin="anonymous"></script>
+<!-- #. jquery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- #. slide -->
+<script src="js/slide.js"></script>
+<!-- #. hiddn -->
+<script src="js/scroll__hidden.js"></script>
+
+</body>
+
+</html>

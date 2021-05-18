@@ -7,22 +7,13 @@
     <!-- css -->
     <link rel="stylesheet" href="css/css.css">
     <!-- font -->
-    <link defer rel="preconnect" href="https://fonts.gstatic.com">
-    <link defer href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <!-- title -->
     <title>ICE Devcenter</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="image/favicon-32x32.png">
-    <!------------ 스크립트시작 ------------>
-    <!-- #. fontawesome -->
-    <script defer src="https://kit.fontawesome.com/4eea417a7f.js" crossorigin="anonymous"></script>
-    <!-- #. jquery -->
-    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- #. slide -->
-    <script defer src="js/slide.js"></script>
-    <!-- #. hiddn -->
-    <script defer src="js/scroll__hidden.js"></script>
 </head>
 <!----------------- modal  ----------------->
 <div class="modal__background">
@@ -48,7 +39,7 @@
 <!----------------- body ----------------->
 <body>
     <!-- 상단 헤더 -->
-    <header class="tnd">
+    <!-- <header class="tnd">
         <div class="container">
             <div class="tnd__header__menu">
                 <li class="tt"><a href="signup.html">회원가입</a></li>
@@ -56,7 +47,7 @@
                 <li class="tt"><a href="idsearch.html">비밀번호찾기</a></li>
             </div>
         </div>
-    </header>
+    </header> -->
     <!-- 메인 헤더 -->
     <header class="header">
         <div class="container container_header">
@@ -71,12 +62,24 @@
                     <a class="search__btn" value="검색" onclick="alert('개발전입니다')" href="#">
                         <i class="fas fa-search"></i></a>
                 </div> -->
-                <li><a href="member.html"><span>아이온커뮤니케이션즈</span>님</a></li>
+                <li class="member__downicon">
+                    <a href="javascript:void(0);" id="if__btn">
+                        <span class="memberinformation__btn">김성중</span>님
+                        <img src="image/down-arrow.png">
+                    </a>
+                    <ul class="memberinformation__group">
+                        <a href="member1.html"><li>정보변경</li></a>
+                        <a href="member2.html"><li>비빌번호변경</li></a>
+                        <a href="member3.html"><li>회원탈퇴</li></a>
+                    </ul>
+                </li>
+
                 <li><a href="#.html">로그아웃</a></li>
                 <li><a href="notice.html">고객지원</a></li>
                 <li><a href="directions.html">오시는길</a></li>
             </ul>
         </div>
+
         <!-- 모바일 네비게이션바 -->
         <input type="checkbox" id="menuicon" style="display: none;">
         <!-- 햄버거 메뉴 아이콘 -->
@@ -88,11 +91,11 @@
         <!-- 사이드바 -->
         <div class="sidebar">
             <!-- 검색기능 -->
-            <div class="mobile__search">
+            <!-- <div class="mobile__search">
                 <input class="mobile__search__txt" type="text" name="" placeholder="검색어를 입력하세요.">
                 <a class="mobile__search__btn" value="검색" onclick="alert('개발전입니다')" href="#">
                     <i class="fas fa-search"></i></a>
-            </div>
+            </div> -->
             <!-- 메뉴 -->
             <div class="sidebar__group">
                 <div class="accordion">
@@ -187,15 +190,15 @@
                 </div>
             <!-- 모바일 로그인/회원가입/비밀번호찾기 -->
                 <div class="mobile__btn__group">
-                    <a href="login.html" class="mobile__btn mobile__login">
-                        <span>로그인하기</span>
+                    <a href="member1.html" class="mobile__btn mobile__login">
+                        <span>마이페이지</span>
                     </a>
 
-                    <a href="signup.html" class="mobile__btn mobile__signup">
-                        <span>회원가입하기</span>
+                    <a href="#" class="mobile__btn mobile__signup">
+                        <span>로그아웃</span>
                     </a>
-                    <a href="idsearch.html" class="mobile__idpwsearch">
-                        <span>아이디/비밀번호찾기</span>
+                    <a href="member1.html" class="mobile__idpwsearch">
+                        <span>회원탈퇴</span>
                     </a>
                 </div>
             </div>
@@ -283,7 +286,7 @@
                     <input type="button" class="login__button" value="로그인" onclick="alert('개발전입니다')"></input>
                 </div>
             </div>
-        </div>      
+        </div>
     </section> -->
     <!-- 메인슬라이드 -->
     <section id="container">
@@ -510,6 +513,8 @@
         </div>
     </div>
 </main>
+
+
     <!-- 푸터 시작 -->
     <footer>
         <div class="container">
@@ -544,6 +549,17 @@
             </div>
         </div>
     </footer>
+
+<!------------ 스크립트시작 ------------>
+<!-- #. fontawesome -->
+<script src="https://kit.fontawesome.com/4eea417a7f.js" crossorigin="anonymous"></script>
+<!-- #. jquery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- #. slide -->
+<script src="js/slide.js"></script>
+<!-- #. hiddn -->
+<script src="js/scroll__hidden.js"></script>
+
 </body>
 
 </html>

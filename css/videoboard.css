@@ -26,6 +26,9 @@
   width: 100%;
   margin-bottom: 10px;
 }
+.eduvideo__item__group {
+  position: relative;
+}
 
 .eduvideo__item h5 {
   width: 100%;

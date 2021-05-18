@@ -7,22 +7,13 @@
     <!-- css -->
     <link rel="stylesheet" href="css/css.css">
     <!-- font -->
-    <link defer rel="preconnect" href="https://fonts.gstatic.com">
-    <link defer href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <!-- title -->
     <title>ICE Devcenter</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="image/favicon-32x32.png">
-    <!------------ 스크립트시작 ------------>
-    <!-- #. fontawesome -->
-    <script defer src="https://kit.fontawesome.com/4eea417a7f.js" crossorigin="anonymous"></script>
-    <!-- #. jquery -->
-    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- #. slide -->
-    <script defer src="js/slide.js"></script>
-    <!-- #. hiddn -->
-    <script defer src="js/scroll__hidden.js"></script>
 </head>
 <!----------------- modal  ----------------->
 <div class="modal__background">
@@ -48,7 +39,7 @@
 <!----------------- body ----------------->
 <body>
     <!-- 상단 헤더 -->
-    <header class="tnd">
+    <!-- <header class="tnd">
         <div class="container">
             <div class="tnd__header__menu">
                 <li class="tt"><a href="signup.html">회원가입</a></li>
@@ -56,7 +47,7 @@
                 <li class="tt"><a href="idsearch.html">비밀번호찾기</a></li>
             </div>
         </div>
-    </header>
+    </header> -->
     <!-- 메인 헤더 -->
     <header class="header">
         <div class="container container_header">
@@ -66,17 +57,28 @@
                     <img src="image/ICE Devcneter_logo.svg"></a>
             </h1>
             <ul class="header__menu">
-                <div class="search__box">
+                <!-- <div class="search__box">
                     <input class="search__txt" type="text" name="" placeholder="검색어를 입력하세요." onkeyup="enterkey();">
                     <a class="search__btn" value="검색" onclick="alert('개발전입니다')" href="#">
                         <i class="fas fa-search"></i></a>
-                </div>
-                <li><a href="login.html">로그인</a></li>
-                <li><a href="signup.html">회원가입</a></li>
+                </div> -->
+                <li class="member__downicon">
+                    <a href="javascript:void(0);" id="if__btn">
+                        <span class="memberinformation__btn">김성중</span>님
+                    </a>
+                    <ul class="memberinformation__group">
+                        <a href="member1.html"><li>정보변경</li></a>
+                        <a href="member2.html"><li>비빌번호변경</li></a>
+                        <a href="member3.html"><li>회원탈퇴</li></a>
+                    </ul>
+                </li>
+
+                <li><a href="#.html">로그아웃</a></li>
                 <li><a href="notice.html">고객지원</a></li>
                 <li><a href="directions.html">오시는길</a></li>
             </ul>
         </div>
+
         <!-- 모바일 네비게이션바 -->
         <input type="checkbox" id="menuicon" style="display: none;">
         <!-- 햄버거 메뉴 아이콘 -->
@@ -88,11 +90,11 @@
         <!-- 사이드바 -->
         <div class="sidebar">
             <!-- 검색기능 -->
-            <div class="mobile__search">
+            <!-- <div class="mobile__search">
                 <input class="mobile__search__txt" type="text" name="" placeholder="검색어를 입력하세요.">
                 <a class="mobile__search__btn" value="검색" onclick="alert('개발전입니다')" href="#">
                     <i class="fas fa-search"></i></a>
-            </div>
+            </div> -->
             <!-- 메뉴 -->
             <div class="sidebar__group">
                 <div class="accordion">
@@ -187,15 +189,15 @@
                 </div>
             <!-- 모바일 로그인/회원가입/비밀번호찾기 -->
                 <div class="mobile__btn__group">
-                    <a href="login.html" class="mobile__btn mobile__login">
-                        <span>로그인하기</span>
+                    <a href="#" class="mobile__btn mobile__login">
+                        <span>마이페이지</span>
                     </a>
 
-                    <a href="signup.html" class="mobile__btn mobile__signup">
-                        <span>회원가입하기</span>
+                    <a href="#" class="mobile__btn mobile__signup">
+                        <span>로그아웃</span>
                     </a>
-                    <a href="idsearch.html" class="mobile__idpwsearch">
-                        <span>아이디/비밀번호찾기</span>
+                    <a href="#" class="mobile__idpwsearch">
+                        <span>회원탈퇴</span>
                     </a>
                 </div>
             </div>
@@ -272,16 +274,13 @@
 <main>
     <section>
             <div class="container">
-                
                 <div class="iogin__group__background">
-                    
-
                     <div class="iogin__group">
-                        <div class="title">회원정보 변경</div>
+                        <h4 class="title">회원정보 변경</h4>
                         <form action="#">
                             <div class="member__id">
                                 <h5>아이디</h5>
-                                <p>ioncomm0705</p>
+                                <p>ioncomm07**</p>
 
                             </div>
                             <div class="field">
@@ -289,10 +288,9 @@
                                 <label>비밀번호</label>
                             </div>
 
-                            <div class="field">
-                                <input type="submit" value="확인">
+                            <div class="field" style="margin-top: 30px;">
+                                <input type="submit" value="확인" onclick="location.href='member2_2.html'">
                             </div>
-          
                         </form>
                     </div>
                 </div>
@@ -300,40 +298,51 @@
     </section>
 </main>
 
-<!-- ================ 푸터시작 =================== -->
-<footer>
-    <div class="container">
-        <div class="footer__logo">
-            <a href="https://www.i-on.net/index.html" target="_blank">
-                <img src="image/ionhorizontal.svg"></a>
-        </div>
-    </div>
-    <div class="container">
-        <div class="footer__down">
-            <div class="footer__text">
-                <li class="pc">(06234)서울특별시 강남구 테헤란로 10길 15, 아이온빌딩&nbsp;&nbsp;
-                    <strong>T.&nbsp;</strong>02-3430-1200&nbsp;&nbsp;
-                    <strong>F.&nbsp;</strong>02-3430-1205&nbsp;&nbsp;
-                    <strong>E.&nbsp;</strong>ask@i-on.net
-                    <br>Copyright 2021 © I-ON Communications Co., Ltd.
-                </li>
-                <li class="moblie">
-                    (주)아이온커뮤니케이션즈<br>
-                    서울특별시 강남구 테헤란로 10길 15 (06234), 아이온빌딩<br>
-                    <strong>T.&nbsp;</strong>02-3430-1200&nbsp;&nbsp;<br>
-                    <strong>F.&nbsp;</strong>02-3430-1205&nbsp;&nbsp;<br>
-                    <strong>E.&nbsp;</strong>ask@i-on.net<br>
-                    Copyright 2021 © I-ON Communications Co., Ltd.
-                </li>
-            </div>
-            <div class="footer__button">
-                <li class="ff"><a href="https://www.i-on.net/index.html" target="_blank">회사소개</a></li><br>
-                <li class="ff"><a href="individual.html" target="_self">개인정보처리방침</a></li><br>
-                <li class="ff"><a id="emailreject">이메일무단수집거부</a></li><br>
+    <!-- 푸터 시작 -->
+    <footer>
+        <div class="container">
+            <div class="footer__logo">
+                <a href="https://www.i-on.net/index.html" target="_blank">
+                    <img src="image/ionhorizontal.svg"></a>
             </div>
         </div>
-    </div>
-</footer>
+        <div class="container">
+            <div class="footer__down">
+                <div class="footer__text">
+                    <li class="pc">(06234)서울특별시 강남구 테헤란로 10길 15, 아이온빌딩&nbsp;&nbsp;
+                        <strong>T.&nbsp;</strong>02-3430-1200&nbsp;&nbsp;
+                        <strong>F.&nbsp;</strong>02-3430-1205&nbsp;&nbsp;
+                        <strong>E.&nbsp;</strong>ask@i-on.net
+                        <br>Copyright 2021 © I-ON Communications Co., Ltd.
+                    </li>
+                    <li class="moblie">
+                        (주)아이온커뮤니케이션즈<br>
+                        서울특별시 강남구 테헤란로 10길 15 (06234), 아이온빌딩<br>
+                        <strong>T.&nbsp;</strong>02-3430-1200&nbsp;&nbsp;<br>
+                        <strong>F.&nbsp;</strong>02-3430-1205&nbsp;&nbsp;<br>
+                        <strong>E.&nbsp;</strong>ask@i-on.net<br>
+                        Copyright 2021 © I-ON Communications Co., Ltd.
+                    </li>
+                </div>
+                <div class="footer__button">
+                    <li class="ff"><a href="https://www.i-on.net/index.html" target="_blank">회사소개</a></li><br>
+                    <li class="ff"><a href="individual.html" target="_self">개인정보처리방침</a></li><br>
+                    <li class="ff"><a id="emailreject">이메일무단수집거부</a></li><br>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!------------ 스크립트시작 ------------>
+<!-- #. fontawesome -->
+<script src="https://kit.fontawesome.com/4eea417a7f.js" crossorigin="anonymous"></script>
+<!-- #. jquery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- #. slide -->
+<script src="js/slide.js"></script>
+<!-- #. hiddn -->
+<script src="js/scroll__hidden.js"></script>
+
 </body>
 
 </html>

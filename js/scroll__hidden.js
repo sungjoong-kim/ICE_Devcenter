@@ -50,13 +50,31 @@ $("#emailreject__close").on('click', function () {
 
 // 메일인증모달팝업
 
-// 메일인증모달팝업 닫기
-$("#popup__close").on('click', function () {
-    $('.modal__background__popup').hide();
+// // 메일인증모달팝업 닫기
+// $("#popup__close").on('click', function () {
+//     $('.modal__background__popup').hide();
+// });
+
+// 메일인증팝업 닫기->index.html 이동
+$("#popup__close").on('click', function changeView() {
+    window.location.href = "index.html";
 });
 
+// 메일인증팝업 알람창 성공or실패
 $("#popup__finish__close").on('click', function () {
-    $('.modal__background__popup').hide();
+    // $('#error__modal').show()
+    var email = $('#confirmemail__input').val();
+    if (!email) {
+        $('#error__modal').show();
+        return;
+    }
+    $('#join__modal').show()
+});
+
+
+// 메일주소확인 알람창 닫기
+$("#popup__finish__end").on('click', function () {
+    $('#error__modal').hide();
 });
 
 // 인증받기 버튼 다음
@@ -68,27 +86,6 @@ $("#popup__next").on('click', function () {
     $('.popup__finish').show();
 });
 
-// 메일인증모달팝업 클릭 스크롤막기
-$("#?").on('click', function () {
-    $('body').addClass('scroll__hidden');
-});
-
-// 메일인증모달팝업 닫기 스크롤막기 풀기
-$("#popup__close").on('click', function () {
-    $('body').removeClass('scroll__hidden');
-});
-
-
-// 모달창 클릭
-$("#popup__btn__finish").on('click', function () {
-    $('.modal__background__emailconfirm').show();
-});
-
-
-// 메일주소확인 알람창 닫기
-$("#popup__finish__end").on('click', function () {
-    $('.modal__background__emailconfirm').hide();
-});
 
 
 
@@ -144,3 +141,72 @@ $(document).ready(function () {
         }
     })
 })
+
+
+// 헤더 로그인 박스 클릭
+$("#if__btn").on('click', function () {
+    $('.memberinformation__group').toggle();
+});
+
+
+// 모달창 클릭 + 스크롤막기 - 회원탈퇴
+
+$("#member__leave").on('click', function () {
+    $('#leave__modal').show();
+});
+
+$("#member__leave").on('click', function () {
+    $('body').addClass('scroll__hidden');
+});
+
+
+//탈퇴하기 닫기 + 스크로풀기 - 회원탈퇴
+$("#leave__popup__close").on('click', function () {
+    $('#leave__modal').hide();
+});
+
+
+$("#leave__popup__close").on('click', function () {
+    $('body').removeClass('scroll__hidden');
+});
+
+
+
+
+
+// 이메일인증모달작동
+
+$("#personalinformation__email__confirm").on('click', function () {
+    $('#personalinformation__emailcodeconfirm').show();
+});
+
+
+
+// 모달창 클릭 스크롤막기 -이메일인증모달
+$("#personalinformation__email__confirm").on('click', function () {
+    $('body').addClass('scroll__hidden');
+});
+
+// 모달창 닫기 스크롤막기 풀기 -이메일인증모달
+
+
+$("#personalinformation__emailconfirm__close").on('click', function () {
+    $('#personalinformation__emailcodeconfirm').hide();
+});
+
+$("#personalinformation__emailconfirm__close").on('click', function () {
+    $('body').removeClass('scroll__hidden');
+});
+
+$("#popup__finish__join__end").on('click', function () {
+    $('#personalinformation__emailcodeconfirm').hide();
+});
+
+$("#popup__finish__join__end").on('click', function () {
+    $('body').removeClass('scroll__hidden');
+});
+
+$("#popup__finish__join__end").on('click', function () {
+    $('#leave__modal').hide();
+});
+

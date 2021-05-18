@@ -76,7 +76,7 @@
   display: flex;
   flex-direction: column;
   width: 500px;
-  height: 500px;
+  height: 400px;
   padding: 20px;
   top: 50%;
   left: 50%;
@@ -90,10 +90,10 @@
   margin: 20px auto 0 auto;
   background-color: #2c91ef;
   color: #ffffff;
-  font-size: 23px;
+  font-size: 18px;
   border-radius: 5px;
   cursor: pointer;
-  transform: all 0.2s;
+  /* transform: all 0.2s; */
 }
 
 .popup__finish__group {
@@ -108,36 +108,36 @@
 
 .popup__input {
   width: 300px;
-  height: 40px;
+  height: 50px;
   border: 1px solid #828282;
   margin: 20px auto 0 auto;
-  padding: 4px 5px 6px 5px;
+  padding: 10px;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .popup__btn__finish {
   width: 300px;
-  height: 40px;
+  height: 50px;
   margin: 10px auto 0 auto;
   background-color: #2c91ef;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 15px;
   border-radius: 5px;
   cursor: pointer;
-  transform: all 0.2s;
+  /* transform: all 0.2s; */
 }
 
 .popup__btn__end {
   width: 200px;
-  height: 40px;
+  height: 50px;
   margin: 25px auto 0 auto;
   background-color: #2c91ef;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 15px;
   border-radius: 5px;
   cursor: pointer;
-  transform: all 0.2s;
+  /* transform: all 0.2s; */
 }
 
 .modal__popup__content__group img {
@@ -162,7 +162,9 @@
   margin-top: 10px;
 }
 
-.modal__popup__content__btn {
+.modal__popup__content__btn,
+.modal__leave__popup__group__btn,
+.personalinformation__emailconfirm__btn {
   display: flex;
   justify-content: flex-end;
 }
@@ -175,13 +177,30 @@
   transform: translate(-20px, 20px);
 }
 
-.modal__popup__content__btn .fa-times:hover {
+.modal__leave__popup__group__btn .fa-times {
+  position: absolute;
+  font-size: 30px;
+  color: #999999;
+  cursor: pointer;
+  transform: translate(235px, -30px);
+}
+
+.personalinformation__emailconfirm__btn .fa-times {
+  position: absolute;
+  font-size: 30px;
+  color: #999999;
+  cursor: pointer;
+  transform: translate(330px, -30px);
+}
+
+.modal__popup__content__btn .fa-times:hover,
+.modal__leave__popup__group__btn .fa-times:hover {
   color: #666666;
   transition: 0.3s;
 }
 
 .modal__background__emailconfirm {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.4);
   position: fixed;
   z-index: 6;
   width: 100%;
@@ -189,7 +208,8 @@
   display: none;
 }
 
-.modal__emailconfirm__popup__group {
+.modal__emailconfirm__popup__group,
+.modal__join__popup__group {
   z-index: 6;
   display: flex;
   flex-direction: column;
@@ -197,21 +217,27 @@
   width: 500px;
   height: 300px;
   border-radius: 20px;
-  padding: 20px;
+  padding: 35px 40px;
   top: 50%;
   left: 50%;
   position: absolute;
   background: rgba(255, 255, 255);
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -60%);
   box-shadow: 0 2px 24px 0 hsl(0deg 0% 58% / 23%);
 }
 
 .modal__emailconfirm__popup__group img {
-  width: 90px;
-  margin: 10px 0;
+  height: 80px;
+  margin: 16px 0;
 }
 
-.modal__emailconfirm__popup__group h5 {
+.modal__join__popup__group img {
+  height: 60px;
+  margin: 15px 0;
+}
+
+.modal__emailconfirm__popup__group,
+.modal__join__popup__group h5 {
   font-size: 20px;
   color: #333333;
   font-weight: 500;
@@ -219,7 +245,8 @@
   margin-top: 10px;
 }
 
-.modal__emailconfirm__popup__group p {
+.modal__emailconfirm__popup__group,
+.modal__join__popup__group p {
   font-size: 15px;
   font-weight: 400;
   color: #666666;
@@ -227,7 +254,156 @@
   margin-top: 5px;
 }
 
+/* 회원탈퇴모달 */
+.modal__background__leave,
+.modal__background__personalinformation__emailconfirm {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  z-index: 6;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.modal__leave__popup__group {
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 291px;
+  border-radius: 20px;
+  padding: 40px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  background: rgba(255, 255, 255);
+  transform: translate(-50%, -60%);
+  box-shadow: 0 2px 24px 0 hsl(0deg 0% 58% / 23%);
+}
+
+.modal__leave__input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #666666;
+  margin-top: 20px;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 15px;
+}
+
+.personalinformation__emailconfirm {
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+  height: 330px;
+  border-radius: 20px;
+  padding: 40px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  background: rgba(255, 255, 255);
+  transform: translate(-50%, -60%);
+  box-shadow: 0 2px 24px 0 hsl(0deg 0% 58% / 23%);
+}
+
+.personalinformation__emailconfirm__input__group {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 20px 10px;
+  border-bottom: 1px solid #666666;
+}
+
+.personalinformation__emailconfirm h5,
+.modal__leave__popup__group h5 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.personalinformation__emailconfirm h5 span,
+.modal__leave__popup__group h5 span {
+  font-weight: 600;
+}
+
+.personalinformation__emailconfirm p,
+.modal__leave__popup__group p {
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.modal__leave__popup__group p span {
+  color: #ff5656;
+  font-weight: 500;
+}
+
+.user__id {
+  width: 33%;
+  height: 50px;
+  margin-right: 5px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  color: #666666;
+}
+.user__pw {
+  width: 33%;
+  height: 50px;
+  margin-left: 5px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  color: #666666;
+}
+
+.text__form {
+  line-height: 47px;
+}
+
+.emailcode__btn {
+  width: 33%;
+  height: 50px;
+  margin-left: 10px;
+  background-color: #ffffff;
+  border: 1px solid #2c91ef;
+  color: #2c91ef;
+  font-size: 15px;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+.email__code__btn {
+  width: 33%;
+  height: 50px;
+  margin-left: 10px;
+  background-color: #2c91ef;
+  color: #ffffff;
+  font-size: 15px;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+.personalinformation__emailconfirm__emailcode__group {
+  display: flex;
+  margin-top: 20px;
+  width: 90%;
+  padding: 0px 10px;
+}
+
+.email__code {
+  width: 72%;
+  height: 50px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  padding: 10;
+}
 /* ------------- 반응형시작 -------------*/
+
 /* 화면 너비가 576~768 태블릿*/
 @media screen and (max-width: 768px) {
   .modal__email__content__group {
@@ -245,5 +421,91 @@
   .signup__box__item__group .signup__box__item__title {
     font-size: 15px;
     word-spacing: -2;
+  }
+
+  .modal__popup__content__group {
+    height: 350px;
+  }
+
+  .modal__leave__popup__group {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .personalinformation__emailconfirm {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .modal__join__popup__group h5,
+  .personalinformation__emailconfirm h5 {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .modal__leave__popup__group h5 {
+    margin-top: 50px;
+  }
+
+  .personalinformation__emailconfirm p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .modal__leave__popup__group__btn .fa-times,
+  .personalinformation__emailconfirm__btn .fa-times {
+    transform: translate(0px, 0px);
+    right: 10px;
+    top: 10px;
+  }
+
+  .modal__leave__input {
+    margin-top: 10px;
+  }
+
+  .personalinformation__emailconfirm__input__group {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 5px;
+    margin-top: 10px;
+    justify-content: space-between;
+  }
+
+  .personalinformation__emailconfirm__emailcode__group {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 5px;
+    margin-top: 0;
+    justify-content: space-between;
+  }
+
+  .emailcode__btn,
+  .email__code,
+  .email__code__btn {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  .user__id,
+  .user__pw,
+  .emailcode__btn {
+    padding: 0 5px;
+  }
+
+  .user__id,
+  .user__pw {
+    width: 44%;
+  }
+
+  .member__content__item {
+    font-size: 15px;
+  }
+
+  .personalinformation__name {
+    font-size: 15px;
   }
 }
