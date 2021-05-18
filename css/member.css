@@ -214,6 +214,11 @@
   background-color: #333333;
 }
 
+.personalinformation__input__radio__group {
+  width: 75%;
+  display: flex;
+}
+
 .personalinformation__input__radio input[type="radio"] {
   display: none;
 }
@@ -292,9 +297,10 @@
     white-space: nowrap;
     margin-left: 5px;
   }
-
+  .personalinformation__vitalize__btn,
   .personalinformation__name__btn {
     width: 22%;
+    height: 45px;
     font-size: 14px;
     margin-left: 5px;
   }
@@ -329,12 +335,14 @@
     margin-left: 5px;
   }
 
-  .personalinformation__name__btn {
-    height: 45px;
-  }
-
   .member__leave__group {
     padding: 20px 0;
+  }
+
+  .personalinformation__input__radio input[type="radio"] + span {
+    width: 100px;
+    height: 45px;
+    margin-left: 5px;
   }
 
   /* .member__information__group__background > .ask__personalinformation {
