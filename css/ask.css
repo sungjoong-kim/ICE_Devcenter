@@ -38,9 +38,10 @@
   padding: 10px;
   font-size: 15px;
   color: #808080;
-  background: #fff
+  background: #fff url(../image/calendar_icon.png) no-repeat 98% 50%;
   -webkit-appearance: none;
   -moz-appearance: none;
+  appearance: none;
 }
 
 .qna__write__mobile__select {
@@ -242,7 +243,8 @@
   }
 
   .ask__group__item__input,
-  .search__bar__ask {
+  .search__bar__ask,
+  .ask__group__item__input__date {
     margin-left: 10px;
     width: 80%;
   }
