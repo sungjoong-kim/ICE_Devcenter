@@ -37,3 +37,13 @@
 .mb__50 {
   margin-bottom: 50px;
 }
+
+.line__bt__2px {
+  border-bottom: 2px solid #7b7b7b;
+}
+
+@media screen and (max-width: 768px) {
+  .line__bt__2px {
+    border-bottom: 0px;
+  }
+}

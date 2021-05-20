@@ -7,7 +7,8 @@
   align-items: center;
 }
 
-.ask__group__item span {
+.ask__group__item span,
+.ask__group__item__textarea span {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,6 +43,25 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+.ask__group__item__textarea {
+  width: 100%;
+  height: 500px;
+  border-bottom: 1px solid #f1f3f9;
+  display: flex;
+  align-items: center;
+}
+
+.ask__group__item__textarea textarea {
+  display: flex;
+  align-content: center;
+  width: 75%;
+  height: 470px;
+  border: 1px solid #b1b1b1;
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 15px;
 }
 
 .qna__write__mobile__select {
@@ -238,20 +258,37 @@
     padding: 20px 0 20px 0;
   }
 
-  .ask__group__item span {
-    width: 20%;
+  .ask__group__item,
+  .ask__group__item__textarea {
+    flex-wrap: wrap;
+    height: auto;
+    border-bottom: 0px;
+  }
+
+  .ask__group__item__textarea {
+    border-bottom: 2px solid #000000;
+  }
+
+  .ask__group__item span,
+  .ask__group__item__textarea span {
+    width: 100%;
+    justify-content: left;
+    margin: 5px 0 3px 0;
+  }
+
+  .ask__group__item__textarea textarea {
+    height: 300px;
   }
 
   .ask__group__item__input,
   .search__bar__ask,
-  .ask__group__item__input__date {
-    margin-left: 10px;
-    width: 80%;
+  .ask__group__item__input__date,
+  .ask__group__item__textarea textarea {
+    width: 100%;
   }
 
   .file__box__group {
-    width: 80%;
-    margin-left: 10px;
+    width: 100%;
   }
 
   .ask__personalinformation__purpose__link {
