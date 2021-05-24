@@ -307,12 +307,14 @@ fieldset {
   margin-top: 5px;
 }
 
+/* 0521추가(폼 전송 시 미입력 경고) */
 .signup__submit__requisite__error {
   color: #ff5656;
   font-size: 14px;
   font-weight: 400;
 }
 
+/* 0521추가(폼 전송 시 미입력 경고) */
 .signup__box__item__title span {
   color: #ff5656;
   font-weight: 500;

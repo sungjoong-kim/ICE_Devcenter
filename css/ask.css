@@ -1,4 +1,6 @@
 /* ask input box */
+
+/* 0521 css수정(height삭제 + padding 추가) */
 .ask__group__item {
   width: 100%;
   padding: 17px 0;
@@ -19,7 +21,7 @@
   font-weight: 400;
 }
 
-/* 0521추가 */
+/* 0521 경고창추가 */
 .submit__requisite__error {
   width: 75%;
   color: #ff5656;
@@ -276,6 +278,7 @@
     border-bottom: 0px;
   }
 
+  /* 0521추가 */
   .ask__group__item {
     padding: 0px;
   }
@@ -290,6 +293,7 @@
     border-bottom: 2px solid #000000;
   }
 
+  /* 0521수정(margin 수정) */
   .ask__group__item span,
   .ask__group__item__textarea span {
     width: 100%;
@@ -297,10 +301,12 @@
     margin: 10px 0 3px 0;
   }
 
+  /* 0521추가 */
   .ask__group__item__textarea textarea {
     height: 300px;
   }
 
+  /* 0521추가 */
   .ask__group__item__input,
   .search__bar__ask,
   .ask__group__item__input__date,
@@ -316,12 +322,14 @@
     margin: 20px 0 20px 0;
   }
 
+  /* 0521추가 */
   .ask__personalinformation > p {
     margin-bottom: 20px;
     font-size: 14px;
     text-align: justify;
   }
 
+  /* 0521추가 */
   .ask__personalinformation__purpose__text h5,
   .ask__personalinformation__purpose__text p {
     font-size: 14px;

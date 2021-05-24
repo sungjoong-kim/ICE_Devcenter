@@ -317,27 +317,27 @@
                     <div class="ice__content" style="padding-top: 0;">
                         <div class="ask__group">
                             <form action="#">
-                                <!-- 0521수정- 인풋 입력 안했을 때 에러창 스타일 추가 및 h6-submit__requisite__error' 노출 -->
+                                <!-- 0521추가(폼 전송 시 미입력 경고) -->
                                 <div class="ask__group__item">
                                     <span>성함</span>
                                     <input type="text" placeholder="아이온" maxlength="15"
                                         class="ask__group__item__input" style="border: 2px solid #ff5656;"></input>
                                     <h6 class="submit__requisite__error">* 필수항목 입니다.</h6>
                                 </div>
+                                <!-- 0521추가(폼 전송 시 미입력 경고) -->
                                 <div class="ask__group__item">
                                     <span>회사명</span>
                                     <input type="text" placeholder="아이온커뮤니케이션즈" maxlength="15"
                                     class="ask__group__item__input" style="border: 2px solid #ff5656;"></input>
                                         <h6 class="submit__requisite__error">* 필수항목 입니다.</h6>
                                 </div>
-
+                                <!-- 0521추가(폼 전송 시 미입력 경고) -->
                                 <div class="ask__group__item">
                                     <span>부서/직급</span>
                                     <input type="text" placeholder="마케팅팀/과장" maxlength="15"
                                     class="ask__group__item__input" style="border: 2px solid #ff5656;"></input>
                                         <h6 class="submit__requisite__error">* 필수항목 입니다.</h6>
                                 </div>
-
                                 <div class="ask__group__item">
                                     <span>이메일</span>
                                     <input type="text" placeholder="example@i-on.net" maxlength="15"
@@ -358,12 +358,11 @@
                                         <option value="#">기타문의</option>
                                     </select>
                                 </div>
-
+                                <!-- 0521수정(placeholder수정) -->
                                 <div class="ask__group__item">
                                     <span>희망 교육 날짜</span>
                                     <input type="text" class="ask__group__item__input__date" placeholder="날짜를 입력하세요" id="datepicker"> </input>
                                 </div>
-
                                 <div class="ask__group__item">
                                     <span>제목</span>
                                     <input type="text" placeholder="제목을 입력해 주세요(30자이내)" maxlength="30"
@@ -459,6 +458,7 @@
 <script src="js/scroll__hidden.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<!-- 0521수정(스크립트 수정 -주말선택막기추가) -->
 <script>
     $("#datepicker").datepicker({
         dateFormat: 'yy-mm-dd' //Input Display Format 변경

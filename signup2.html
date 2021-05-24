@@ -312,7 +312,8 @@
                                 <div class="signup__box__item__account">
                                     <div class="signup__box__item__account__item">
                                         <p>회사명</p>
-                                        <input type="text"  placeholder="예) (주)아이온커뮤니케이션즈" maxlength="15" style="border: 2px solid #ff5656;">
+                                <!-- 0521추가(폼 전송 시 미입력 경고) -->
+                                    <input type="text" placeholder="예) (주)아이온커뮤니케이션즈" maxlength="15" style="border: 2px solid #ff5656;">
                                         <h6 class="signup__submit__requisite__error">* 필수항목 입니다.</h6>
                                     </div>
                                     <div class="signup__box__item__account__item">
@@ -323,32 +324,27 @@
                                     <div class="signup__box__item__account__item">
                                         <p>담당자이메일</p>
                                 
-
                                         <div class="email__group">
                                             <input type="email"  placeholder="exemple@i-on.net" maxlength="30">
                                             <input type="button" value="중복확인" >
                                         </div>
-
-
                                     </div>
                                     <div class="signup__box__item__account__item">
                                         <p>담당자휴대폰</p>
                                         <div class="email__group">
                                         <input type="text" placeholder="010-0000-0000" maxlength="13">
                                         <input type="button" value="중복확인" >
+                                        </div>
                                     </div>
-
-                                    </div>
-
                                 </div>
                                 <div class="signup__btn__group">
                                     <input type="button" class="signup__btn" value="다음" id="signup__next"
                                         onclick="location.href='signup3.html'">
                                 </div>
                             </div>
+                        </div>
+                    </form>
                 </div>
-            </form>
-
             </div>
         </section>
     </main>

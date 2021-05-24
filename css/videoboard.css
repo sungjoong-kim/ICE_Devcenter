@@ -22,6 +22,7 @@
   transform: translateY(-3px);
 }
 
+/* 0521추가(마우스 hover시 아이콘 노출) 시작 */
 .eduvideo__item__tum__group {
   position: relative;
   overflow: hidden;
@@ -48,11 +49,9 @@
   width: 50px;
   height: 50px;
 }
+/* 0521추가(마우스 hover시 아이콘 노출) 끝 */
 
-.opacityadd {
-  opacity: 1;
-}
-
+/* 0521수정(margin-bottom삭제, position:realtive추가) */
 .eduvideo__item__tum {
   width: 100%;
   position: relative;
@@ -62,6 +61,7 @@
   position: relative;
 }
 
+/* 0521수정(h5로 변경, margin-bottom삭제, margin 추가) */
 .eduvideo__item h5 {
   width: 100%;
   font-size: 15px;
@@ -71,6 +71,7 @@
   text-overflow: ellipsis;
 }
 
+/* 0521추가(동영상강의-강의자명추가)*/
 .eduvideo__item h6 {
   font-size: 13px;
   font-weight: 400;
@@ -79,7 +80,7 @@
   margin-left: auto;
   text-align: left;
 }
-
+/* 0521수정(min-heigh수정)*/
 .eduvideo__item p {
   min-height: 95px;
   margin-bottom: 10px;
