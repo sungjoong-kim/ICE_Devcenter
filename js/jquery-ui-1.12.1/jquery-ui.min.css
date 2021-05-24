@@ -115,6 +115,7 @@
   margin-top: -8px;
   cursor: pointer;
 }
+
 .ui-datepicker .ui-datepicker-title {
   margin: 0 2.3em;
   line-height: 3em;
@@ -138,15 +139,27 @@
   margin: 0 0 0.4em;
 }
 
+/* 0521수정-달력요일색 변경 시작 */
+
 .ui-datepicker th {
   padding: 1em 0.5em;
   text-align: center;
   font-weight: 400;
   border: 0;
   font-size: 12px;
-  color: #5d7fd4;
+  color: #454545;
   text-align: center;
 }
+
+.ui-datepicker-calendar thead tr th:first-child {
+  color: #ee5757;
+}
+
+.ui-datepicker-calendar thead tr th:last-child {
+  color: #5d7fd4;
+}
+
+/* 0521수정-달력요일색 변경 끝 */
 
 .ui-datepicker td {
   border: 0;

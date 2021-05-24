@@ -317,21 +317,25 @@
                     <div class="ice__content" style="padding-top: 0;">
                         <div class="ask__group">
                             <form action="#">
+                                <!-- 0521수정- 인풋 입력 안했을 때 에러창 스타일 추가 및 h6-submit__requisite__error' 노출 -->
                                 <div class="ask__group__item">
                                     <span>성함</span>
                                     <input type="text" placeholder="아이온" maxlength="15"
-                                        class="ask__group__item__input"></input>
+                                        class="ask__group__item__input" style="border: 2px solid #ff5656;"></input>
+                                    <h6 class="submit__requisite__error">* 필수항목 입니다.</h6>
                                 </div>
                                 <div class="ask__group__item">
                                     <span>회사명</span>
                                     <input type="text" placeholder="아이온커뮤니케이션즈" maxlength="15"
-                                        class="ask__group__item__input"></input>
+                                    class="ask__group__item__input" style="border: 2px solid #ff5656;"></input>
+                                        <h6 class="submit__requisite__error">* 필수항목 입니다.</h6>
                                 </div>
 
                                 <div class="ask__group__item">
                                     <span>부서/직급</span>
                                     <input type="text" placeholder="마케팅팀/과장" maxlength="15"
-                                        class="ask__group__item__input"></input>
+                                    class="ask__group__item__input" style="border: 2px solid #ff5656;"></input>
+                                        <h6 class="submit__requisite__error">* 필수항목 입니다.</h6>
                                 </div>
 
                                 <div class="ask__group__item">
@@ -357,7 +361,7 @@
 
                                 <div class="ask__group__item">
                                     <span>희망 교육 날짜</span>
-                                    <input type="text" class="ask__group__item__input__date" data-placeholder="등록일" id="datepicker"> </input>
+                                    <input type="text" class="ask__group__item__input__date" placeholder="날짜를 입력하세요" id="datepicker"> </input>
                                 </div>
 
                                 <div class="ask__group__item">
@@ -453,23 +457,12 @@
 <script src="js/slide.js"></script>
 <!-- #. hiddn -->
 <script src="js/scroll__hidden.js"></script>
-
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
-
-<!-- <script type="text/javascript">
-	window.onload = function() {
-		today = new Date();
-		console.log("today.toISOString() >>>" + today.toISOString());
-		today = today.toISOString().slice(0, 10);
-		console.log("today >>>> " + today);
-		bir = document.getElementById("todaybirthday");
-		bir.value = today;
-    }
-</script> -->
 <script>
     $("#datepicker").datepicker({
         dateFormat: 'yy-mm-dd' //Input Display Format 변경
+        ,regional: "ko"
         ,showOtherMonths: true //빈 공간에 현재월의 앞뒤월의 날짜를 표시
         ,buttonText: "선택" //버튼에 마우스 갖다 댔을 때 표시되는 텍스트   
         ,buttonImage: "(image)" //버튼 이미지 경로
@@ -479,17 +472,14 @@
         ,dayNamesMin: ['SUN','MON','TUE','WED','THU','FRI','SAT'] //달력의 요일 부분 텍스트
         ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] //달력의 요일 부분 Tooltip 텍스트
         ,minDate: 0 //이전날짜막기
+        ,beforeShowDay: function(date){
+	        var day = date.getDay();
+	        return [(day != 0 && day != 6)];
+        }
     });
-           //초기값을 오늘 날짜로 설정
-          $('#datepicker').datepicker('setDate', 'today'); //(-1D:하루전, -1M:한달전, -1Y:일년전), (+1D:하루후, -1M:한달후, -1Y:일년후)     
+//      $('#datepicker').datepicker('setDate', 'today'); //기본셋팅오늘날짜로 설정
+// </script>
 
-// 주말(토, 일요일) 선택 막기
-function noWeekendsOrHolidays(date) {
-    var noWeekend = jQuery.datepicker.noWeekends(date);
-    return noWeekend[0] ? [true] : noWeekend;
-}
-
-</script>
 
 </body>
 

@@ -402,6 +402,67 @@
   font-size: 15px;
   padding: 10;
 }
+
+.modal__background__associatemember {
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+}
+
+.associatemember__group {
+  background: #eeeeee;
+  width: 490px;
+  height: 250px;
+  border-radius: 10px;
+  padding: 20px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -60%);
+  border: 1px solid #b6b6b6;
+}
+
+.associatemember__group__index {
+  background: #ffffff;
+  height: 80%;
+  padding: 15px;
+  border: 1px solid #cacaca;
+  border-radius: 10px;
+  color: #8a8a8a;
+}
+
+.associatemember__group h5 {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.associatemember__group p {
+  font-size: 15px;
+  text-align: justify;
+  word-spacing: -2;
+}
+
+.associatemember__btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.associatemember__btn .fa-times {
+  position: absolute;
+  font-size: 25px;
+  color: #999999;
+  cursor: pointer;
+  transform: translate(5px, -11px);
+}
+
+.associatemember__btn .fa-times:hover {
+  color: #666666;
+  transition: 0.3s;
+}
 /* ------------- 반응형시작 -------------*/
 
 /* 화면 너비가 576~768 태블릿*/

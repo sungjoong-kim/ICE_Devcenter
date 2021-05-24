@@ -1,10 +1,11 @@
 /* ask input box */
 .ask__group__item {
   width: 100%;
-  height: 80px;
+  padding: 17px 0;
   border-bottom: 1px solid #f1f3f9;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .ask__group__item span,
@@ -16,6 +17,15 @@
   height: 100%;
   font-size: 15px;
   font-weight: 400;
+}
+
+/* 0521추가 */
+.submit__requisite__error {
+  width: 75%;
+  color: #ff5656;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 5px 0 -10px auto;
 }
 
 .ask__group__item__input {
@@ -266,6 +276,16 @@
     border-bottom: 0px;
   }
 
+  .ask__group__item {
+    padding: 0px;
+  }
+
+  /* 0521추가 */
+  .submit__requisite__error {
+    width: 100%;
+    margin: 0;
+  }
+
   .ask__group__item__textarea {
     border-bottom: 2px solid #000000;
   }
@@ -274,7 +294,7 @@
   .ask__group__item__textarea span {
     width: 100%;
     justify-content: left;
-    margin: 5px 0 3px 0;
+    margin: 10px 0 3px 0;
   }
 
   .ask__group__item__textarea textarea {
