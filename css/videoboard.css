@@ -136,6 +136,10 @@
   transition: transform 0.5s;
 }
 
+.casestudy__item a {
+  cursor: default;
+}
+
 .casestudy__item:hover {
   transform: translateY(-3px);
 }

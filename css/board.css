@@ -506,6 +506,11 @@
   font-size: 15px;
 }
 
+.answercomplete {
+  font-weight: 500;
+  color: #5f90db;
+}
+
 /* ------------- 반응형시작 -------------*/
 /* 화면 너비가 576~768 태블릿*/
 @media screen and (max-width: 768px) {
@@ -541,6 +546,8 @@
 
   .board__list .title {
     width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .board__list .date {
@@ -614,6 +621,8 @@
 
   .qna__board__list .title {
     width: 65%;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .qna__board__list .division {
