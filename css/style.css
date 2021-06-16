@@ -800,7 +800,7 @@ input#tab05:checked ~ ul > li:nth-child(5) .sideicon .sidearrow::after {
   border-radius: 4px;
   text-align: center;
   color: #fff;
-  background-color: #1d375e;
+  background-color: #2f5f88;
   margin-left: 10px;
   cursor: pointer;
 }
