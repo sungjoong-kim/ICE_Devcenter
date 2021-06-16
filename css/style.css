@@ -365,11 +365,11 @@ hr {
   background-repeat: no-repeat;
   background-position: 90% 50%;
 }
-
+/* 06.15수정 */
 #menu ul li a:hover + .submenu,
 .submenu:hover {
   box-sizing: border-box;
-  background-color: #f7fafd;
+  background-color: #f7fbff;
   border-top: 3px solid #5f90db;
 }
 
@@ -754,7 +754,7 @@ input#tab05:checked ~ ul > li:nth-child(5) .sideicon .sidearrow::after {
   justify-content: space-between;
   width: 100%;
   height: 70px;
-  background-color: #98c3e2;
+  background-color: #5298c9;
   float: left;
 }
 
@@ -800,7 +800,7 @@ input#tab05:checked ~ ul > li:nth-child(5) .sideicon .sidearrow::after {
   border-radius: 4px;
   text-align: center;
   color: #fff;
-  background-color: #118ade;
+  background-color: #1d375e;
   margin-left: 10px;
   cursor: pointer;
 }
@@ -964,7 +964,7 @@ input#tab05:checked ~ ul > li:nth-child(5) .sideicon .sidearrow::after {
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  background: rgb(52 145 239 / 0.03);
+  /* background: rgb(52 145 239 / 0.03); */
   transition: all 0.3s;
 }
 
@@ -1348,7 +1348,8 @@ input#tab05:checked ~ ul > li:nth-child(5) .sideicon .sidearrow::after {
 /* 푸터 */
 footer {
   height: 50vh;
-  background-color: #eef8fd;
+  background-color: #f1f1f1;
+  border-top: 1px solid #dfdfde;
 }
 
 .footer__logo {
@@ -1361,6 +1362,7 @@ footer {
   justify-content: space-between;
   width: 100%;
   margin-top: 35px;
+  font-weight: 300;
 }
 
 .footer__text {
@@ -1384,8 +1386,8 @@ footer {
   margin-left: 20px;
 }
 
-.footer__button li:hover {
-  font-weight: bold;
+.footer__button a:hover {
+  font-weight: 500;
   color: #118ade;
   cursor: pointer;
 }
